@@ -10,11 +10,11 @@ import openai
 import tiktoken
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
-from .EmbeddingModels import BaseEmbeddingModel, OpenAIEmbeddingModel
-from .SummarizationModels import (BaseSummarizationModel,
+from EmbeddingModels import BaseEmbeddingModel, OpenAIEmbeddingModel
+from SummarizationModels import (BaseSummarizationModel,
                                   GPT3TurboSummarizationModel)
-from .tree_structures import Node, Tree
-from .utils import (distances_from_embeddings, get_children, get_embeddings,
+from tree_structures import Node, Tree
+from utils import (distances_from_embeddings, get_children, get_embeddings,
                     get_node_list, get_text,
                     indices_of_nearest_neighbors_from_distances, split_text)
 
