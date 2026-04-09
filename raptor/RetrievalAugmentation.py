@@ -5,8 +5,8 @@ from .cluster_tree_builder import ClusterTreeBuilder, ClusterTreeConfig
 from .EmbeddingModels import BaseEmbeddingModel
 from .QAModels import BaseQAModel, GPT3TurboQAModel
 from .SummarizationModels import BaseSummarizationModel
-from tree_builders import TreeBuilder, TreeBuilderConfig
-from tree_retrievers import TreeRetriever, TreeRetrieverConfig
+from .tree_builders import TreeBuilder, TreeBuilderConfig
+from .tree_retrievers import TreeRetriever, TreeRetrieverConfig
 from .tree_structures import Node, Tree
 
 # Define a dictionary to map supported tree builders to their respective configs
