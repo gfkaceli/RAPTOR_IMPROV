@@ -269,10 +269,10 @@ class LocalQAModel(BaseQAModel):
             # Seq2Seq models (T5, BART) use "text2text-generation"
             # Causal models (Mistral, Llama, GPT) use "text-generation"
             if hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder:
-                task = "text2text-generation"
+                task = "document-question-answering"
                 self._is_causal = False
             else:
-                task = "text-generation"
+                task = "document-question-answering"
                 self._is_causal = True
             self._pipeline = hf_pipeline(
                 task, model=self.model_name, tokenizer=self.model_name,

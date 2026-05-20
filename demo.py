@@ -243,7 +243,7 @@ class LocalFlanQAModel(BaseQAModel):
         try:
             from transformers import pipeline as hf_pipeline
             self._pipeline = hf_pipeline(
-                "text2text-generation", model=self.model_name, tokenizer=self.model_name
+                "document-question-answering", model=self.model_name, tokenizer=self.model_name
             )
         except Exception as exc:
             self._load_error = exc
