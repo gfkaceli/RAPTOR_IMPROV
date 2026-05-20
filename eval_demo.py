@@ -211,36 +211,66 @@ from raptor.EmbeddingModels import SBertEmbeddingModel
 # ============================================================================
 
 
-class LocalBartSummarizationModel(BaseSummarizationModel):
-    """HuggingFace summarizer — scales with model name."""
+class LocalSummarizationModel(BaseSummarizationModel):
+    """
+    HuggingFace summarizer using "text-generation" pipeline.
+
+    In transformers v5.8+, the "summarization" pipeline task was removed.
+    We use "text-generation" with a summarization prompt instead. This works
+    for both encoder-decoder models (BART, T5) and causal models (Mistral).
+
+    For encoder-decoder models like BART-large-CNN that were trained on
+    summarization, the prompt "Summarize the following text: ..." triggers
+    the same behavior as the old "summarization" pipeline — same weights,
+    just a different entry point.
+    """
 
     def __init__(self, model_name="sshleifer/distilbart-cnn-12-6"):
         self.model_name = model_name
         self._pipeline = None
         self._load_error = None
+        self._is_causal = None
 
     def _ensure_loaded(self):
         if self._pipeline is not None or self._load_error is not None:
             return
         try:
-            from transformers import pipeline as hf_pipeline
+            from transformers import pipeline as hf_pipeline, AutoConfig
+            config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
+            self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
             self._pipeline = hf_pipeline(
-                "summarization", model=self.model_name, tokenizer=self.model_name)
-            print(f"    Summarizer loaded: {self.model_name}")
+                "text-generation",
+                model=self.model_name,
+                tokenizer=self.model_name,
+                trust_remote_code=True,
+                device_map="auto",
+            )
+            model_type = "causal" if self._is_causal else "encoder-decoder"
+            print(f"    Summarizer loaded: {self.model_name} ({model_type})")
         except Exception as exc:
             self._load_error = exc
+            print(f"    [WARN] Summarizer failed to load: {exc}")
 
     def summarize(self, context, max_tokens=150):
         text = " ".join(str(context).split())
         if not text: return ""
         self._ensure_loaded()
         if self._pipeline is not None:
+            prompt = f"Summarize the following text concisely, preserving key facts, names, and dates:\n\n{text}\n\nSummary:"
             try:
                 result = self._pipeline(
-                    text, max_new_tokens=min(int(max_tokens), 128),
-                    min_new_tokens=20, do_sample=False, truncation=True)
-                return result[0]["summary_text"].strip()
-            except Exception: pass
+                    prompt, max_new_tokens=min(int(max_tokens), 128),
+                    do_sample=False, truncation=True,
+                )
+                generated = result[0]["generated_text"]
+                if self._is_causal:
+                    if "Summary:" in generated:
+                        return generated.split("Summary:")[-1].strip()
+                    return generated[len(prompt):].strip()
+                return generated.strip()
+            except Exception:
+                pass
+        # Heuristic fallback — extract first two sentences
         sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
         return ". ".join(sentences[:2]) + ("." if sentences else "")
 
@@ -250,7 +280,13 @@ class LocalQAModel(BaseQAModel):
     HuggingFace text generation for QA. Supports:
       - Seq2Seq models (flan-t5-base, flan-t5-large, flan-t5-xl)
       - Causal LMs (mistralai/Mistral-7B-Instruct-v0.3, etc.)
-    Automatically detects the model type from the HF config.
+
+    Uses "text-generation" pipeline for all models. In transformers v5+,
+    "text2text-generation" was removed — "text-generation" now handles both
+    causal and encoder-decoder models natively. For encoder-decoder models
+    (T5, BART) it returns only the generated text. For causal models
+    (Mistral, Llama) it returns the full prompt + generation, so we strip
+    the prompt in the answer extraction step.
     """
 
     def __init__(self, model_name="google/flan-t5-base", max_new_tokens=80):
@@ -266,20 +302,17 @@ class LocalQAModel(BaseQAModel):
         try:
             from transformers import pipeline as hf_pipeline, AutoConfig
             config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
-            # Seq2Seq models (T5, BART) use "text2text-generation"
-            # Causal models (Mistral, Llama, GPT) use "text-generation"
-            if hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder:
-                task = "document-question-answering"
-                self._is_causal = False
-            else:
-                task = "document-question-answering"
-                self._is_causal = True
+            # Detect model type so we know whether to strip the prompt from output
+            self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
             self._pipeline = hf_pipeline(
-                task, model=self.model_name, tokenizer=self.model_name,
+                "text-generation",
+                model=self.model_name,
+                tokenizer=self.model_name,
                 trust_remote_code=True,
-                device_map="auto",  # uses GPU if available, CPU otherwise
+                device_map="auto",
             )
-            print(f"    QA model loaded: {self.model_name} (task={task})")
+            model_type = "causal" if self._is_causal else "encoder-decoder"
+            print(f"    QA model loaded: {self.model_name} ({model_type})")
         except Exception as exc:
             self._load_error = exc
             print(f"    [WARN] QA model failed to load: {exc}")
@@ -292,25 +325,27 @@ class LocalQAModel(BaseQAModel):
         if self._pipeline is not None:
             prompt = (
                 f"Based on the following context, answer the question in one "
-                f"using the following information {context}. "
-                f"Answer the following question in less than 5-7 words, if possible: {question}"
+                f"or two sentences. Be specific and include key names, dates, "
+                f"and facts from the context.\n\n"
+                f"Context: {context}\n\n"
+                f"Question: {question}\n\n"
                 f"Answer:"
             )
             try:
                 result = self._pipeline(
                     prompt, max_new_tokens=self.max_new_tokens, do_sample=False,
                 )
+                generated = result[0]["generated_text"]
                 if self._is_causal:
-                    # Causal models return the full prompt + generation
-                    full_text = result[0]["generated_text"]
-                    # Extract only the generated part after "Answer:"
-                    if "Answer:" in full_text:
-                        answer = full_text.split("Answer:")[-1].strip()
+                    # Causal models echo the prompt — strip it
+                    if "Answer:" in generated:
+                        answer = generated.split("Answer:")[-1].strip()
                     else:
-                        answer = full_text[len(prompt):].strip()
+                        answer = generated[len(prompt):].strip()
                     return answer
                 else:
-                    return result[0]["generated_text"].strip()
+                    # Encoder-decoder models (T5) return only the generated text
+                    return generated.strip()
             except Exception:
                 pass
         # Heuristic fallback
@@ -359,8 +394,8 @@ class OpenAIQAModel(BaseQAModel):
                     {"role": "system",
                      "content": "You are a precise question-answering assistant. "
                                 "Answer based only on the provided context. Be specific "
-                                f"and include key names, dates, and facts. using the following information {context}. "
-                                f"Answer the following question in less than 5-7 words, if possible: {question}."},
+                                "and include key names, dates, and facts. Answer in one "
+                                "or two sentences."},
                     {"role": "user",
                      "content": f"Context: {context}\n\nQuestion: {question}"},
                 ],
@@ -473,7 +508,7 @@ def _shared_models(tier_name: str = "base"):
         summ = OpenAISummarizationModel(model_name=summ_name)
         print(f"    Summarizer: {summ_name} (API)")
     else:
-        summ = LocalBartSummarizationModel(model_name=summ_name)
+        summ = LocalSummarizationModel(model_name=summ_name)
         print(f"    Summarizer: {summ_name} (local)")
 
     # QA model

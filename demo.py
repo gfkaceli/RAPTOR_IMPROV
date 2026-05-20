@@ -189,20 +189,27 @@ from raptor.EmbeddingModels import SBertEmbeddingModel
 
 
 class LocalBartSummarizationModel(BaseSummarizationModel):
-    """DistilBART summarizer for local (no-API) usage."""
+    """
+    Local summarizer using text-generation pipeline.
+    Works with both encoder-decoder (BART, T5) and causal (Mistral) models.
+    """
 
     def __init__(self, model_name: str = "sshleifer/distilbart-cnn-12-6"):
         self.model_name = model_name
         self._pipeline = None
         self._load_error = None
+        self._is_causal = None
 
     def _ensure_loaded(self):
         if self._pipeline is not None or self._load_error is not None:
             return
         try:
-            from transformers import pipeline as hf_pipeline
+            from transformers import pipeline as hf_pipeline, AutoConfig
+            config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
+            self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
             self._pipeline = hf_pipeline(
-                "summarization", model=self.model_name, tokenizer=self.model_name
+                "text-generation", model=self.model_name, tokenizer=self.model_name,
+                trust_remote_code=True, device_map="auto",
             )
         except Exception as exc:
             self._load_error = exc
@@ -213,37 +220,54 @@ class LocalBartSummarizationModel(BaseSummarizationModel):
             return ""
         self._ensure_loaded()
         if self._pipeline is not None:
+            prompt = (
+                f"Summarize the following text concisely, preserving key facts, "
+                f"names, and dates:\n\n{text}\n\nSummary:"
+            )
             try:
                 result = self._pipeline(
-                    text,
+                    prompt,
                     max_new_tokens=min(int(max_tokens), 128),
-                    min_new_tokens=20,
                     do_sample=False,
                     truncation=True,
                 )
-                return result[0]["summary_text"].strip()
+                generated = result[0]["generated_text"]
+                if self._is_causal:
+                    # Causal models echo the prompt — extract after "Summary:"
+                    if "Summary:" in generated:
+                        return generated.split("Summary:")[-1].strip()
+                    return generated[len(prompt):].strip()
+                # Encoder-decoder models return only the generated text
+                return generated.strip()
             except Exception:
                 pass
-        # Heuristic fallback — deterministic, no silent degradation in the ablation
+        # Heuristic fallback
         sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
         return ". ".join(sentences[:2]) + ("." if sentences else "")
 
 
 class LocalFlanQAModel(BaseQAModel):
-    """FLAN-T5 question-answering model for local (no-API) usage."""
+    """
+    Local QA model using text-generation pipeline.
+    Works with both encoder-decoder (FLAN-T5) and causal (Mistral) models.
+    """
 
     def __init__(self, model_name: str = "google/flan-t5-base"):
         self.model_name = model_name
         self._pipeline = None
         self._load_error = None
+        self._is_causal = None
 
     def _ensure_loaded(self):
         if self._pipeline is not None or self._load_error is not None:
             return
         try:
-            from transformers import pipeline as hf_pipeline
+            from transformers import pipeline as hf_pipeline, AutoConfig
+            config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
+            self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
             self._pipeline = hf_pipeline(
-                "document-question-answering", model=self.model_name, tokenizer=self.model_name
+                "text-generation", model=self.model_name, tokenizer=self.model_name,
+                trust_remote_code=True, device_map="auto",
             )
         except Exception as exc:
             self._load_error = exc
@@ -256,13 +280,21 @@ class LocalFlanQAModel(BaseQAModel):
         self._ensure_loaded()
         if self._pipeline is not None:
             prompt = (
-                f"Answer the question using the provided context. "
-                f"If the answer is not in the context, say you do not know.\n\n"
-                f"Context: {context}\n\nQuestion: {question}"
+                f"Based on the following context, answer the question in one "
+                f"or two sentences. Be specific and include key names, dates, "
+                f"and facts from the context.\n\n"
+                f"Context: {context}\n\nQuestion: {question}\n\nAnswer:"
             )
             try:
                 result = self._pipeline(prompt, max_new_tokens=64, do_sample=False)
-                return result[0]["generated_text"].strip()
+                generated = result[0]["generated_text"]
+                if self._is_causal:
+                    # Causal models echo the prompt — extract after "Answer:"
+                    if "Answer:" in generated:
+                        return generated.split("Answer:")[-1].strip()
+                    return generated[len(prompt):].strip()
+                # Encoder-decoder models return only the generated text
+                return generated.strip()
             except Exception:
                 pass
         # Heuristic fallback
