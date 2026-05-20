@@ -1,4 +1,0 @@
-method,description,accuracy_pct,mean_f1,mean_precision,mean_recall,num_layers,total_nodes,leaf_nodes,summary_nodes,build_time_sec
-original,RAPTOR (GMM+UMAP) upstream,100.0,0.1256,0.0679,0.9422,0,3,3,0,0.18
-gmm,GMMClusterer (new interface),100.0,0.1256,0.0679,0.9422,0,3,3,0,0.14
-leiden,LeidenClusterer (k-NN graph),100.0,0.1256,0.0679,0.9422,0,3,3,0,0.12
