@@ -190,27 +190,36 @@ from raptor.EmbeddingModels import SBertEmbeddingModel
 
 class LocalBartSummarizationModel(BaseSummarizationModel):
     """
-    Local summarizer using text-generation pipeline.
-    Works with both encoder-decoder (BART, T5) and causal (Mistral) models.
+    Local summarizer. Uses model.generate() for encoder-decoder models (BART, T5)
+    and text-generation pipeline for causal models (Mistral). In transformers v5.8+
+    the text-generation pipeline does not support encoder-decoder models.
     """
 
     def __init__(self, model_name: str = "sshleifer/distilbart-cnn-12-6"):
         self.model_name = model_name
+        self._model = None
+        self._tokenizer = None
         self._pipeline = None
         self._load_error = None
         self._is_causal = None
 
     def _ensure_loaded(self):
-        if self._pipeline is not None or self._load_error is not None:
+        if self._model is not None or self._pipeline is not None or self._load_error is not None:
             return
         try:
-            from transformers import pipeline as hf_pipeline, AutoConfig
+            from transformers import AutoConfig, AutoTokenizer
             config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
             self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
-            self._pipeline = hf_pipeline(
-                "text-generation", model=self.model_name, tokenizer=self.model_name,
-                trust_remote_code=True, device_map="auto",
-            )
+            if self._is_causal:
+                from transformers import pipeline as hf_pipeline
+                self._pipeline = hf_pipeline(
+                    "text-generation", model=self.model_name, tokenizer=self.model_name,
+                    trust_remote_code=True, device_map="auto",
+                )
+            else:
+                from transformers import AutoModelForSeq2SeqLM
+                self._tokenizer = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
+                self._model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name, trust_remote_code=True)
         except Exception as exc:
             self._load_error = exc
 
@@ -219,56 +228,63 @@ class LocalBartSummarizationModel(BaseSummarizationModel):
         if not text:
             return ""
         self._ensure_loaded()
-        if self._pipeline is not None:
-            prompt = (
-                f"Summarize the following text concisely, preserving key facts, "
-                f"names, and dates:\n\n{text}\n\nSummary:"
-            )
+        max_out = min(int(max_tokens), 128)
+
+        if self._model is not None and not self._is_causal:
+            prompt = f"Summarize: {text}"
             try:
-                result = self._pipeline(
-                    prompt,
-                    max_new_tokens=min(int(max_tokens), 128),
-                    do_sample=False,
-                    truncation=True,
-                )
-                generated = result[0]["generated_text"]
-                if self._is_causal:
-                    # Causal models echo the prompt — extract after "Summary:"
-                    if "Summary:" in generated:
-                        return generated.split("Summary:")[-1].strip()
-                    return generated[len(prompt):].strip()
-                # Encoder-decoder models return only the generated text
-                return generated.strip()
+                inputs = self._tokenizer(prompt, return_tensors="pt", truncation=True, max_length=1024)
+                outputs = self._model.generate(**inputs, max_new_tokens=max_out, do_sample=False)
+                return self._tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
             except Exception:
                 pass
-        # Heuristic fallback
+
+        if self._pipeline is not None and self._is_causal:
+            prompt = f"Summarize the following text concisely:\n\n{text}\n\nSummary:"
+            try:
+                result = self._pipeline(prompt, max_new_tokens=max_out, do_sample=False)
+                generated = result[0]["generated_text"]
+                if "Summary:" in generated:
+                    return generated.split("Summary:")[-1].strip()
+                return generated[len(prompt):].strip()
+            except Exception:
+                pass
+
         sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
         return ". ".join(sentences[:2]) + ("." if sentences else "")
 
 
 class LocalFlanQAModel(BaseQAModel):
     """
-    Local QA model using text-generation pipeline.
-    Works with both encoder-decoder (FLAN-T5) and causal (Mistral) models.
+    Local QA model. Uses model.generate() for encoder-decoder models (FLAN-T5)
+    and text-generation pipeline for causal models (Mistral).
     """
 
     def __init__(self, model_name: str = "google/flan-t5-base"):
         self.model_name = model_name
+        self._model = None
+        self._tokenizer = None
         self._pipeline = None
         self._load_error = None
         self._is_causal = None
 
     def _ensure_loaded(self):
-        if self._pipeline is not None or self._load_error is not None:
+        if self._model is not None or self._pipeline is not None or self._load_error is not None:
             return
         try:
-            from transformers import pipeline as hf_pipeline, AutoConfig
+            from transformers import AutoConfig, AutoTokenizer
             config = AutoConfig.from_pretrained(self.model_name, trust_remote_code=True)
             self._is_causal = not (hasattr(config, "is_encoder_decoder") and config.is_encoder_decoder)
-            self._pipeline = hf_pipeline(
-                "text-generation", model=self.model_name, tokenizer=self.model_name,
-                trust_remote_code=True, device_map="auto",
-            )
+            if self._is_causal:
+                from transformers import pipeline as hf_pipeline
+                self._pipeline = hf_pipeline(
+                    "text-generation", model=self.model_name, tokenizer=self.model_name,
+                    trust_remote_code=True, device_map="auto",
+                )
+            else:
+                from transformers import AutoModelForSeq2SeqLM
+                self._tokenizer = AutoTokenizer.from_pretrained(self.model_name, trust_remote_code=True)
+                self._model = AutoModelForSeq2SeqLM.from_pretrained(self.model_name, trust_remote_code=True)
         except Exception as exc:
             self._load_error = exc
 
@@ -278,26 +294,32 @@ class LocalFlanQAModel(BaseQAModel):
         if not context:
             return "No context available."
         self._ensure_loaded()
-        if self._pipeline is not None:
-            prompt = (
-                f"Based on the following context, answer the question in one "
-                f"or two sentences. Be specific and include key names, dates, "
-                f"and facts from the context.\n\n"
-                f"Context: {context}\n\nQuestion: {question}\n\nAnswer:"
-            )
+
+        prompt = (
+            f"Based on the following context, answer the question in one "
+            f"or two sentences. Be specific and include key names, dates, "
+            f"and facts from the context.\n\n"
+            f"Context: {context}\n\nQuestion: {question}\n\nAnswer:"
+        )
+
+        if self._model is not None and not self._is_causal:
+            try:
+                inputs = self._tokenizer(prompt, return_tensors="pt", truncation=True, max_length=1024)
+                outputs = self._model.generate(**inputs, max_new_tokens=64, do_sample=False)
+                return self._tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+            except Exception:
+                pass
+
+        if self._pipeline is not None and self._is_causal:
             try:
                 result = self._pipeline(prompt, max_new_tokens=64, do_sample=False)
                 generated = result[0]["generated_text"]
-                if self._is_causal:
-                    # Causal models echo the prompt — extract after "Answer:"
-                    if "Answer:" in generated:
-                        return generated.split("Answer:")[-1].strip()
-                    return generated[len(prompt):].strip()
-                # Encoder-decoder models return only the generated text
-                return generated.strip()
+                if "Answer:" in generated:
+                    return generated.split("Answer:")[-1].strip()
+                return generated[len(prompt):].strip()
             except Exception:
                 pass
-        # Heuristic fallback
+
         sentences = [s.strip() for s in context.split(".") if s.strip()]
         keywords = [t.lower() for t in question.split() if len(t) > 3]
         best, best_score = "", -1
