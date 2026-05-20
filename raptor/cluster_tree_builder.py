@@ -30,9 +30,15 @@ class ClusterTreeConfig(TreeBuilderConfig):
 
     def log_config(self):
         base_summary = super().log_config()
+        cluster_algo_name = getattr(
+            self.clustering_algorithm,
+            "__name__",
+            self.clustering_algorithm.__class__.__name__
+        )
+
         cluster_tree_summary = f"""
         Reduction Dimension: {self.reduction_dimension}
-        Clustering Algorithm: {self.clustering_algorithm.__name__}
+        Clustering Algorithm: {cluster_algo_name}
         Clustering Parameters: {self.clustering_params}
         """
         return base_summary + cluster_tree_summary
