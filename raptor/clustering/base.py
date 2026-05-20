@@ -55,7 +55,7 @@ import numpy as np
 # We re-export the upstream Node type so subclasses can type-annotate against it.
 # This is the ONLY upstream import in this file — all clusterers should depend on
 # this module rather than reaching into raptor.cluster_utils directly.
-from ..tree_structures import Node
+from raptor.tree_structures import Node
 
 
 logger = logging.getLogger(__name__)
@@ -134,6 +134,17 @@ class BaseClusterer(ABC):
     # for the deterministic ablation if you want to compare layer-by-layer
     # behavior without the recursion confound.
     recursive_split: bool = True
+
+    # -------------------------------------------------------------------------
+    # Upstream compatibility: RAPTOR's ClusterTreeConfig.log_config() accesses
+    # self.clustering_algorithm.__name__, which works when clustering_algorithm
+    # is a class (classes have __name__) but fails on an instance. We expose
+    # __name__ as a property so instances behave like the upstream code expects.
+    # This avoids patching cluster_tree_builder.py for a one-line logging call.
+    # -------------------------------------------------------------------------
+    @property
+    def __name__(self) -> str:
+        return self.algorithm_name
 
     def __init__(
         self,

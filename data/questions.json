@@ -1,0 +1,77 @@
+[
+  {
+    "question": "What was the Logic Theorist and who created it?",
+    "answer": "The Logic Theorist was the first AI program, presented by Allen Newell and Herbert Simon at the 1956 Dartmouth Conference. It could prove mathematical theorems from Principia Mathematica.",
+    "type": "local"
+  },
+  {
+    "question": "What caused the first AI winter?",
+    "answer": "The first AI winter was caused by the failure of AI to scale beyond simple problems, disappointing results in machine translation, and the critical 1973 Lighthill Report that led to funding cuts from both the British government and DARPA.",
+    "type": "local"
+  },
+  {
+    "question": "Why did expert systems fail in the late 1980s?",
+    "answer": "Expert systems proved expensive to maintain, difficult to update, and brittle when facing situations outside their narrow domains. The specialized Lisp machines became obsolete as general-purpose desktops became more powerful.",
+    "type": "local"
+  },
+  {
+    "question": "What was the significance of AlexNet in 2012?",
+    "answer": "AlexNet was a deep convolutional neural network that won the ImageNet competition by a dramatic margin, proving that deep learning could vastly outperform traditional computer vision methods and triggering massive investment in the field.",
+    "type": "local"
+  },
+  {
+    "question": "What is the Turing Test?",
+    "answer": "The Turing Test, proposed by Alan Turing in 1950, asks whether machines can exhibit intelligent behavior indistinguishable from that of humans. It was introduced in his paper Computing Machinery and Intelligence.",
+    "type": "local"
+  },
+  {
+    "question": "How did neural network research evolve from the Perceptron to deep learning?",
+    "answer": "Frank Rosenblatt invented the Perceptron in 1958, but Minsky and Papert's 1969 book showed its limitations, stalling research for over a decade. Neural networks revived through deep learning, culminating in AlexNet's 2012 ImageNet victory and the 2017 Transformer architecture.",
+    "type": "cross"
+  },
+  {
+    "question": "Compare the two AI winters — what caused each and how long did they last?",
+    "answer": "The first AI winter lasted from roughly 1974 to 1980, caused by the failure to scale beyond toy problems and the critical Lighthill Report. The second lasted from about 1987 to 1993, caused by the collapse of the expert systems market and the failure of Japan's Fifth Generation project.",
+    "type": "cross"
+  },
+  {
+    "question": "How did government funding influence AI's progress and setbacks?",
+    "answer": "DARPA funding fueled the golden years of AI in the 1960s and early 1970s. Funding cuts after the Lighthill Report caused the first AI winter. Government initiatives in the 1980s responded to Japan's Fifth Generation project, but DARPA again pulled back after expert systems failed, causing the second winter.",
+    "type": "cross"
+  },
+  {
+    "question": "What role did games play in AI history?",
+    "answer": "Games were key milestones: Herbert Simon predicted a chess champion computer in 1957. IBM's Deep Blue beat Kasparov in 1997, forty years late. DeepMind's AlphaGo defeated Go champion Lee Sedol in 2016, a feat thought decades away.",
+    "type": "cross"
+  },
+  {
+    "question": "How did the approach to building AI systems shift from the 1980s to the 2000s?",
+    "answer": "AI shifted from hand-coded expert systems with explicit rules in the 1980s to data-driven machine learning and statistical approaches in the 1990s-2000s, where computers learned patterns from large datasets rather than following human-specified rules.",
+    "type": "cross"
+  },
+  {
+    "question": "What recurring pattern do you see across the history of AI?",
+    "answer": "AI history shows a recurring cycle of hype and disappointment. Periods of optimism and heavy funding are followed by unmet expectations and funding cuts. This happened with the initial promises of the 1950s-60s leading to the first winter, the expert systems boom leading to the second winter, and echoes in current concerns about large language models.",
+    "type": "global"
+  },
+  {
+    "question": "Summarize the major milestones in AI from the 1950s to the present.",
+    "answer": "Key milestones include the 1956 Dartmouth Conference founding the field, the Perceptron in 1958, ELIZA in 1966, expert systems like MYCIN in the 1970s-80s, Deep Blue defeating Kasparov in 1997, AlexNet winning ImageNet in 2012, AlphaGo in 2016, and the Transformer architecture in 2017 enabling modern large language models.",
+    "type": "global"
+  },
+  {
+    "question": "What are the main challenges facing AI today?",
+    "answer": "Current challenges include hallucination in language models, bias amplification from training data, enormous computational and environmental costs, questions about safety and alignment with human values, and the distant goal of artificial general intelligence.",
+    "type": "global"
+  },
+  {
+    "question": "How did the intellectual foundations laid before computers influence later AI?",
+    "answer": "Boole's algebra provided the framework for logical reasoning in computers. Babbage and Lovelace established the concept of programmable computation. Turing formalized computation theory and proposed the Turing Test. Shannon's information theory underpinned digital computing. All of these directly shaped how AI researchers approached building intelligent machines.",
+    "type": "global"
+  },
+  {
+    "question": "What is the overall narrative arc of AI history?",
+    "answer": "AI evolved from ancient myths and philosophical questions through mathematical foundations in the 19th-20th centuries, to formal establishment in 1956, through cycles of progress and disappointment, shifting from symbolic and rule-based approaches to statistical and neural methods, culminating in today's deep learning and large language models that are remarkably capable but still face fundamental challenges.",
+    "type": "global"
+  }
+]
