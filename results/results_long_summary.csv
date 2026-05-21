@@ -1,0 +1,4 @@
+method,description,model_tier,mean_f1,mean_rouge_l,contains_em_%,retrieval_hit_%,layers,total_nodes,leaves,summaries,build_sec
+original,RAPTOR GMM+UMAP upstream,base,0.3832,0.2682,93.3,0.0,1,21,18,3,56.78
+gmm,GMMClusterer new interface,base,0.3442,0.2643,60.0,0.0,1,21,18,3,45.5
+leiden,LeidenClusterer k-NN graph,base,0.4031,0.2977,66.7,0.0,1,21,18,3,43.18
