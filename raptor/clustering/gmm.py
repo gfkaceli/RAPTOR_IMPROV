@@ -114,9 +114,13 @@ class GMMClusterer(BaseClusterer):
         )
         reduced = reducer.fit_transform(embeddings)
 
-        # BIC search for optimal n_clusters
-        max_k = min(self.max_clusters_per_bic_search, n)
-        ks = np.arange(1, max_k)
+        # BIC search for optimal n_clusters.
+        # Cap max_k at sqrt(n) to prevent BIC from overfitting on small datasets.
+        # With 30 nodes, searching up to K=29 produces clusters of 1-2 nodes
+        # which always have lower BIC (perfect fit) but are meaningless.
+        # sqrt(n) is a standard heuristic that balances granularity with stability.
+        max_k = min(self.max_clusters_per_bic_search, max(3, int(np.sqrt(n)) + 1))
+        ks = np.arange(1, max_k + 1)
         bics = []
         for k in ks:
             gm = GaussianMixture(n_components=k, random_state=self.random_state)
