@@ -84,6 +84,7 @@ class KMeansClusterer(BaseClusterer):
         *,
         k_strategy: str = "silhouette",
         fixed_k: int = 5,
+        min_k: int = 3,
         max_k: int = 10,
         k_schedule: Optional[Dict[int, float]] = None,
         n_init: int = 10,
@@ -96,6 +97,7 @@ class KMeansClusterer(BaseClusterer):
             )
         self.k_strategy = k_strategy
         self.fixed_k = fixed_k
+        self.min_k = min_k
         self.max_k = max_k
         self.k_schedule = k_schedule
         self.n_init = n_init
@@ -151,32 +153,33 @@ class KMeansClusterer(BaseClusterer):
         return labels
 
     def _pick_k(self, embeddings: np.ndarray) -> int:
-        """Choose K based on the configured strategy."""
+        """Choose K based on the configured strategy, enforcing min_k."""
         n = embeddings.shape[0]
 
         if self.k_strategy == "fixed":
-            return self.fixed_k
+            return max(self.min_k, self.fixed_k)
 
         if self.k_strategy == "sqrt":
-            return max(2, int(np.ceil(np.sqrt(n))))
+            return max(self.min_k, int(np.ceil(np.sqrt(n))))
 
         # silhouette search
         return self._silhouette_search(embeddings)
 
     def _silhouette_search(self, embeddings: np.ndarray) -> int:
-        """Try K=2..max_k, return the K with highest silhouette score."""
+        """Try K=min_k..max_k, return the K with highest silhouette score."""
         from sklearn.cluster import KMeans
         from sklearn.metrics import silhouette_score
 
         n = embeddings.shape[0]
-        max_k = min(self.max_k, n - 1)
-        if max_k < 2:
-            return 2
+        lo = max(2, self.min_k)
+        hi = min(self.max_k, n - 1)
+        if hi < lo:
+            return lo
 
-        best_k = 2
+        best_k = lo
         best_score = -1.0
 
-        for k in range(2, max_k + 1):
+        for k in range(lo, hi + 1):
             km = KMeans(
                 n_clusters=k,
                 random_state=self.random_state,
@@ -196,8 +199,8 @@ class KMeansClusterer(BaseClusterer):
 
         if self.verbose:
             logger.info(
-                "KMeans silhouette search: best K=%d (score=%.4f) from range [2, %d]",
-                best_k, best_score, max_k,
+                "KMeans silhouette search: best K=%d (score=%.4f) from range [%d, %d]",
+                best_k, best_score, lo, hi,
             )
 
         return best_k
