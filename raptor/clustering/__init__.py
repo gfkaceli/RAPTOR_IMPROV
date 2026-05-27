@@ -40,6 +40,7 @@ uses `self`, so you MUST pass an instance.
 from .base import BaseClusterer, ClusteringResult
 from .gmm import GMMClusterer
 from .leiden import LeidenClusterer, LeidenConfig
+from .kmeans import KMeansClusterer
 
 __all__ = [
     "BaseClusterer",
@@ -47,4 +48,6 @@ __all__ = [
     "GMMClusterer",
     "LeidenClusterer",
     "LeidenConfig",
+    "KMeansClusterer"
 ]
+
