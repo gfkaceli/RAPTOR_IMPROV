@@ -46,8 +46,7 @@ __all__ = [
     "BaseClusterer",
     "ClusteringResult",
     "GMMClusterer",
+    "KMeansClusterer",
     "LeidenClusterer",
     "LeidenConfig",
-    "KMeansClusterer"
 ]
-
