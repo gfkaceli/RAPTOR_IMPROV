@@ -41,12 +41,16 @@ from .base import BaseClusterer, ClusteringResult
 from .gmm import GMMClusterer
 from .leiden import LeidenClusterer, LeidenConfig
 from .kmeans import KMeansClusterer
+from .agglomerative import AgglomerativeClusterer
+from .dbscan import DBSCANClusterer
 
 __all__ = [
     "BaseClusterer",
     "ClusteringResult",
     "GMMClusterer",
     "KMeansClusterer",
+    "AgglomerativeClusterer",
+    "DBSCANClusterer",
     "LeidenClusterer",
     "LeidenConfig",
 ]
