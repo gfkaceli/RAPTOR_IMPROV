@@ -163,8 +163,13 @@ class FlatRetriever:
             self._tree = _MockTree()
             return
 
-        # Embed all chunks using the same model RAPTOR uses
-        raw_embeddings = self.embedding_model.create_embedding_batch(self._chunks)
+        # Embed all chunks using the same model RAPTOR uses.
+        # SBertEmbeddingModel only has create_embedding(text) for single texts,
+        # so we loop. This is fine — chunking produces tens of chunks, not thousands.
+        raw_embeddings = [
+            self.embedding_model.create_embedding(chunk)
+            for chunk in self._chunks
+        ]
         self._embeddings = np.array(raw_embeddings)
 
         # Build mock tree for eval loop stats
