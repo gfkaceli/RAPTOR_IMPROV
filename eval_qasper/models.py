@@ -149,7 +149,7 @@ class LocalQAModel(BaseQAModel):
             f"Answer the question using only the context from a scientific paper below. "
             f"If the question is extractive:"
             f"Reply with the shortest possible answer: a single phrase, entity, or list of entities."
-            f"Otherwise reply with 5 to 7 words"
+            f"Otherwise reply with 5 to 7 words if possible"
             f"For yes/no questions, answer exactly 'Yes' or 'No'. "
             f"If the context does not contain the answer, reply exactly with 'Unanswerable'.\n\n"
             f"Context: {context}\n\n"
