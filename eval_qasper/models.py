@@ -146,9 +146,14 @@ class LocalQAModel(BaseQAModel):
         self._ensure_loaded()
 
         prompt = (
-            f"Answer the question based on the following context from a scientific paper. "
-            f"If the context doesn't contain the answer, say 'Unanswerable'.\n\n"
-            f"Context: {context}\n\nQuestion: {question}\n\nAnswer:"
+            f"Answer the question using only the context from a scientific paper below. "
+            f"Reply with the shortest possible answer: a single phrase, entity, or list of entities — "
+            f"not a sentence and not an explanation. "
+            f"For yes/no questions, answer exactly 'Yes' or 'No'. "
+            f"If the context does not contain the answer, reply exactly 'Unanswerable'.\n\n"
+            f"Context: {context}\n\n"
+            f"Question: {question}\n\n"
+            f"Short answer:"
         )
 
         if self._model is not None and not self._is_causal:
