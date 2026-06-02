@@ -265,15 +265,25 @@ MODEL_TIERS = {
         "qa": ("local", "Qwen/Qwen2.5-1.5B-Instruct")
     },
     "local-large": {"description": "qwen medium",
-        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1", "summ": ("local", "facebook/bart-large-cnn"),       "qa": ("local", "Qwen/Qwen2.5-3B-Instruct")},
+        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
+                    "summ": ("local", "Qwen/Qwen2.5-1.5B-Instruct"),
+                    "qa": ("local", "Qwen/Qwen2.5-3B-Instruct")},
     "local-xl":    {"description": "qwen large",
-        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1", "summ": ("local", "Qwen/Qwen2.5-1.5B-Instruct"),       "qa": ("local", "Qwen/Qwen2.5-7B-Instruct")},
+        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
+                    "summ": ("local", "Qwen/Qwen2.5-3B-Instruct"),
+                    "qa": ("local", "Qwen/Qwen2.5-7B-Instruct")},
     "mistral":     {"description": "mistral",
-        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1", "summ": ("local", "facebook/bart-large-cnn"),       "qa": ("local", "mistralai/Mistral-7B-Instruct-v0.3")},
+        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
+                    "summ": ("local", "Qwen/Qwen2.5-3B-Instruct"),
+                    "qa": ("local", "mistralai/Mistral-7B-Instruct-v0.3")},
     "api":         {"description": "GPT-4o mini",
-        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1", "summ": ("api",   "gpt-4o-mini"),                  "qa": ("api",   "gpt-4o-mini")},
+        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
+                    "summ": ("api",   "gpt-4o-mini"),
+                    "qa": ("api",   "gpt-4o-mini")},
     "api-gpt4":    {"description": "GPT-4o",
-        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1", "summ": ("api",   "gpt-4o"),   },
+        "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
+                    "summ": ("api",   "gpt-4o"),  "qa": ("api", "gpt-4o")
+                    },
 }
 
 
