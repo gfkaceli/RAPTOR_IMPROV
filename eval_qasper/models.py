@@ -176,11 +176,11 @@ class LocalSummarizationModel(BaseSummarizationModel):
 class LocalQAModel(BaseQAModel):
     """Local QA model — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = ("You answer questions about scientific papers. Reply with the shortest "
-              "possible answer: a phrase, entity, or short list of entities — not a "
-              "sentence and not an explanation. For yes/no questions answer exactly "
-              "'Yes' or 'No'. If the context does not contain the answer, reply "
-              "exactly 'Unanswerable'.")
+    SYSTEM = ("You are a question answering portal, answer using only the provided context. "
+          "Give the most specific answer the context supports — a number, entity, list, or "
+          "brief phrase. Extract specific values (scores, counts, names) exactly as stated. "
+          "For yes/no questions answer 'Yes' or 'No'. Only reply 'Unanswerable' if the "
+          "context genuinely does not contain the answer.")
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 64):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
