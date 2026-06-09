@@ -99,38 +99,36 @@ def make_gmm_config(emb, summ, qa):
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
 
 
-def make_leiden_config(emb, summ, qa):
-    lcfg = LeidenConfig(
-        k_neighbors=10, use_adjacency_edges=True, adjacency_weight=0.5,
-        resolution=1.0, resolution_schedule={0: 1.2, 1: 0.8},
-        partition_type="RBConfiguration", min_cluster_size=1,
-    )
-    clusterer = LeidenClusterer(config=lcfg, random_state=224)
-    return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
-
-
 def make_kmeans_config(emb, summ, qa):
     clusterer = KMeansClusterer(
-        k_strategy="silhouette", min_k=3, max_k=10, random_state=224,
+        k_strategy="silhouette", min_k=3, max_k=15, random_state=224,
+        reduce_embeddings=True, reduction_dimension=10,   # <-- add
     )
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
-
 
 def make_agglomerative_config(emb, summ, qa):
     clusterer = AgglomerativeClusterer(
         cut_strategy="silhouette", linkage="average",
-        min_k=3, max_k=10, random_state=224,
+        min_k=3, max_k=15, random_state=224,
+        reduce_embeddings=True, reduction_dimension=10,   # <-- add
     )
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
-
 
 def make_dbscan_config(emb, summ, qa):
     clusterer = DBSCANClusterer(
         noise_strategy="nearest", min_samples=2,
         eps_percentile=80, random_state=224,
+        reduce_embeddings=True, reduction_dimension=10,   # <-- add
     )
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
 
+def make_leiden_config(emb, summ, qa):
+    lcfg = LeidenConfig(k_neighbors=15, use_adjacency_edges=True, adjacency_weight=0.5,
+        resolution=1.0, resolution_schedule={0: 1.2, 1: 0.8},
+        partition_type="RBConfiguration", min_cluster_size=1)
+    clusterer = LeidenClusterer(config=lcfg, random_state=224,
+        reduce_embeddings=True, reduction_dimension=10)   # <-- add
+    return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
 
 def make_flat(emb, summ, qa):
     return FlatRetriever(embedding_model=emb, qa_model=qa, top_k=10, chunk_size=100)
