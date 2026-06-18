@@ -153,11 +153,33 @@ class BaseClusterer(ABC):
         max_length_in_cluster: int = 3500,
         tokenizer: Optional[Any] = None,
         verbose: bool = False,
+        reduce_embeddings: bool = False,
+        reduction_dimension: int = 10,
+        umap_n_neighbors: Optional[int] = None,
+        umap_metric: str = "cosine",
     ) -> None:
         self.random_state = random_state
         self.max_length_in_cluster = max_length_in_cluster
         self.tokenizer = tokenizer  # lazily imported in _token_length
         self.verbose = verbose
+
+        # ---------------------------------------------------------------
+        # Shared dimensionality reduction.
+        #
+        # When reduce_embeddings=True, every clusterer runs UMAP on the raw
+        # embeddings BEFORE its _cluster_embeddings is called, so all methods
+        # cluster in the SAME reduced space. This removes the confound where
+        # GMM/original clustered in UMAP-reduced space while KMeans, Leiden,
+        # Agglomerative, and DBSCAN clustered in the raw 768-dim space.
+        #
+        # Set this True for ALL methods in the ablation to make the comparison
+        # isolate the clustering algorithm rather than the space it operates in.
+        # Mirrors the UMAP step in upstream RAPTOR's cluster_utils.py.
+        # ---------------------------------------------------------------
+        self.reduce_embeddings = reduce_embeddings
+        self.reduction_dimension = reduction_dimension
+        self.umap_n_neighbors = umap_n_neighbors
+        self.umap_metric = umap_metric
 
     # -------------------------------------------------------------------------
     # Subclass API
@@ -227,13 +249,52 @@ class BaseClusterer(ABC):
             )
 
         embeddings = self._extract_embeddings(nodes, embedding_model_name)
-        labels = self._cluster_embeddings(embeddings, layer=layer)
+
+        # Optionally reduce dimensionality so all clusterers operate in the
+        # same space. The reduced matrix is used ONLY for cluster assignment;
+        # centroids and the ClusteringResult keep the original embeddings so
+        # downstream consumers (summarization, bridge links) see real vectors.
+        cluster_input = embeddings
+        if self.reduce_embeddings:
+            cluster_input = self._reduce(embeddings)
+
+        labels = self._cluster_embeddings(cluster_input, layer=layer)
 
         if labels.shape[0] != len(nodes):
             raise RuntimeError(
                 f"{self.algorithm_name}: clusterer returned {labels.shape[0]} labels "
                 f"for {len(nodes)} nodes. This is a clusterer bug."
             )
+
+        # -------------------------------------------------------------------
+        # Anti-collapse guard.
+        #
+        # RAPTOR builds the tree by repeatedly clustering each layer's nodes
+        # into the next layer. The upstream ClusterTreeBuilder only keeps
+        # recursing while a layer produces more than `reduction_dimension + 1`
+        # nodes. If a clustering pass collapses ALL nodes into a single cluster,
+        # that layer yields exactly one parent node, the builder sees 1 <= 11
+        # on the next iteration, and tree growth stops — so the tree never gets
+        # past one summarization layer.
+        #
+        # This collapse is exactly what happens on upper layers: the layer-1
+        # summary nodes are all summaries of the SAME document, so they sit very
+        # close together in embedding space. Silhouette (KMeans/Agglomerative),
+        # the BIC sqrt-cap (GMM), and auto-eps (DBSCAN) all then prefer a single
+        # cluster. Upstream RAPTOR_Clustering avoids this because its soft GMM
+        # expansion keeps producing many clusters.
+        #
+        # To keep the multi-layer comparison fair, when the clusterer returns a
+        # single cluster but there are enough nodes to split (more than the
+        # reduction_dimension + 1 the builder needs to keep going), we force a
+        # split into a small number of groups. We split by KMeans on the
+        # cluster-input embeddings as a neutral, algorithm-agnostic fallback so
+        # this guard behaves identically regardless of which clusterer is active.
+        # -------------------------------------------------------------------
+        n_effective_clusters = len(set(labels.tolist()) - {-1})
+        recursion_floor = getattr(self, "_reduction_dimension", self.reduction_dimension) + 1
+        if n_effective_clusters <= 1 and len(nodes) > recursion_floor:
+            labels = self._force_split(cluster_input, layer=layer)
 
         clusters, centroids = self._labels_to_clusters(nodes, embeddings, labels)
 
@@ -427,6 +488,101 @@ class BaseClusterer(ABC):
             else:
                 out.extend(sub_result.clusters)
         return out
+
+    def _reduce(self, embeddings: np.ndarray) -> np.ndarray:
+        """
+        Apply UMAP dimensionality reduction so all clusterers operate in the
+        same space. Matches the global reduction step in upstream RAPTOR's
+        cluster_utils.global_cluster_embeddings.
+
+        Reduction is skipped (returns input unchanged) when there are too few
+        points for UMAP to be meaningful — UMAP needs more samples than the
+        target dimension, and n_neighbors must be > 1.
+        """
+        n = embeddings.shape[0]
+        target_dim = min(self.reduction_dimension, embeddings.shape[1])
+
+        # UMAP needs enough points: n must exceed target_dim + 1, and
+        # n_neighbors must be >= 2. Skip reduction on tiny inputs.
+        if n <= target_dim + 1 or n < 4:
+            if self.verbose:
+                logger.info(
+                    "%s: skipping UMAP reduction (only %d nodes, need > %d)",
+                    self.algorithm_name, n, target_dim + 1,
+                )
+            return embeddings
+
+        n_neighbors = self.umap_n_neighbors
+        if n_neighbors is None:
+            # Upstream RAPTOR heuristic: sqrt(n-1), floored at 2.
+            n_neighbors = max(2, int((n - 1) ** 0.5))
+        n_neighbors = min(n_neighbors, n - 1)
+
+        try:
+            import umap  # type: ignore
+        except ImportError as exc:
+            raise ImportError(
+                "reduce_embeddings=True requires `umap-learn`. It's already in "
+                "upstream RAPTOR's requirements.txt."
+            ) from exc
+
+        reducer = umap.UMAP(
+            n_neighbors=n_neighbors,
+            n_components=target_dim,
+            metric=self.umap_metric,
+            random_state=self.random_state,  # determinism — upstream omits this
+        )
+        reduced = reducer.fit_transform(embeddings)
+        if self.verbose:
+            logger.info(
+                "%s: UMAP reduced %d nodes from %dd to %dd (n_neighbors=%d)",
+                self.algorithm_name, n, embeddings.shape[1], target_dim, n_neighbors,
+            )
+        return reduced
+
+    def _force_split(
+        self,
+        embeddings: np.ndarray,
+        *,
+        layer: Optional[int] = None,
+    ) -> np.ndarray:
+        """
+        Force a degenerate single-cluster result into multiple clusters.
+
+        Used by the anti-collapse guard in cluster(). Splits the embeddings
+        into k groups via KMeans, where k scales with the number of nodes so
+        the resulting layer still has more than reduction_dimension + 1 nodes
+        (otherwise the builder would stop on the very next iteration anyway).
+
+        We use plain KMeans here — not the subclass's own algorithm — so the
+        guard is deterministic and identical across all clusterers. The goal is
+        only to keep the tree growing; the primary clustering at each layer is
+        still done by the subclass.
+        """
+        n = embeddings.shape[0]
+        floor = getattr(self, "_reduction_dimension", 10) + 1
+        # Choose k so the next layer has comfortably more than `floor` nodes,
+        # but cap it so clusters aren't trivially small. sqrt(n) is the usual
+        # heuristic; ensure at least floor+1 clusters so growth continues.
+        k = max(floor + 1, int(np.ceil(np.sqrt(n))))
+        k = min(k, n)  # can't have more clusters than nodes
+        if k < 2:
+            return np.zeros(n, dtype=int)
+
+        try:
+            from sklearn.cluster import KMeans
+            km = KMeans(n_clusters=k, random_state=self.random_state, n_init=10)
+            labels = km.fit_predict(embeddings)
+        except Exception:
+            # Last-resort fallback: round-robin assignment into k groups.
+            labels = np.array([i % k for i in range(n)], dtype=int)
+
+        if self.verbose:
+            logger.info(
+                "%s @ layer=%s: anti-collapse guard forced split of %d nodes into %d clusters",
+                self.algorithm_name, layer, n, len(set(labels.tolist())),
+            )
+        return labels
 
     def _token_length(self, text: str) -> int:
         if self.tokenizer is None:
