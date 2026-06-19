@@ -116,8 +116,8 @@ def make_agglomerative_config(emb, summ, qa):
 
 def make_dbscan_config(emb, summ, qa):
     clusterer = DBSCANClusterer(
-        noise_strategy="nearest", min_samples=2,
-        eps_percentile=80, random_state=224,
+        noise_strategy="nearest", min_samples=5,
+        eps_percentile=90, random_state=224,
         reduce_embeddings=True, reduction_dimension=10,   # <-- add
     )
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
