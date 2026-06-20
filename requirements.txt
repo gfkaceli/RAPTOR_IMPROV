@@ -13,8 +13,8 @@ texttable == 1.7.0
 pandas == 3.0.3
 datasets == 4.8.5
 accelerate == 1.13.0
-numpy==2.4.3
-scipy==1.17.1
-transformers==5.3.0
-tqdm==4.67.3
-sentence-transformers==5.2.3
+#numpy==2.4.3
+#scipy==1.17.1
+#transformers==5.3.0
+#tqdm==4.67.3
+#sentence-transformers==5.2.3
