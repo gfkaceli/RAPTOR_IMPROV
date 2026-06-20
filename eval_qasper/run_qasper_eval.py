@@ -123,7 +123,7 @@ def make_dbscan_config(emb, summ, qa):
     return _wrap_config(_make_tree_config(clusterer, emb, summ), emb, qa)
 
 def make_leiden_config(emb, summ, qa):
-    lcfg = LeidenConfig(k_neighbors=10, use_adjacency_edges=True, adjacency_weight=0.5,
+    lcfg = LeidenConfig(k_neighbors=20, use_adjacency_edges=True, adjacency_weight=0.5,
         resolution=1.0, resolution_schedule={0: 1.2, 1: 0.8},
         partition_type="RBConfiguration", min_cluster_size=1)
     clusterer = LeidenClusterer(config=lcfg, random_state=224,

@@ -155,9 +155,7 @@ class _LocalGenerator:
 class LocalSummarizationModel(BaseSummarizationModel):
     """Local summarizer — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = ("You are a summarization assistant for scientific text. Produce a "
-              "concise summary that preserves key facts, names, and numerical results. "
-              "Output only the summary, nothing else.")
+    SYSTEM = "You are a Summarizing Text Portal."
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         self._gen = _LocalGenerator(model_name, max_new_tokens=128)
@@ -167,7 +165,7 @@ class LocalSummarizationModel(BaseSummarizationModel):
         if not text:
             return ""
         self._gen.max_new_tokens = min(int(max_tokens), 128)
-        user = f"Summarize the following text:\n\n{text}"
+        user = f"Write a summary of the following, including as many key details as possible: {text}: "
         out = self._gen.generate(self.SYSTEM, user)
         if out:
             return out
