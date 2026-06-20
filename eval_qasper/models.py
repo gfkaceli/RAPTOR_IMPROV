@@ -222,9 +222,9 @@ class OpenAIQAModel(BaseQAModel):
                 model=self.model_name,
                 messages=[
                     {"role": "system",
-                     "content": "You answer questions about scientific papers. Reply with "
-                                "the shortest possible answer: a phrase or entity, not a "
-                                "sentence. For yes/no questions answer 'Yes' or 'No'. If the "
+                     "content": "You answer questions about scientific papers. Reply in "
+                                "5-7 words: a phrase or entity. "
+                                "For yes/no questions answer 'Yes' or 'No'. If the "
                                 "context does not contain the answer, reply 'Unanswerable'."},
                     {"role": "user",
                      "content": f"Context: {context}\n\nQuestion: {question}"},
