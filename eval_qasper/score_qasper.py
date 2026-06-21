@@ -55,6 +55,8 @@ def score_jsonl(path: str) -> Dict:
                 "question": rec["question"][:120],
                 "predicted": rec["predicted"][:200],
                 "f1": round(scores["f1"], 4),
+                "rouge_l": round(scores.get("rouge_l", 0.0), 4),
+                "bleu": round(scores.get("bleu", 0.0), 4),
                 "answer_type": scores["answer_type"],
                 "n_references": scores["n_references"],
                 "tree_layers": rec.get("tree_layers", 0),
@@ -89,11 +91,12 @@ def write_summary_csv(summaries: List[Dict], out_path: str):
                 all_keys.append(k)
                 seen.add(k)
     # Prefer a sensible column order
-    preferred = ["method", "file", "n", "f1",
-                 "f1_extractive", "n_extractive",
-                 "f1_abstractive", "n_abstractive",
-                 "f1_yes_no", "n_yes_no",
-                 "f1_unanswerable", "n_unanswerable",
+    preferred = ["method", "file", "n",
+                 "f1", "rouge_l", "bleu",
+                 "f1_extractive", "rouge_l_extractive", "bleu_extractive", "n_extractive",
+                 "f1_abstractive", "rouge_l_abstractive", "bleu_abstractive", "n_abstractive",
+                 "f1_yes_no", "rouge_l_yes_no", "bleu_yes_no", "n_yes_no",
+                 "f1_unanswerable", "rouge_l_unanswerable", "bleu_unanswerable", "n_unanswerable",
                  "f1_none", "n_none"]
     ordered = [k for k in preferred if k in seen]
     extras = [k for k in all_keys if k not in seen.intersection(preferred)]
@@ -128,15 +131,17 @@ def score_run_directory(run_dir: str) -> List[Dict]:
         # Write per-method detail CSV next to the predictions file
         detail_path = os.path.join(run_dir, f"detailed_{method}.csv")
         write_detail_csv(result["detail"], detail_path)
-        print(f"    F1 = {result['summary']['f1']:.4f}  "
-              f"(n={result['summary']['n']})")
+        s = result["summary"]
+        print(f"    F1={s['f1']:.4f}  ROUGE-L={s.get('rouge_l', 0):.4f}  "
+              f"BLEU={s.get('bleu', 0):.4f}  (n={s['n']})")
         # Per-type breakdown
         for atype in ["extractive", "abstractive", "yes_no", "unanswerable"]:
             key = f"f1_{atype}"
-            n_key = f"n_{atype}"
-            if key in result["summary"]:
-                print(f"      {atype:14s}: F1={result['summary'][key]:.4f}  "
-                      f"(n={result['summary'][n_key]})")
+            if key in s:
+                print(f"      {atype:14s}: F1={s[key]:.4f}  "
+                      f"ROUGE-L={s.get(f'rouge_l_{atype}', 0):.4f}  "
+                      f"BLEU={s.get(f'bleu_{atype}', 0):.4f}  "
+                      f"(n={s[f'n_{atype}']})")
 
     return summaries
 
@@ -185,11 +190,16 @@ def main():
             result["summary"]["method"] = method
             all_summaries.append(result["summary"])
 
-            print(f"  F1 = {result['summary']['f1']:.4f}  (n={result['summary']['n']})")
+            print(f"  F1={result['summary']['f1']:.4f}  "
+                  f"ROUGE-L={result['summary'].get('rouge_l', 0):.4f}  "
+                  f"BLEU={result['summary'].get('bleu', 0):.4f}  "
+                  f"(n={result['summary']['n']})")
             for atype in ["extractive", "abstractive", "yes_no", "unanswerable"]:
                 key = f"f1_{atype}"
                 if key in result["summary"]:
                     print(f"    {atype}: F1={result['summary'][key]:.4f} "
+                          f"ROUGE-L={result['summary'].get(f'rouge_l_{atype}', 0):.4f} "
+                          f"BLEU={result['summary'].get(f'bleu_{atype}', 0):.4f} "
                           f"(n={result['summary'][f'n_{atype}']})")
         else:
             print(f"  Skipping unknown target: {target}")
@@ -201,15 +211,12 @@ def main():
         print("=" * 70)
         # Sort by F1 desc
         all_summaries.sort(key=lambda s: -s.get("f1", 0))
-        print(f"  {'method':<20s} {'n':>5s} {'F1':>8s} "
-              f"{'ext':>8s} {'abs':>8s} {'y/n':>8s} {'un':>8s}")
+        print(f"  {'method':<20s} {'n':>5s} {'F1':>8s} {'ROUGE-L':>8s} {'BLEU':>8s}")
         for s in all_summaries:
             print(f"  {s.get('method', ''):<20s} "
                   f"{s.get('n', 0):>5d} {s.get('f1', 0):>8.4f} "
-                  f"{s.get('f1_extractive', 0):>8.4f} "
-                  f"{s.get('f1_abstractive', 0):>8.4f} "
-                  f"{s.get('f1_yes_no', 0):>8.4f} "
-                  f"{s.get('f1_unanswerable', 0):>8.4f}")
+                  f"{s.get('rouge_l', 0):>8.4f} "
+                  f"{s.get('bleu', 0):>8.4f}")
 
 
 if __name__ == "__main__":
