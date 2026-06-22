@@ -1,0 +1,8 @@
+method,file,n,f1,rouge_l,bleu,f1_extractive,rouge_l_extractive,bleu_extractive,n_extractive,f1_abstractive,rouge_l_abstractive,bleu_abstractive,n_abstractive,f1_yes_no,rouge_l_yes_no,bleu_yes_no,n_yes_no,f1_unanswerable,rouge_l_unanswerable,bleu_unanswerable,n_unanswerable
+agglomerative,predictions_agglomerative.jsonl,179,0.4103,0.3927,0.2966,0.4261,0.4088,0.2666,99,0.2206,0.1864,0.1121,42,0.56,0.56,0.56,25,0.6154,0.6154,0.6154,13
+dbscan,predictions_dbscan.jsonl,179,0.3938,0.3734,0.2815,0.3807,0.3579,0.2213,101,0.2261,0.1923,0.1258,40,0.6,0.6,0.6,25,0.6154,0.6154,0.6154,13
+flat,predictions_flat.jsonl,179,0.3927,0.3813,0.2823,0.4307,0.4208,0.2724,103,0.2034,0.1771,0.1149,39,0.4583,0.4583,0.4583,24,0.5385,0.5385,0.5385,13
+gmm,predictions_gmm.jsonl,179,0.3975,0.3854,0.2933,0.3898,0.3774,0.2391,100,0.2042,0.1812,0.1148,40,0.5417,0.5417,0.5417,24,0.7333,0.7333,0.7333,15
+kmeans,predictions_kmeans.jsonl,179,0.4019,0.3844,0.2907,0.4013,0.3863,0.2453,101,0.2101,0.17,0.1064,40,0.5833,0.5833,0.5833,24,0.6429,0.6429,0.6429,14
+leiden,predictions_leiden.jsonl,179,0.4141,0.3946,0.3072,0.4263,0.4023,0.27,99,0.1887,0.1622,0.1014,42,0.56,0.56,0.56,25,0.7692,0.7692,0.7692,13
+original,predictions_original.jsonl,179,0.4006,0.3804,0.2923,0.4147,0.389,0.258,102,0.1899,0.1646,0.1025,39,0.5,0.5,0.5,24,0.7143,0.7143,0.7143,14

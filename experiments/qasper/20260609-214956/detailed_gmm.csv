@@ -1,0 +1,189 @@
+method,paper_id,question_id,question,predicted,f1,rouge_l,bleu,answer_type,n_references,tree_layers,tree_nodes,build_time_sec
+gmm,1912.01214,b6f15fb6279b82e34a5bf4828b7b5ddabfdf1d54,which multilingual approaches do they compare with?,"They compare with pivot-based methods, MLM (model-learned multi-lingual) approach, MLM+BRLM-SA (MLM combined with BRLM), MLM+BRLM-HA (MLM combined with BRLM using hard alignment), pivoting, and a base",0.0588,0.0588,0.0209,extractive,2,1,78,37.44
+gmm,1912.01214,f5e6f43454332e0521a778db0b769481e23e7682,what are the pivot-based baselines?,"pivoting, pivot-synthetic",0.4,0.4,0.3033,extractive,2,1,78,37.44
+gmm,1912.01214,9a05a5f4351db75da371f7ac12eb0b03607c4b87,which datasets did they experiment with?,Europarl and MultiUN corpora,0.6667,0.6667,0.3195,extractive,2,1,78,37.44
+gmm,1912.01214,5eda469a8a77f028d0c5f1acd296111085614537,what language pairs are explored?,"French-English-Spanish (Fr-En-Es), German-English-French (De-En-Fr), Romanian-English-German (Ro-En-De), Arabic-English (Ar-En), Spanish-English (Es-En), Russian-English (Ru-En), Romanian-English",0.3333,0.3333,0.1066,extractive,2,1,78,37.44
+gmm,1810.08699,18c5d366b1da8447b5404eab71f4cc658ba12e6f,what ner models were evaluated?,"Stanford NER, spaCy 2.0, and recurrent models with CRF layers.",0.7,0.7,0.3247,extractive,2,1,64,36.22
+gmm,1810.08699,b5e4866f0685299f1d7af267bbcc4afe2aab806f,what is the source of the news sentences?,ilur am,0.0,0.0,0.0,extractive,2,1,64,36.22
+gmm,1810.08699,1f085b9bb7bfd0d6c8cba1a9d73f08fcf2da7590,did they use a crowdsourcing platform for manual annotations?,No,1.0,1.0,1.0,yes_no,2,1,64,36.22
+gmm,1609.00425,b6ae8e10c6a0d34c834f18f66ab730b670fb528c,what are the topics pulled from Reddit?,"politics, business, science, AskReddit, frontpage",0.5882,0.5882,0.1114,extractive,2,1,75,41.22
+gmm,1609.00425,a87a009c242d57c51fc94fe312af5e02070f898b,What predictive model do they build?,A predictive model to classify dogmatic posts from Reddit.,0.0625,0.0625,0.0126,extractive,2,1,75,41.22
+gmm,1801.05147,ef4dba073d24042f24886580ae77add5326f2130,What accuracy does the proposed system achieve?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,117,34.29
+gmm,1801.05147,2df4a045a9cd7b44874340b6fdf9308d3c55327a,What crowdsourcing platform is used?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,117,34.29
+gmm,1811.00383,a313e98994fc039a82aa2447c411dda92c65a470,How do they match words before reordering them?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,43,31.6
+gmm,1811.00383,37861be6aecd9242c4fdccdfcd06e48f3f1f8f81,On how many language pairs do they show that preordering assisting language sentences helps translation quality?,Many,0.0,0.0,0.0,abstractive,2,1,43,31.6
+gmm,1811.00383,7e62a53823aba08bc26b2812db016f5ce6159565,Which dataset(s) do they experiment with?,ILCI corpus,0.4,0.4,0.0352,extractive,2,1,43,31.6
+gmm,1909.09067,9eabb54c2408dac24f00f92cf1061258c7ea2e1a,Which information about text structure is included in the corpus?,"Paragraphs, lines",0.2353,0.2353,0.0015,extractive,2,1,52,31.98
+gmm,1909.09067,3d013f15796ae7fed5272183a166c45f16e24e39,Which information about typography is included in the corpus?,"font type, font style",0.2963,0.2963,0.0087,extractive,2,1,52,31.98
+gmm,1704.06194,9ee07edc371e014df686ced4fb0c3a7b9ce3d5dc,On which benchmarks they achieve the state of the art?,WebQSP and SimpleQuestions,0.8,0.8,0.4082,extractive,2,1,95,41.98
+gmm,1704.06194,d3aa0449708cc861a51551b128d73e11d62207d2,What they use in their propsoed framework?,Hierarchical Residual BiLSTM (HR-BiLSTM) model,0.0909,0.0909,0.0163,extractive,2,1,95,41.98
+gmm,1704.06194,cfbec1ef032ac968560a7c76dec70faf1269b27c,What does KBQA abbreviate for,Knowledge Base Question Answering,1.0,1.0,1.0,extractive,2,1,95,41.98
+gmm,1704.06194,c0e341c4d2253eb42c8840381b082aae274eddad,What is te core component for KBQA?,KB relation detection,0.1818,0.1818,0.0655,extractive,2,1,95,41.98
+gmm,1909.00512,1ec152119cf756b16191b236c85522afeed11f59,What experiments are proposed to test that upper layers produce context-specific embeddings?,Probing tasks and analyzing the input layers of the models are proposed to test that upper layers produce context-specific embeddings.,0.3125,0.25,0.0642,abstractive,2,1,82,40.86
+gmm,1909.00512,891c2001d6baaaf0da4e65b647402acac621a7d2,How do they calculate a static embedding for each word?,They calculate a static embedding for each word by taking the first principal component (PC) of its contextualized representations in a given layer.,0.7879,0.7879,0.6198,extractive,2,1,82,40.86
+gmm,2003.03106,66c96c297c2cffdf5013bab5e95b59101cb38655,What is the performance of BERT on the task?,"BERT outperforms competitors like spaCy, achieving a higher recall of 0.979 and a remarkably higher recall that is about 5 points above the second-best system. It gains 2.1 points in F1-score over CRF",0.2222,0.1111,0.026,extractive,2,1,84,40.96
+gmm,2003.03106,6b53e1f46ae4ba9b75117fc6e593abded89366be,What are the other algorithms tested?,"The other algorithms tested include a CRF classifier, spaCy entity tagger, and NLNDE.",0.3333,0.2069,0.0743,extractive,2,1,84,40.96
+gmm,2003.03106,c0bee6539eb6956a7347daa9d2419b367bd02064,Does BERT reach the best performance among all the algorithms compared?,Yes,0.0,0.0,0.0,yes_no,2,1,84,40.96
+gmm,2003.03106,3de0487276bb5961586acc6e9f82934ef8cb668c,What are the clinical datasets used in the paper?,NUBes-PHI and MEDDOCAN,0.8,0.4,0.4082,extractive,2,1,84,40.96
+gmm,1708.01464,113d791df6fcfc9cecfb7b1bebaf32cc2e4402ab,how is model compactness measured?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,57,32.12
+gmm,1708.01464,0752d71a0a1f73b3482a888313622ce9e9870d6e,what was the baseline?,wFST,1.0,1.0,1.0,extractive,2,1,57,32.12
+gmm,1708.01464,55c8f7acbfd4f5cde634aaecd775b3bb32e9ffa3,what evaluation metrics were used?,"The evaluation metrics used were Word Error Rate (WER), Word Error Rate 100 (WER100), and Perplexity.",0.5517,0.5517,0.4759,extractive,2,1,57,32.12
+gmm,1708.01464,4eaf9787f51cd7cdc45eb85cf223d752328c6ee4,what datasets did they use?,They used the following datasets:,0.0,0.0,0.0,extractive,2,1,57,32.12
+gmm,2002.03407,fb2b536dc8e442dffab408db992b971e86548158,What is the interannotator agreement for the human evaluation?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,68,36.39
+gmm,2002.03407,31735ec3d83c40b79d11df5c34154849aeb3fb47,Who were the human evaluators used?,Unanswerable,0.0,0.0,0.0,extractive,2,1,68,36.39
+gmm,2002.03407,10d450960907091f13e0be55f40bcb96f44dd074,Is the template-based model realistic?  ,Yes,1.0,1.0,1.0,yes_no,2,1,68,36.39
+gmm,2002.03407,b5608076d91450b0d295ad14c3e3a90d7e168d0e,Is the student reflection data very different from the newspaper data?  ,Yes,1.0,1.0,1.0,yes_no,2,1,68,36.39
+gmm,2002.03407,c21b87c97d1afac85ece2450ee76d01c946de668,What is the recent abstractive summarization method in this paper?,neural seq2seq models,0.0,0.0,0.0,extractive,2,1,68,36.39
+gmm,1909.11687,d087539e6a38c42f0a521ff2173ef42c0733878e,Why are prior knowledge distillation techniques models are ineffective in producing student models with vocabularies dif,They require the student and teacher models to share the same vocabulary and output space.,0.619,0.619,0.2921,extractive,2,1,67,36.47
+gmm,1909.11687,efe9bad55107a6be7704ed97ecce948a8ca7b1d2,What state-of-the-art compression techniques were used in the comparison?,Unanswerable,0.0,0.0,0.0,extractive,2,1,67,36.47
+gmm,1605.06083,71e4ba4e87e6596aeca187127c0d088df6570c57,What evaluations methods do they take?,"They use several evaluation methods including:
+- Analyzing coreference graphs and Louvain clustering to identify diverse expressions for the same entity.
+- Counting the proportion of descriptions cont",0.0,0.0,0.0,unanswerable,2,1,41,25.72
+gmm,1605.06083,7561a968470a8936d10e1ba722d2f38b5a9a4d38,What is the size of the dataset?,"30,000",1.0,1.0,1.0,extractive,2,1,41,25.72
+gmm,1605.06083,6d4400f45bd97b812e946b8a682b018826e841f1,Which methods are considered to find examples of biases and unwarranted inferences??,A browser-based tool,0.0,0.0,0.0,extractive,2,1,41,25.72
+gmm,1605.06083,26c2e1eb12143d985e4fb50543cf0d1eb4395e67,What biases are found in the dataset?,"The biases found in the dataset include linguistic bias, unwarranted inferences, and stereotype-driven descriptions. Specifically, the study found that:",0.1111,0.1111,0.0456,abstractive,2,1,41,25.72
+gmm,1804.05918,f17ca24b135f9fe6bb25dc5084b13e1637ec7744,What discourse relations does it work best/worst for?,"Based on the context provided, the paragraph-level model works best for detecting ""Comparison"" and ""Temporal"" discourse relations, as it achieves F1-score improvements of 6 points and 7 points respect",0.12,0.0851,0.0233,abstractive,2,1,77,40.95
+gmm,1804.05918,bd5bd1765362c2d972a762ca12675108754aa437,How much does this model improve state-of-the-art?,Unanswerable,0.0,0.0,0.0,extractive,2,1,77,40.95
+gmm,1809.04267,d9b6c61fc6d29ad399d27b931b6cb7b1117b314a,Where is a question generation model used?,question answering and question generation,0.625,0.625,0.1506,extractive,2,1,74,36.71
+gmm,1901.05287,d27438b11bc70e706431dda0af2b1c0b0d209f96,Were any of these tasks evaluated in any previous work?,Yes,1.0,1.0,1.0,yes_no,2,1,33,26.77
+gmm,1612.06685,8d4ac4afbf5b14f412171729ceb5e822afcfa3f4,"Do they build a model to automatically detect demographic, lingustic or psycological dimensons of people?",No,1.0,1.0,1.0,yes_no,2,1,29,22.36
+gmm,1612.06685,3c93894c4baf49deacc6ed2a14ef5e0f13b7d96f,Which demographic dimensions of people do they obtain?,"The demographic dimensions obtained include location, profile information, and language use.",0.4706,0.4706,0.1411,extractive,2,1,29,22.36
+gmm,1612.06685,07d15501a599bae7eb4a9ead63e9df3d55b3dc35,How do they obtain psychological dimensions of people?,"They obtain psychological dimensions of people by analyzing the vocabulary used in blogs, specifically focusing on the distribution of words in categories such as Positive Feelings and Money, and also",0.1538,0.1538,0.0476,extractive,2,1,29,22.36
+gmm,1912.04961,99e78c390932594bd833be0f5c890af5c605d808,What is the baseline?,"For Dosage extraction, the baseline is `Nearest Number', and for Frequency extraction, the baseline is `Random Top-3`.",0.0952,0.0952,0.0442,extractive,2,1,90,41.01
+gmm,1912.04961,861187338c5ad445b9acddba8f2c7688785667b1,Is the data de-identified?,Yes,1.0,1.0,1.0,yes_no,2,1,90,41.01
+gmm,1912.04961,f161e6d5aecf8fae3a26374dcb3e4e1b40530c95,What embeddings are used?,"ELMo, BERT, and ClinicalBERT",0.7273,0.7273,0.2134,extractive,2,1,90,41.01
+gmm,1910.10781,12c50dea84f9a8845795fa8b8c1679328bd66246,What datasets did they use for evaluation?,"They used three datasets for evaluation:
+1. CSAT dataset for CSAT prediction, consisting of spoken transcripts (automatic via ASR)
+2. 20 newsgroups dataset for topic identification task, consisting of",0.3019,0.3019,0.0688,extractive,2,1,49,27.25
+gmm,1910.10781,0810b43404686ddfe4ca84783477ae300fdd2ea4,On top of BERT does the RNN layer work better or the transformer layer?,Transformer layer,1.0,1.0,1.0,abstractive,2,1,49,27.25
+gmm,1603.09631,455d4ef8611f62b1361be4f6387b222858bb5e56,How was this data collected?,The data was collected using the crowdsourcing platform CrowdFlower (CF).,0.2222,0.2222,0.125,abstractive,2,1,44,31.12
+gmm,1603.09631,bc16ce6e9c61ae13d46970ebe6c4728a47f8f425,What is the average length of dialog?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,44,31.12
+gmm,1911.06964,1ff0fccf0dca95a6630380c84b0422bed854269a,How are models evaluated in this human-machine communication game?,By training an autocomplete system on 500K randomly sampled sentences from Yelp reviews.,1.0,1.0,1.0,extractive,2,1,38,26.89
+gmm,1911.06964,3d7d865e905295d11f1e85af5fa89b210e3e9fdf,How many participants were trying this communication game?,Unanswerable,0.0,0.0,0.0,extractive,2,1,38,26.89
+gmm,1911.06964,2ad4d3d222f5237ed97923640bc8e199409cbe52,What user variations have been tested?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,38,26.89
+gmm,1911.06964,3fad42be0fb2052bb404b989cc7d58b440cd23a0,What are the baselines used?,The baselines used are Unif and Stopword.,0.6667,0.6667,0.3684,extractive,2,1,38,26.89
+gmm,2001.02284,ee417fea65f9b1029455797671da0840c8c1abbe,Do they use off-the-shelf NLP systems to build their assitant?,No,1.0,1.0,1.0,yes_no,2,1,109,42.01
+gmm,2001.02284,ca5a82b54cb707c9b947aa8445aac51ea218b23a,How does the IPA label data after interacting with users?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,109,42.01
+gmm,2001.02284,da55bd769721b878dd17f07f124a37a0a165db02,What kind of repetitive and time-consuming activities does their assistant handle?,repetitive and routine tasks,0.0444,0.0444,0.0,extractive,2,1,109,42.01
+gmm,2002.01664,feb448860918ef5b905bb25d7b855ba389117c1f,How was the audio data gathered?,"The audio data was gathered from the All India Radio news channel, specifically collecting around 635 hours of audio data for 7 Indian languages: Kannada, Hindi, Telugu, Malayalam, Bengali, and Englis",0.24,0.24,0.086,abstractive,2,1,43,18.33
+gmm,2002.01664,4bc2784be43d599000cb71d31928908250d4cef3,What is the GhostVLAD approach?,"GhostVLAD is an extension of the NetVLAD approach that includes additional ""ghost"" clusters alongside the standard NetVLAD clusters, resulting in a total of \(K + G\) clusters where \(G\) typically ra",0.2692,0.2692,0.0478,extractive,2,1,43,18.33
+gmm,2002.01664,75df70ce7aa714ec4c6456d0c51f82a16227f2cb,Which 7 Indian languages do they experiment with?,"Kannada, Hindi, Telugu, Malayalam, Bengali, and English",0.9333,0.6,0.2838,abstractive,2,1,43,18.33
+gmm,1808.09111,6424e442b34a576f904d9649d63acf1e4fdefdfc,What datasets do they evaluate on?,Wall Street Journal (WSJ) portion of the Penn Treebank,1.0,1.0,1.0,extractive,2,1,77,32.43
+gmm,1808.09111,5eabfc6cc8aa8a99e6e42514ef9584569cb75dec,Do they evaluate only on English datasets?,No,0.0,0.0,0.0,yes_no,2,1,77,32.43
+gmm,1808.09111,887c6727e9f25ade61b4853a869fe712fe0b703d,What is the invertibility condition?,INLINEFORM0 and INLINEFORM1 exists,0.4444,0.4444,0.0441,extractive,2,1,77,32.43
+gmm,1906.08593,6236762b5631d9e395f81e1ebccc4bf3ab9b24ac,Do they show on which examples how conflict works better than attention?,Yes,1.0,1.0,1.0,yes_no,2,1,43,22.84
+gmm,1906.08593,31d695ba855d821d3e5cdb7bea638c7dbb7c87c7,Which neural architecture do they use as a base for their attention conflict mechanisms?,GRU,0.0909,0.0909,0.0,extractive,2,1,43,22.84
+gmm,1906.08593,b14217978ad9c3c9b6b1ce393b1b5c6e7f49ecab,On which tasks do they test their conflict method?,Quora Duplicate Question Pair Detection and ranking questions in Bing's People Also Ask feature.,0.9231,0.9231,0.6998,extractive,2,1,43,22.84
+gmm,1809.00540,a99fdd34422f4231442c220c97eafc26c76508dd,Do they use graphical models?,Unanswerable,0.0,0.0,0.0,yes_no,2,1,58,27.45
+gmm,1809.00540,2c78993524ca62bf1f525b60f2220a374d0e3535,What are the sources of the datasets?,Unanswerable,0.0,0.0,0.0,extractive,2,1,58,27.45
+gmm,1809.00540,d604f5fb114169f75f9a38fab18c1e866c5ac28b,What metric is used for evaluation?,cosine similarity,0.0,0.0,0.0,abstractive,2,1,58,27.45
+gmm,2004.03354,1d3e914d0890fc09311a70de0b20974bf7f0c9fe,Which eight NER tasks did they evaluate on?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,72,32.37
+gmm,2004.03354,16535db1d73a9373ffe9d6eedaa2369cefd91ac4,What in-domain text did they use?,Unanswerable,0.0,0.0,0.0,extractive,2,1,72,32.37
+gmm,1611.04798,de0b650022ad8693465242ded169313419eed7d9,Does their framework automatically optimize for hyperparameters?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,78,40.96
+gmm,1611.04798,2b3cac7af10d358d4081083962d03ea2798cf622,Does their framework always generate purely attention-based models?,No,0.0,0.0,0.0,yes_no,2,1,78,40.96
+gmm,1611.04798,897ba53ef44f658c128125edd26abf605060fb13,"Do they test their framework performance on commonly used language pairs, such as English-to-German?",Yes,1.0,1.0,1.0,yes_no,2,1,78,40.96
+gmm,1611.04798,41ac23e32bf208b69414f4b687c4f324c6132464,Which languages do they test on for the under-resourced scenario?,English-German,0.1538,0.1538,0.0,extractive,2,1,78,40.96
+gmm,1912.13337,e97186c51d4af490dba6faaf833d269c8256426c,Are the automatically constructed datasets subject to quality control?,Yes,0.0,0.0,0.0,yes_no,2,1,129,47.12
+gmm,1912.13337,5bb3c27606c59d73fd6944ba7382096de4fa58d8,Do they focus on Reading Comprehension or multiple choice question answering?,Multiple choice question answering,1.0,1.0,1.0,abstractive,2,1,129,47.12
+gmm,1912.13337,8de9f14c7c4f37ab103bc8a639d6d80ade1bc27b,After how many hops does accuracy decrease?,4,0.0,0.0,0.0,extractive,2,1,129,47.12
+gmm,1912.13337,85590bb26fed01a802241bc537d85ba5ef1c6dc2,How do they control for annotation artificats?,They carefully control for annotation artifacts in their automatically constructed probes to address the vulnerability associated with automatic construction methods.,0.0968,0.0667,0.034,extractive,2,1,129,47.12
+gmm,1912.13337,75ff6e425ce304a35f18c0230c0d13d3913a31a9,Is WordNet useful for taxonomic reasoning for this task?,Yes,1.0,1.0,1.0,yes_no,2,1,129,47.12
+gmm,1809.01541,5cb610d3d5d7d447b4cd5736d6a7d8262140af58,How do they perform multilingual training?,They perform multilingual training by randomly alternating between languages for every new minibatch.,0.8462,0.8462,0.7016,extractive,2,1,42,18.47
+gmm,1809.01541,c32adef59efcb9d1a5b10e1d7c999a825c9e6d9a,What languages are evaluated?,"de, en, fr, ru, sv, es, fi",0.0,0.0,0.0,abstractive,2,1,42,18.47
+gmm,1809.01541,b9d168da5321a7d7b812c52bb102a05210fe45bd,Does the model have attention?,No,0.0,0.0,0.0,yes_no,2,1,42,18.47
+gmm,1809.01541,0c234db3b380c27c4c70579a5d6948e1e3b24ff1,What architecture does the decoder have?,LSTM decoder,0.6667,0.6667,0.5,extractive,2,1,42,18.47
+gmm,1809.01541,fa527becb8e2551f4fd2ae840dbd4a68971349e0,What architecture does the encoder have?,LSTM,1.0,1.0,1.0,extractive,2,1,42,18.47
+gmm,1809.01541,32a3c248b928d4066ce00bbb0053534ee62596e7,What is MSD prediction?,"MSD prediction is the task of predicting the Morphosyntactic Description (MSD) tag of the target form, which involves predicting the MSD tag of the target form as a sequence of its components, such as",0.1818,0.1818,0.0467,abstractive,2,1,42,18.47
+gmm,1809.01541,c9b8d3858c112859eabee54248b874331c48f71b,What type of inflections are considered?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,42,18.47
+gmm,1809.09194,45e9533586199bde19313cd43b3d0ecadcaf7a33,Do they use attention?,Yes,1.0,1.0,1.0,yes_no,2,1,34,22.65
+gmm,1809.09194,d3dbb5c22ef204d85707d2d24284cc77fa816b6c,What other models do they compare to?,R M,0.0,0.0,0.0,abstractive,2,1,34,22.65
+gmm,1809.09194,a5e49cdb91d9fd0ca625cc1ede236d3d4672403c,What is the architecture of the span detector?,multi-turn answer module,0.5455,0.5455,0.1889,extractive,2,1,34,22.65
+gmm,1604.05372,aefa333b2cf0a4000cd40566149816f5b36135e7,What evaluation metric do they use?,The ratio of correct 'translations' (matches),0.8889,0.8889,0.6687,extractive,2,1,51,31.03
+gmm,2002.08795,c5abe97625b9e1c8de8208e15d59c704a597b88c,What are the results from these proposed strategies?,Both agents successfully pass the bottleneck corresponding to entering the cellar and lighting the lamp and reach comparable scores within a margin of error. KG-A2C-chained is significantly more sampl,0.2182,0.1455,0.0254,extractive,2,1,49,31.51
+gmm,2002.08795,eb2d5edcdfe18bd708348283f92a32294bb193a5,What are the baselines?,KG-A2C and A2C,0.5714,0.5714,0.313,extractive,2,1,49,31.51
+gmm,2002.08795,88ab7811662157680144ed3fdd00939e36552672,What are the two new strategies?,"The two new game state exploration strategies are:
+1. Freezing the policy leading to the bottleneck and conducting a backtracking search.
+2. Leveraging knowledge graphs to improve existing exploration",0.4516,0.4194,0.3085,extractive,2,1,49,31.51
+gmm,1802.06024,cb196725edc9cdb2c54b72364f3bbf7c76471490,Do they report results only on English data?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,115,51.33
+gmm,1802.06024,286078813136943dfafb5155ee15d2429e7601d9,How much better than the baseline is LiLi?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,115,51.33
+gmm,1802.06024,8f16dc7d7be0d284069841e456ebb2c69575b32b,What baseline is used in the experiments?,Unanswerable,0.0,0.0,0.0,extractive,2,1,115,51.33
+gmm,1802.06024,a7d020120a45c39bee624f65443e09b895c10533,In what way does LiLi imitate how humans acquire knowledge and perform inference during an interactive conversation?,"LiLi imitates how humans acquire knowledge and perform inference during an interactive conversation by using reinforcement learning (RL) to formulate and execute query-specific inference strategies, l",0.2703,0.1622,0.0359,extractive,2,1,115,51.33
+gmm,1802.06024,585626d18a20d304ae7df228c2128da542d248ff,What metrics are used to establish that this makes chatbots more knowledgeable and better at learning and conversation? ,avg +ve F1,0.5455,0.5455,0.1889,extractive,2,1,115,51.33
+gmm,1802.06024,bfc2dc913e7b78f3bd45e5449d71383d0aa4a890,What are the components of the general knowledge learning engine?,"The components of the general knowledge learning engine are:
+- Knowledge Graph (INLINEFORM0)
+- Relation-Entity Matrix (INLINEFORM2)
+- Two additional matrices (INLINEFORM4, INLINEFORM5)",0.4,0.4,0.275,extractive,2,1,115,51.33
+gmm,1809.00530,6aa2a1e2e3666f2b2a1f282d4cbdd1ca325eb9de,How many labels do the datasets have?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,88,28.55
+gmm,1809.00530,b46c0015a122ee5fb95c2a45691cb97f80de1bb6,What is the architecture of the model?,"The model architecture includes a neural-based feature encoder (parameterized by INLINEFORM1) that maps documents from both domains to a shared feature space, and a fully connected layer with softmax ",0.0408,0.0408,0.0151,extractive,2,1,88,28.55
+gmm,1809.00530,5b7a4994bfdbf8882f391adf1cd2218dbc2255a0,What are the baseline methods?,The baseline methods mentioned are:,0.08,0.08,0.0,extractive,2,1,88,28.55
+gmm,1809.00530,9176d2ba1c638cdec334971c4c7f1bb959495a8e,What are the source and target domains?,"The source domain is the domain with sufficient labeled data, while the target domain is the new domain with very few or no labeled data.",0.1754,0.1754,0.0316,extractive,2,1,88,28.55
+gmm,1710.07960,0ba3ea93eef5660a79ea3c26c6a270eac32dfa4c,Did they use a crowdsourcing platform for annotations?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,66,32.09
+gmm,1710.07960,5e324846a99a5573cd2e843d1657e87f4eb22fa6,How do they deal with unknown distribution senses?,"They modify a naïve Bayesian classifier to account for an unknown distribution of senses. Specifically, they adjust the classifier so that when no context features are observed, every word sense is co",0.1818,0.1364,0.0285,abstractive,2,1,66,32.09
+gmm,1912.03804,2ccc26e11df4eb26fcccdd1f446dc749aff5d572,Do they report results only on English data?,No,0.0,0.0,0.0,yes_no,2,1,60,26.78
+gmm,1912.03804,f318a2851d7061f05a5b32b94251f943480fbd15,What conclusions do the authors draw from their finding that the emotional appeal of ISIS and Catholic materials are sim,"The authors conclude that both ISIS and Catholic materials score the highest in the ""inspired"" category and have the lowest score in the ""afraid"" category.",0.2609,0.1304,0.0373,abstractive,2,1,60,26.78
+gmm,1912.03804,6bbbb9933aab97ce2342200447c6322527427061,How id Depechemood trained?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,60,26.78
+gmm,1912.03804,2007bfb8f66e88a235c3a8d8c0a3b3dd88734706,How are similarities and differences between the texts from violent and non-violent religious groups analyzed?,Word frequency and topic modeling with NMF,0.25,0.1667,0.0414,abstractive,2,1,60,26.78
+gmm,1912.03804,d859cc37799a508bbbe4270ed291ca6394afce2c,How are prominent topics idenified in Dabiq and Rumiyah?,By extracting articles published in Dabiq and Rumiyah and performing topic modeling and unsupervised emotion detection on them.,0.2,0.2,0.0799,abstractive,2,1,60,26.78
+gmm,1912.08960,50e80cfa84200717921840fddcf3b051a9216ad8,Are the images from a specific domain?,Unanswerable,0.0,0.0,0.0,yes_no,2,1,61,27.67
+gmm,1912.08960,b1bc9ae9d40e7065343c12f860a461c7c730a612,Which datasets are used?,ShapeWorldICE datasets,0.3636,0.3636,0.0302,abstractive,2,1,61,27.67
+gmm,1912.08960,63a1cbe66fd58ff0ead895a8bac1198c38c008aa,Which existing models are evaluated?,Show&Tell and LRCN1u models,0.8571,0.8571,0.63,extractive,2,1,61,27.67
+gmm,1912.08960,509af1f11bd6f3db59284258e18fdfebe86cae47,How is diversity measured?,"The diversity is measured as the ratio of the observed number of language constructions to the optimal number. Specifically, it involves looking at language constructions used and computing this ratio",0.5778,0.4444,0.2974,extractive,2,1,61,27.67
+gmm,2002.11910,23e16c1173b7def2c5cb56053b57047c9971e3bb,What state-of-the-art deep neural network is used?,long short-term memory (LSTM),0.3333,0.3333,0.2041,extractive,2,1,35,22.39
+gmm,2002.11910,d78f7f84a76a07b777d4092cb58161528ca3803c,What boundary assembling method is used?,Backward greedy search,0.4,0.4,0.0498,extractive,2,1,35,22.39
+gmm,2002.11910,9da1e124d28b488b0d94998d32aa2fa8a5ebec51,What are previous state of the art results?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,35,22.39
+gmm,1909.09587,37be0d479480211291e068d0d3823ad0c13321d3,What is the model performance on target language reading comprehension?,"The model performance on target language reading comprehension varies depending on the source and target language pairs. Specifically, the performance drops significantly when the source language is E",0.2286,0.1429,0.0225,extractive,2,1,46,27.12
+gmm,1909.09587,a3d9b101765048f4b61cbd3eaa2439582ebb5c77,What source-target language pairs were used in this work? ,"Chinese-English, English-Chinese, Chinese-Korean",0.0,0.0,0.0,abstractive,3,1,46,27.12
+gmm,1909.09587,009ce6f2bea67e7df911b3f93443b23467c9f4a1,What model is used as a baseline?  ,State-of-the-art model on SQuAD,0.2222,0.2222,0.2092,extractive,2,1,46,27.12
+gmm,1909.09587,55569d0a4586d20c01268a80a7e31a17a18198e2,what does the model learn in zero-shot setting?,language-independent strategies,0.0,0.0,0.0,extractive,1,1,46,27.12
+gmm,1802.07862,7cd22ca9e107d2b13a7cc94252aaa9007976b338,Do they inspect their model to see if their model learned to associate image parts with words related to entities?,Unanswerable,0.0,0.0,0.0,yes_no,2,1,78,37.0
+gmm,1802.07862,adbf33c6144b2f5c40d0c6a328a92687a476f371,Does their NER model learn NER from both text and images?,Yes,1.0,1.0,1.0,yes_no,2,1,78,37.0
+gmm,1802.07862,f7a89b9cd2792f23f2cb43d50a01b8218a6fbb24,Which types of named entities do they recognize?,"board game, economic term, musician or DJ",0.0,0.0,0.0,extractive,2,1,78,37.0
+gmm,1802.07862,a0543b4afda15ea47c1e623c7f00d4aaca045be0,Can named entities in SnapCaptions be discontigious?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,78,37.0
+gmm,1802.07862,1591068b747c94f45b948e12edafe74b5e721047,How large is their MNER SnapCaptions dataset?,10K,0.2222,0.2222,0.0009,extractive,2,1,78,37.0
+gmm,2004.01853,193ee49ae0f8827a6e67388a10da59e137e7769f,What is masked document generation?,"Masked Document Generation (MDG) involves learning to recover a document with a masked span of tokens. Specifically, a span \(\mathcal{M}\) of length \(l\) starting at position \(k\) is randomly sampl",0.1304,0.1304,0.0248,extractive,2,1,88,41.47
+gmm,2004.01853,ed2eb4e54b641b7670ab5a7060c7b16c628699ab,Which of the three pretraining tasks is the most helpful?,Sentence Reordering (SR),0.5,0.5,0.3333,extractive,2,1,88,41.47
+gmm,1710.03348,beac555c4aea76c88f19db7cc901fa638765c250,What useful information does attention capture?,"attention captures useful information beyond alignments, such as contextual information for verbs.",0.24,0.24,0.069,extractive,2,1,59,31.61
+gmm,1710.03348,91e326fde8b0a538bc34d419541b5990d8aae14b,What datasets are used?,WMT15 German-to-English training data,0.4444,0.4444,0.2959,extractive,2,1,59,31.61
+gmm,1710.03348,044f922604b4b3f42ae381419fd5cd5624fa0637,In what cases is attention different from alignment?,"attention differs from alignment in cases involving verbs, where it captures contextual information beyond simple translational equivalents, unlike traditional alignments which only involve one or a f",0.381,0.3333,0.1837,extractive,2,1,59,31.61
+gmm,1612.03226,f94b53db307685d572aefad52cd55f53d23769c2,How do they calculate variance from the model outputs?,"They calculate variance from the model outputs by using Expected Gradient Length (EGL), which measures the expected change in model parameters through the norm of the gradient. This method considers t",0.2286,0.1714,0.0215,extractive,2,1,33,27.0
+gmm,1612.03226,aa7d327ef98f9f9847b447d4def04889b4508d7a,How much data samples do they start with before obtaining the initial model labels?,190 hours,0.0,0.0,0.0,extractive,2,1,33,27.0
+gmm,1612.03226,b8d7d055ddb94f5826a9aad7479b4a92a9c8a2f0,Which model do they use for end-to-end speech recognition?,Recurrent Neural Network (RNN),1.0,1.0,1.0,extractive,2,1,33,27.0
+gmm,1612.03226,551457ed34ca7fc0878c85bc664b135c21059b58,Which dataset do they use?,"A base model is trained on 190 hours of transcribed speech data, and then a subset of a 1,700-hour unlabeled dataset is used.",0.65,0.65,0.3167,extractive,2,1,33,27.0
+gmm,1809.02286,0ad4359e3e7e5e5f261c2668fe84c12bc762b3b8,Which baselines did they compare against?,syntactic tree-based models as well as other neural models,0.1765,0.1176,0.0178,abstractive,2,1,111,33.37
+gmm,1809.01202,4cbe5a36b492b99f9f9fea8081fe4ba10a7a0e94,What baselines did they consider?,Unanswerable,0.0,0.0,0.0,extractive,2,1,75,36.63
+gmm,1809.01202,a4d115220438c0ded06a91ad62337061389a6747,What types of social media did they consider?,Twitter,0.0,0.0,0.0,extractive,2,1,75,36.63
+gmm,1909.02027,2c7e94a65f5f532aa31d3e538dcab0468a43b264,How was the dataset annotated?,The dataset was created through a combination of guided crowdsourcing for intent definition and rephrasing/scenario tasks for data collection.,0.0667,0.0667,0.0385,abstractive,2,1,43,22.91
+gmm,1909.02027,149da739b1c19a157880d9d4827f0b692006aa2c,Which classifiers are evaluated?,"SVM, Google's DialogFlow, and Rasa NLU",0.6667,0.6667,0.1751,extractive,2,1,43,22.91
+gmm,1909.02027,27de1d499348e17fec324d0ef00361a490659988,What is the size of this dataset?,"23,700",1.0,1.0,1.0,extractive,2,1,43,22.91
+gmm,1909.02027,cfcdd73e712caf552ba44d0aa264d8dace65a589,Where does the data come from?,The data comes from crowdsourcing.,0.0822,0.0548,0.0,abstractive,2,1,43,22.91
+gmm,1911.02855,23b2901264bda91045258b5d4120879ae292e950,What are method improvements of F1 for paraphrase identification?,+0.96,0.0,0.0,0.0,extractive,2,1,75,36.6
+gmm,1911.02855,b5bc34e1e381dbf972d0b594fe8c66ff75305d71,What are method's improvements of F1 for NER task for English and Chinese datasets?,"For English datasets, the method outperforms BERT-MRC by +0.29 and +0.96 respectively. For Chinese datasets, the improvements are +0.97 for MSRA and +2.36 for OntoNotes4.0.",0.6415,0.6038,0.1891,extractive,2,1,75,36.6
+gmm,1911.02855,72f7ef55e150e16dcf97fe443aff9971a32414ef,What are method's improvements of F1 w.r.t. baseline BERT tagger for Chinese POS datasets?,"+1.86, +1.80, +2.19",0.5,0.5,0.3333,extractive,2,1,75,36.6
+gmm,1911.02855,20e38438471266ce021817c6364f6a46d01564f2,How are weights dynamically adjusted?,"Each training example's weight is inversely proportional to its predicted probability \( p \), and this weight dynamically changes as training proceeds to emphasize harder examples and de-emphasize co",0.4211,0.4211,0.1954,extractive,2,1,75,36.6
+gmm,1906.01081,28067da818e3f61f8b5152c0d42a531bf0f987d4,Ngrams of which length are aligned using PARENT?,Unanswerable,1.0,1.0,1.0,unanswerable,2,1,67,32.16
+gmm,1906.01081,bf3b27a4f4be1f9ae31319877fd0c75c03126fd5,How many people participated in their evaluation study of table-to-text models?,500,0.6667,0.6667,0.3679,abstractive,2,1,67,32.16
+gmm,1906.01081,ffa7f91d6406da11ddf415ef094aaf28f3c3872d,By how much more does PARENT correlate with human judgements in comparison to other text generation metrics?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,67,32.16
+gmm,1812.10479,b634ff1607ce5756655e61b9a6f18bc736f84c83,Which stock market sector achieved the best performance?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,194,53.89
+gmm,1611.01576,2f901dab6b757e12763b23ae8b37ae2e517a2271,What languages pairs are used in machine translation?,German-English,0.0,0.0,0.0,extractive,2,1,65,36.34
+gmm,1611.01576,b591853e938984e6069d738371500ebdec50d256,What sentiment classification dataset is used?,IMDb movie review dataset,0.8889,0.8889,0.7788,extractive,2,1,65,36.34
+gmm,1611.01576,a130306c6662ff489df13fb3f8faa7cba8c52a21,What pooling function is used?,"""dynamic average pooling""",1.0,1.0,1.0,extractive,2,1,65,36.34
+gmm,1904.09535,b1cf5739467ba90059add58d11b73d075a11ec86,Do they report results only on English?,No,0.0,0.0,0.0,unanswerable,2,1,34,26.91
+gmm,1904.09535,2ea4347f1992b0b3958c4844681ff0fe4d0dd1dd,What neural network modules are included in NeuronBlocks?,"embedding, CNN/RNN, Transformer",0.1818,0.1818,0.0655,extractive,2,1,34,26.91
+gmm,1904.09535,4f253dfced6a749bf57a1b4984dc962ce9550184,"How do the authors evidence the claim that many engineers find it a big overhead to choose from multiple frameworks, mod",Extensive experiments confirm the effectiveness,0.0,0.0,0.0,abstractive,2,1,34,26.91
+gmm,1911.03059,dc1cec824507fc85ac1ba87882fe1e422ff6cffb,what datasets did they use?,"total 3500 questions from the Internet and other sources such as books of general knowledge questions, history etc",0.9444,0.9444,0.889,abstractive,2,1,37,22.51
+gmm,1911.03059,f428618ca9c017e0c9c2a23515dab30a7660f65f,what ml based approaches were compared?,"Seven machine learning based classifiers were compared: Multi-Layer Perceptron (MLP), Naive Bayes Classifier (NBC), Support Vector Machine (SVM), Gradient Boosting Classifier (GBC), Stochastic Gradien",0.8667,0.8667,0.7775,extractive,2,1,37,22.51
+gmm,1706.08198,8ce11515634236165cdb06ba80b9a36a8b9099a2,Is pre-training effective in their evaluation?,Yes,1.0,1.0,1.0,yes_no,2,1,42,22.79
+gmm,1706.08198,6024039bbd1118c5dab86c41cce1175d99f10a25,What parallel corpus did they use?,Asian Scientific Paper Excerpt Corpus (ASPEC) BIBREF0 and NTCIR PatentMT Parallel Corpus BIBREF1,0.96,0.96,0.7612,extractive,2,1,42,22.79
+gmm,1909.08089,de5b6c25e35b3a6c5e40e350fc5e52c160b33490,How much does their model outperform existing models?,Unanswerable,0.0,0.0,0.0,abstractive,2,1,76,32.48
+gmm,1909.08089,b66c9a4021b6c8529cac1a2b54dacd8ec79afa5f,What do they mean by global and local context?,"Global context refers to the overall document, while local context pertains to the specific topic segment or section that a sentence falls into.",0.2963,0.2963,0.0542,extractive,2,1,76,32.48
+gmm,1910.09982,6bfba3ddca5101ed15256fca75fcdc95a53cece7,What are the 18 propaganda techniques?,Unanswerable,0.0,0.0,0.0,extractive,2,1,53,23.21
+gmm,1910.09982,df5a4505edccc0ee11349ed6e7958cf6b84c9ed4,What dataset was used?,1M news dataset,0.25,0.25,0.178,extractive,2,1,53,23.21
+gmm,1910.09982,fd753ab5177d7bd27db0e0afc12411876ee607df,What was the baseline for this task?,"A very simple logistic regression classifier with default parameters, where the input instances are represented by a single feature: the length of the sentence.",0.3913,0.3913,0.2478,abstractive,2,1,53,23.21
+gmm,1609.00559,88e62ea7a4d1d2921624b8480b5c6b50cfa5ad42,What is a second order co-ocurrence matrix?,A second-order co-occurrence matrix is constructed by using a co-occurrence matrix to create a second-order co-occurrence vector for each concept in a pair of concepts to be measured for relatedness. ,0.1404,0.1053,0.0253,abstractive,2,1,76,36.66
+gmm,1609.00559,4dcf67b5e7bd1422e7e70c657f6eacccd8de06d3,How many humans participated?,Four,0.0,0.0,0.0,unanswerable,2,1,76,36.66
+gmm,1609.00559,8b3d3953454c88bde88181897a7a2c0c8dd87e23,What embedding techniques are explored in the paper?,word embeddings,0.0,0.0,0.0,extractive,2,1,76,36.66
+gmm,1604.00727,784ce5a983c5f2cc95a2c60ce66f2a8a50f3636f,Do the authors also try the model on other datasets?,Unanswerable,0.0,0.0,0.0,yes_no,2,1,73,41.09
+gmm,1604.00727,7705dd04acedaefee30d8b2c9978537afb2040dc,What word level and character level model baselines are used?,Word-level and character-level models are used as baselines.,0.1053,0.1053,0.0638,abstractive,2,1,73,41.09
+gmm,1612.02482,44497509fdf5e87cff05cdcbe254fbd288d857ad,By how much do they improve the efficacy of the attention mechanism?,"The context does not provide a specific percentage or measure by which morphological segmentation improves the efficacy of the attention mechanism. Therefore, the answer is:",0.0,0.0,0.0,unanswerable,2,1,92,41.43
+gmm,1612.02482,0ee73909ac638903da4a0e5565c8571fc794ab96,How were the human judgements assembled?,A group of 50 native people who were well-versed in both English and Tamil languages acted as annotators for the evaluation.,0.2162,0.1081,0.0481,abstractive,2,1,92,41.43
+gmm,1608.01084,1f07e837574519f2b696f3d6fa3230af0b931e5d,Did they only experiment with one language pair?,No,0.0,0.0,0.0,yes_no,2,1,84,41.44

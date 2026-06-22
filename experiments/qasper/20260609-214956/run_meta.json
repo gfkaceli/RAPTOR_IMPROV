@@ -1,0 +1,65 @@
+{
+  "timestamp": "20260609-214956",
+  "model_tier": "local-xl",
+  "n_papers": 60,
+  "n_questions_total": 179,
+  "seed": 224,
+  "methods": [
+    {
+      "method": "flat",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 32.96,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_flat.jsonl"
+    },
+    {
+      "method": "original",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 3158.9,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_original.jsonl"
+    },
+    {
+      "method": "gmm",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 1980.93,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_gmm.jsonl"
+    },
+    {
+      "method": "leiden",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 984.63,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_leiden.jsonl"
+    },
+    {
+      "method": "kmeans",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 1576.89,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_kmeans.jsonl"
+    },
+    {
+      "method": "agglomerative",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 1816.0,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_agglomerative.jsonl"
+    },
+    {
+      "method": "dbscan",
+      "n_papers": 60,
+      "n_questions": 179,
+      "total_build_time_sec": 6659.81,
+      "failures": 0,
+      "output": "experiments/qasper/20260609-214956/predictions_dbscan.jsonl"
+    }
+  ]
+}

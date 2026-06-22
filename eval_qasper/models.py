@@ -290,7 +290,7 @@ MODEL_TIERS = {
     "local-xl": {
         "description": "Qwen2.5-7B-Instruct QA + 3B summ — large, needs GPU",
         "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
-        "summ": ("local", "Qwen/Qwen2.5-3B-Instruct"),
+        "summ": ("local", "Qwen/Qwen2.5-7B-Instruct"),
         "qa": ("local", "Qwen/Qwen2.5-7B-Instruct"),
     },
     "mistral": {
