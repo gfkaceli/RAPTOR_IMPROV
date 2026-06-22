@@ -170,20 +170,20 @@ class LocalSummarizationModel(BaseSummarizationModel):
         if out:
             return out
         # Heuristic fallback
-        sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
-        return ". ".join(sentences[:2]) + ("." if sentences else "")
+        #sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
+        #return ". ".join(sentences[:2]) + ("." if sentences else "")
 
 
 class LocalQAModel(BaseQAModel):
     """Local QA model — chat template for instruct models, generate() otherwise."""
 
     SYSTEM = ("You are a question answering portal, answer using only the provided context. "
-          "Give the most specific answer the context supports — a number, entity, list, or "
-          "brief phrase. Extract specific values (scores, counts, names) exactly as stated. "
+          "Give the most specific answer the context supports, a number, entity, list, or "
+          "brief phrase. Answer with about 5-7 words if possible. "
           "For yes/no questions answer 'Yes' or 'No'. Only reply 'Unanswerable' if the "
-          "context genuinely does not contain the answer.")
+          "context does not contain the answer.")
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 64):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 80):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
@@ -200,7 +200,7 @@ class LocalQAModel(BaseQAModel):
 # ---------------------------------------------------------------------------
 
 class OpenAIQAModel(BaseQAModel):
-    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 64):
+    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 80):
         self.model_name = model_name
         self.max_tokens = max_tokens
         self._client = None

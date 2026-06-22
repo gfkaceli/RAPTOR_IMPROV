@@ -27,7 +27,7 @@ Output:
           "method": ..., "tree_layers": ..., "tree_nodes": ...,
         }
 
-Then run `python -m eval_qasper.score_qasper` to compute the F1 metrics.
+Then run `python -m eval_qasper.score_qasper` to compute the metrics.
 """
 
 from __future__ import annotations
