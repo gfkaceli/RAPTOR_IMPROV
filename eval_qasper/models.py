@@ -24,9 +24,6 @@ os.environ.setdefault("OPENAI_API_KEY", "not-used-in-local-demo")
 
 from raptor import BaseSummarizationModel, BaseQAModel
 from raptor.EmbeddingModels import SBertEmbeddingModel
-import transformers
-
-transformers.set_seed(42)
 
 
 # ---------------------------------------------------------------------------
@@ -35,9 +32,11 @@ transformers.set_seed(42)
 
 def _clean_causal_answer(text: str) -> str:
     """
-    Safety net for causal models that keep generating past the real answer.
-    Truncates at the first paragraph break and at known runaway markers.
-    With chat-template models this rarely fires, but it's cheap insurance.
+    Strict cleaning for QA answers. Causal models often produce the correct
+    short answer and then keep generating into hallucinated boilerplate or echo
+    the prompt. We truncate at the first paragraph break and at known runaway
+    markers. This is correct for SHORT answers but would destroy multi-paragraph
+    summaries — use _clean_summary for those.
     """
     answer = text.strip()
     for lead in ("Short answer:", "Answer:", "Summary:"):
@@ -56,6 +55,28 @@ def _clean_causal_answer(text: str) -> str:
         if marker in answer:
             answer = answer.split(marker)[0].strip()
     return answer
+
+
+def _clean_summary(text: str) -> str:
+    """
+    Light cleaning for summaries. Summaries are legitimately multi-sentence and
+    multi-paragraph, so we must NOT truncate at the first paragraph break the
+    way QA cleaning does. We only strip a leading "Summary:" label and chat
+    control tokens, and cut clear prompt-echo / boilerplate markers.
+    """
+    out = text.strip()
+    for lead in ("Summary:", "Here is a summary:", "Here's a summary:"):
+        if out.startswith(lead):
+            out = out[len(lead):].strip()
+    # Strip chat control tokens but keep all real content (incl. paragraph breaks)
+    for token in ("<|im_end|>", "<|im_start|>"):
+        out = out.replace(token, "")
+    # Cut obvious runaway into instruction text, but only at explicit markers —
+    # never at a bare paragraph break.
+    for marker in ("You are an AI assistant", "\nUser:", "\nSystem:"):
+        if marker in out:
+            out = out.split(marker)[0].strip()
+    return out.strip()
 
 
 class _LocalGenerator:
@@ -102,9 +123,17 @@ class _LocalGenerator:
             self._load_error = exc
             print(f"  [WARN] model load failed ({self.model_name}): {exc}", file=sys.stderr)
 
-    def generate(self, system: str, user: str) -> str:
-        """Generate a response. Returns "" on failure."""
+    def generate(self, system: str, user: str, clean_mode: str = "answer") -> str:
+        """
+        Generate a response. Returns "" on failure.
+
+        clean_mode controls post-processing:
+          - "answer": strict cleaning (truncate at paragraph break) for short QA.
+          - "summary": light cleaning (preserve multi-paragraph content) for
+            tree-building summaries.
+        """
         self._ensure_loaded()
+        cleaner = _clean_summary if clean_mode == "summary" else _clean_causal_answer
 
         # Encoder-decoder (T5/BART)
         if self._model is not None and not self._is_causal:
@@ -140,7 +169,7 @@ class _LocalGenerator:
                     do_sample=False, return_full_text=False,
                 )
                 gen = result[0]["generated_text"].strip()
-                return _clean_causal_answer(gen)
+                return cleaner(gen)
             except Exception as exc:
                 print(f"  [WARN] generation failed: {exc}", file=sys.stderr)
                 return ""
@@ -155,7 +184,9 @@ class _LocalGenerator:
 class LocalSummarizationModel(BaseSummarizationModel):
     """Local summarizer — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = "You are a Summarizing Text Portal."
+    SYSTEM = ("You are a summarization assistant for scientific text. Produce a "
+              "concise summary that preserves key facts, names, and numerical results. "
+              "Output only the summary, nothing else.")
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         self._gen = _LocalGenerator(model_name, max_new_tokens=128)
@@ -165,25 +196,43 @@ class LocalSummarizationModel(BaseSummarizationModel):
         if not text:
             return ""
         self._gen.max_new_tokens = min(int(max_tokens), 128)
-        user = f"Write a summary of the following, including as many key details as possible: {text}: "
-        out = self._gen.generate(self.SYSTEM, user)
-        if out:
-            return out
-        # Heuristic fallback
-        #sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
-        #return ". ".join(sentences[:2]) + ("." if sentences else "")
+        user = f"Summarize the following text:\n\n{text}"
+        out = self._gen.generate(self.SYSTEM, user, clean_mode="summary")
+
+        # Guard: if the model returned a near-empty summary (a known failure mode
+        # where causal models occasionally emit almost nothing), retry once with
+        # a more direct prompt before giving up. A 1-2 token "summary" produces a
+        # meaningless node embedding that pollutes the tree.
+        if len(out.split()) < 5:
+            retry_user = (
+                "Write a concise 2-3 sentence summary of the following scientific "
+                f"text, preserving key facts and findings:\n\n{text}"
+            )
+            retry = self._gen.generate(self.SYSTEM, retry_user, clean_mode="summary")
+            if len(retry.split()) > len(out.split()):
+                out = retry
+
+        if len(out.split()) < 3:
+            # Still degenerate — fall back to the lead sentences so the node at
+            # least carries real content from its children rather than noise.
+            sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
+            out = ". ".join(sentences[:2]) + ("." if sentences else "")
+            print(f"  [WARN] summary degenerated to <3 tokens; used lead-sentence "
+                  f"fallback for a {len(text.split())}-word cluster", file=sys.stderr)
+
+        return out
 
 
 class LocalQAModel(BaseQAModel):
     """Local QA model — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = ("You are a question answering portal, answer using only the provided context. "
-          "Give the most specific answer the context supports, a number, entity, list, or "
-          "brief phrase."
-          "For yes/no questions answer 'Yes' or 'No'. Only reply 'Unanswerable' if the "
-          "context does not contain the answer.")
+    SYSTEM = ("You answer questions about scientific papers. Reply with the shortest "
+              "possible answer: a phrase, entity, or short list of entities — not a "
+              "sentence and not an explanation. For yes/no questions answer exactly "
+              "'Yes' or 'No'. If the context does not contain the answer, reply "
+              "exactly 'Unanswerable'.")
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 128):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 64):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
@@ -200,7 +249,7 @@ class LocalQAModel(BaseQAModel):
 # ---------------------------------------------------------------------------
 
 class OpenAIQAModel(BaseQAModel):
-    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 128):
+    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 64):
         self.model_name = model_name
         self.max_tokens = max_tokens
         self._client = None
@@ -222,9 +271,9 @@ class OpenAIQAModel(BaseQAModel):
                 model=self.model_name,
                 messages=[
                     {"role": "system",
-                     "content": "You answer questions about scientific papers. Reply in "
-                                "5-7 words: a phrase or entity. "
-                                "For yes/no questions answer 'Yes' or 'No'. If the "
+                     "content": "You answer questions about scientific papers. Reply with "
+                                "the shortest possible answer: a phrase or entity, not a "
+                                "sentence. For yes/no questions answer 'Yes' or 'No'. If the "
                                 "context does not contain the answer, reply 'Unanswerable'."},
                     {"role": "user",
                      "content": f"Context: {context}\n\nQuestion: {question}"},
@@ -290,7 +339,7 @@ MODEL_TIERS = {
     "local-xl": {
         "description": "Qwen2.5-7B-Instruct QA + 3B summ — large, needs GPU",
         "emb": "sentence-transformers/multi-qa-mpnet-base-cos-v1",
-        "summ": ("local", "Qwen/Qwen2.5-7B-Instruct"),
+        "summ": ("local", "Qwen/Qwen2.5-3B-Instruct"),
         "qa": ("local", "Qwen/Qwen2.5-7B-Instruct"),
     },
     "mistral": {
