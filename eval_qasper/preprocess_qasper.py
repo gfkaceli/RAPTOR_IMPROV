@@ -21,6 +21,11 @@ Usage:
     python -m eval_qasper.preprocess_qasper
     python -m eval_qasper.preprocess_qasper --split validation --max-papers 20
     python -m eval_qasper.preprocess_qasper --split test --output data/qasper/test.json
+    python -m eval_qasper.preprocess_qasper --merge-json-splits \
+        --train-json data/qasper/train.json \
+        --validation-json data/qasper/validation.json \
+        --test-json data/qasper/test.json \
+        --output data/qasper/all_splits.json
 
 Requirements:
     pip install datasets
@@ -169,6 +174,45 @@ def _load_qasper(split: str):
 # Main
 # ---------------------------------------------------------------------------
 
+
+def _load_json_list(path: str, split_name: str) -> List[Dict]:
+    """Load a preprocessed split JSON file and ensure it is a list."""
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"{split_name} JSON file not found: {path}")
+
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if not isinstance(data, list):
+        raise ValueError(
+            f"Expected list JSON in {path}, got {type(data).__name__}"
+        )
+    return data
+
+
+def _merge_split_jsons(train_path: str, validation_path: str, test_path: str) -> List[Dict]:
+    """Merge preprocessed train/validation/test JSON arrays into one list."""
+    merged: List[Dict] = []
+
+    for split_name, split_path in [
+        ("train", train_path),
+        ("validation", validation_path),
+        ("test", test_path),
+    ]:
+        split_items = _load_json_list(split_path, split_name)
+
+        # Preserve split provenance for downstream analysis.
+        for item in split_items:
+            if isinstance(item, dict) and "split" not in item:
+                item = dict(item)
+                item["split"] = split_name
+            merged.append(item)
+
+        print(f"  Loaded {len(split_items)} items from {split_name}: {split_path}")
+
+    print(f"  Merged total items: {len(merged)}")
+    return merged
+
 def main():
     parser = argparse.ArgumentParser(description="Preprocess QASPER for RAPTOR evaluation.")
     parser.add_argument("--split", default="validation",
@@ -182,7 +226,34 @@ def main():
                         help="Skip papers with shorter concatenated text.")
     parser.add_argument("--output", default=None,
                         help="Output JSON path. Default: data/qasper/<split>.json")
+    parser.add_argument("--merge-json-splits", action="store_true",
+                        help="Merge train/validation/test preprocessed JSON files into one JSON.")
+    parser.add_argument("--train-json", default=os.path.join("data", "qasper", "train.json"),
+                        help="Path to preprocessed train JSON.")
+    parser.add_argument("--validation-json", default=os.path.join("data", "qasper", "validation.json"),
+                        help="Path to preprocessed validation JSON.")
+    parser.add_argument("--test-json", default=os.path.join("data", "qasper", "test.json"),
+                        help="Path to preprocessed test JSON.")
     args = parser.parse_args()
+
+    if args.merge_json_splits:
+        print("Merging preprocessed train/validation/test JSON files...")
+        merged = _merge_split_jsons(
+            train_path=args.train_json,
+            validation_path=args.validation_json,
+            test_path=args.test_json,
+        )
+
+        out_path = args.output or os.path.join("data", "qasper", "all_splits.json")
+        out_dir = os.path.dirname(out_path)
+        if out_dir:
+            os.makedirs(out_dir, exist_ok=True)
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(merged, f, indent=1)
+
+        print(f"\nSaved merged JSON to {out_path}")
+        return
 
     try:
         from datasets import load_dataset

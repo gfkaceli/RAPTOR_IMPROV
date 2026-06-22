@@ -124,7 +124,7 @@ def make_dbscan_config(emb, summ, qa):
 
 def make_leiden_config(emb, summ, qa):
     lcfg = LeidenConfig(k_neighbors=10, use_adjacency_edges=True, adjacency_weight=0.5,
-        resolution=1.0, resolution_schedule={0: 1.2, 1: 0.8},
+        resolution=1.0, resolution_schedule={0: 1.3, 1: 0.9, 2: 0.6},
         partition_type="RBConfiguration", min_cluster_size=1)
     clusterer = LeidenClusterer(config=lcfg, random_state=224,
         reduce_embeddings=True, reduction_dimension=10)   # <-- add
