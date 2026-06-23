@@ -187,8 +187,8 @@ class LocalSummarizationModel(BaseSummarizationModel):
     """Local summarizer — chat template for instruct models, generate() otherwise."""
 
     SYSTEM = ("You are a summarization assistant for scientific text. Produce a "
-              "concise summary that preserves key facts, names, and numerical results. "
-              "Output only the summary, nothing else.")
+              "concise summary that preserves key facts, names, and numerical results."
+              )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         self._gen = _LocalGenerator(model_name, max_new_tokens=128)
@@ -205,7 +205,7 @@ class LocalSummarizationModel(BaseSummarizationModel):
         # where causal models occasionally emit almost nothing), retry once with
         # a more direct prompt before giving up. A 1-2 token "summary" produces a
         # meaningless node embedding that pollutes the tree.
-        if len(out.split()) < 5:
+        """if len(out.split()) < 5:
             retry_user = (
                 "Write a concise 2-3 sentence summary of the following scientific "
                 f"text, preserving key facts and findings:\n\n{text}"
@@ -220,7 +220,7 @@ class LocalSummarizationModel(BaseSummarizationModel):
             sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
             out = ". ".join(sentences[:2]) + ("." if sentences else "")
             print(f"  [WARN] summary degenerated to <3 tokens; used lead-sentence "
-                  f"fallback for a {len(text.split())}-word cluster", file=sys.stderr)
+                  f"fallback for a {len(text.split())}-word cluster", file=sys.stderr)"""
 
         return out
 
@@ -228,12 +228,11 @@ class LocalSummarizationModel(BaseSummarizationModel):
 class LocalQAModel(BaseQAModel):
     """Local QA model — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = ("You are an expert research assistant."
-              "Read the provided research paper context carefully and answer the question. "
-              "Your answer must be factual and supported by the provided text."
-              "Answer in no more than one or two sentences."
-              "For yes/no questions answer exactly 'Yes' or 'No'. "
-              "If the context does not contain the answer, reply exactly 'Unanswerable'."
+    SYSTEM = ("You answer questions about scientific papers using only the provided context. "
+          "Give the most specific answer the context supports — a number, entity, list, or "
+          "brief phrase. Extract specific values (scores, counts, names) exactly as stated. "
+          "For yes/no questions answer 'Yes' or 'No'. Only reply 'Unanswerable' if the "
+          "context genuinely does not contain the answer."
               )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 80):
