@@ -232,7 +232,7 @@ class LocalQAModel(BaseQAModel):
               "'Yes' or 'No'. If the context does not contain the answer, reply "
               "exactly 'Unanswerable'.")
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 64):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 128):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
@@ -249,7 +249,7 @@ class LocalQAModel(BaseQAModel):
 # ---------------------------------------------------------------------------
 
 class OpenAIQAModel(BaseQAModel):
-    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 64):
+    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 128):
         self.model_name = model_name
         self.max_tokens = max_tokens
         self._client = None
