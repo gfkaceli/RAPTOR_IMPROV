@@ -231,11 +231,12 @@ class LocalQAModel(BaseQAModel):
     SYSTEM = ("You are an expert research assistant."
               "Read the provided research paper context carefully and answer the question. "
               "Your answer must be factual and supported by the provided text."
+              "Answer in no more than one or two sentences."
               "For yes/no questions answer exactly 'Yes' or 'No'. "
               "If the context does not contain the answer, reply exactly 'Unanswerable'."
               )
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 128):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 80):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
