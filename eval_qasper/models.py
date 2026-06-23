@@ -25,7 +25,9 @@ os.environ.setdefault("OPENAI_API_KEY", "not-used-in-local-demo")
 from raptor import BaseSummarizationModel, BaseQAModel
 from raptor.EmbeddingModels import SBertEmbeddingModel
 
+import transformers
 
+transformers.set_seed(42)
 # ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
@@ -226,11 +228,12 @@ class LocalSummarizationModel(BaseSummarizationModel):
 class LocalQAModel(BaseQAModel):
     """Local QA model — chat template for instruct models, generate() otherwise."""
 
-    SYSTEM = ("You answer questions about scientific papers. Reply with the shortest "
-              "possible answer: a phrase, entity, or short list of entities — not a "
-              "sentence and not an explanation. For yes/no questions answer exactly "
-              "'Yes' or 'No'. If the context does not contain the answer, reply "
-              "exactly 'Unanswerable'.")
+    SYSTEM = ("You are an expert research assistant."
+              "Read the provided research paper context carefully and answer the question. "
+              "Your answer must be factual and supported by the provided text."
+              "For yes/no questions answer exactly 'Yes' or 'No'. "
+              "If the context does not contain the answer, reply exactly 'Unanswerable'."
+              )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 128):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
