@@ -235,7 +235,7 @@ class LocalQAModel(BaseQAModel):
           "context genuinely does not contain the answer."
               )
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 50):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 70):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
