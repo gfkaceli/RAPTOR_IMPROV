@@ -235,7 +235,7 @@ class LocalQAModel(BaseQAModel):
           "context genuinely does not contain the answer."
               )
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 70):
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 80):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
@@ -243,7 +243,7 @@ class LocalQAModel(BaseQAModel):
         question = str(question).strip()
         if not context:
             return ""
-        user = f"Answer the following question in 5-7 words if possible based on the context.\n\nContext: {context}\n\nQuestion: {question}"
+        user = f"Answer the following question in 5-7 words, if possible based on the context.\n\nContext: {context}\n\nQuestion: {question}"
         return self._gen.generate(self.SYSTEM, user)
 
 
