@@ -243,7 +243,7 @@ class LocalQAModel(BaseQAModel):
         question = str(question).strip()
         if not context:
             return ""
-        user = f"Context: {context}\n\nQuestion: {question}"
+        user = f"Answer the following question in 5-7 words if possible based on the context.\n\nContext: {context}\n\nQuestion: {question}"
         return self._gen.generate(self.SYSTEM, user)
 
 
@@ -279,7 +279,7 @@ class OpenAIQAModel(BaseQAModel):
                                 "sentence. For yes/no questions answer 'Yes' or 'No'. If the "
                                 "context does not contain the answer, reply 'Unanswerable'."},
                     {"role": "user",
-                     "content": f"Context: {context}\n\nQuestion: {question}"},
+                     "content": f"Answer the following question in 5-7 words if possible based on the context.\n\nContext: {context}\n\nQuestion: {question}"},
                 ],
                 max_tokens=self.max_tokens, temperature=0,
             )

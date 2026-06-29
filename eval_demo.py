@@ -552,6 +552,7 @@ def make_gmm_config(emb, summ, qa):
     clusterer = GMMClusterer(
         reduction_dimension=10, soft_threshold=0.1,
         force_hard_clustering=False, random_state=224,
+        reduce_embeddings=True,
     )
     tree_config = ClusterTreeConfig(
         clustering_algorithm=clusterer, clustering_params={},
@@ -572,7 +573,12 @@ def make_leiden_config(emb, summ, qa):
         resolution=1.0, resolution_schedule={0: 1.2, 1: 0.8},
         partition_type="RBConfiguration", min_cluster_size=1,
     )
-    clusterer = LeidenClusterer(config=leiden_cfg, random_state=224)
+    clusterer = LeidenClusterer(
+        config=leiden_cfg,
+        random_state=224,
+        reduce_embeddings=True,
+        reduction_dimension=10,
+    )
     tree_config = ClusterTreeConfig(
         clustering_algorithm=clusterer, clustering_params={},
         reduction_dimension=10, summarization_model=summ,

@@ -367,6 +367,7 @@ def make_gmm_config(emb, summ, qa) -> RetrievalAugmentationConfig:
         random_state=224,
         max_length_in_cluster=3500,
         verbose=False,
+        reduce_embeddings=True,
     )
     tree_config = ClusterTreeConfig(
         clustering_algorithm=clusterer,
@@ -406,6 +407,8 @@ def make_leiden_config(emb, summ, qa) -> RetrievalAugmentationConfig:
         random_state=224,
         max_length_in_cluster=3500,
         verbose=False,
+        reduce_embeddings=True,
+        reduction_dimension=10,
     )
     tree_config = ClusterTreeConfig(
         clustering_algorithm=clusterer,
