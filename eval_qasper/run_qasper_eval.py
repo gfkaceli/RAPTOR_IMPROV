@@ -68,7 +68,7 @@ from .models import load_models, MODEL_TIERS
 def make_original_config(emb, summ, qa):
     return RetrievalAugmentationConfig(
         embedding_model=emb, summarization_model=summ, qa_model=qa,
-        tb_max_tokens=100, tb_num_layers=3, tb_summarization_length=200,
+        tb_max_tokens=100, tb_num_layers=3, tb_summarization_length=500,
         tr_top_k=10, tr_selection_mode="top_k",
     )
 
@@ -80,7 +80,7 @@ def _make_tree_config(clusterer, emb, summ):
         summarization_model=summ,
         embedding_models={"EMB": emb},
         cluster_embedding_model="EMB",
-        max_tokens=100, num_layers=3, summarization_length=200,
+        max_tokens=100, num_layers=3, summarization_length=500,
     )
 
 
