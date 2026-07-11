@@ -97,22 +97,30 @@ class GMMClusterer(BaseClusterer):
             ) from exc
 
         n = embeddings.shape[0]
-        if n <= self.reduction_dimension + 1:
-            # Not enough points to do UMAP reduction; cluster everything together.
+        if n <= 1:
             return np.zeros(n, dtype=int)
 
-        # UMAP reduction with seed for reproducibility — upstream RAPTOR does
-        # NOT set the seed, which is a determinism bug. We fix it here.
-        n_neighbors = self.umap_n_neighbors
-        if n_neighbors is None:
-            n_neighbors = max(2, int((n - 1) ** 0.5))
-        reducer = umap.UMAP(
-            n_neighbors=n_neighbors,
-            n_components=min(self.reduction_dimension, n - 2),
-            metric=self.umap_metric,
-            random_state=self.random_state,
-        )
-        reduced = reducer.fit_transform(embeddings)
+        # BaseClusterer already reduced when reduce_embeddings=True; re-use
+        # that matrix to keep all methods in the same reduced space.
+        if self.reduce_embeddings:
+            reduced = embeddings
+        else:
+            if n <= self.reduction_dimension + 1:
+                # Not enough points to do UMAP reduction; cluster everything together.
+                return np.zeros(n, dtype=int)
+
+            # UMAP reduction with seed for reproducibility — upstream RAPTOR does
+            # NOT set the seed, which is a determinism bug. We fix it here.
+            n_neighbors = self.umap_n_neighbors
+            if n_neighbors is None:
+                n_neighbors = max(2, int((n - 1) ** 0.5))
+            reducer = umap.UMAP(
+                n_neighbors=n_neighbors,
+                n_components=min(self.reduction_dimension, n - 2),
+                metric=self.umap_metric,
+                random_state=self.random_state,
+            )
+            reduced = reducer.fit_transform(embeddings)
 
         # BIC search for optimal n_clusters.
         # Cap max_k at sqrt(n) to prevent BIC from overfitting on small datasets.

@@ -153,7 +153,7 @@ class BaseClusterer(ABC):
         max_length_in_cluster: int = 3500,
         tokenizer: Optional[Any] = None,
         verbose: bool = False,
-        reduce_embeddings: bool = False,
+        reduce_embeddings: bool = True,
         reduction_dimension: int = 10,
         umap_n_neighbors: Optional[int] = None,
         umap_metric: str = "cosine",
@@ -500,7 +500,8 @@ class BaseClusterer(ABC):
         target dimension, and n_neighbors must be > 1.
         """
         n = embeddings.shape[0]
-        target_dim = min(self.reduction_dimension, embeddings.shape[1])
+        requested_dim = getattr(self, "_reduction_dimension", self.reduction_dimension)
+        target_dim = min(requested_dim, embeddings.shape[1])
 
         # UMAP needs enough points: n must exceed target_dim + 1, and
         # n_neighbors must be >= 2. Skip reduction on tiny inputs.
