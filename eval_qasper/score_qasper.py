@@ -73,7 +73,7 @@ def write_detail_csv(rows: List[Dict], out_path: str):
     if not rows:
         return
     fieldnames = list(rows[0].keys())
-    with open(out_path, "w", newline="") as f:
+    with open(out_path, "w", newline="", encoding='utf-8') as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
         w.writerows(rows)
