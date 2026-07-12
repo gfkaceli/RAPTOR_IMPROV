@@ -53,83 +53,47 @@ from raptor.clustering import (
 )
 from raptor.flat_retriever import FlatRetriever
 
-# Reuse the QASPER model tiers/loaders — same models, different prompt.
-from eval_qasper.models import load_models, MODEL_TIERS
+# Dedicated QuALITY models: multiple-choice QA + narrative summarization.
+from eval_quality.models import load_models, MODEL_TIERS
 
 
 # ---------------------------------------------------------------------------
-# Multiple-choice prompting
+# Multiple-choice answering
 # ---------------------------------------------------------------------------
-
-MC_SYSTEM = (
-    "You are answering a multiple-choice reading-comprehension question about a "
-    "passage. You are given retrieved excerpts from the passage and a question "
-    "with four options labelled A, B, C, D. Choose the single best option based "
-    "only on the excerpts. Respond with just the letter (A, B, C, or D) and "
-    "nothing else."
-)
-
-
-def format_mc_prompt(context: str, question: str, options: List[str]) -> str:
-    letters = ["A", "B", "C", "D", "E", "F"][:len(options)]
-    opt_lines = "\n".join(f"{L}. {opt}" for L, opt in zip(letters, options))
-    return (
-        f"Context excerpts:\n{context}\n\n"
-        f"Question: {question}\n\n"
-        f"Options:\n{opt_lines}\n\n"
-        f"Answer with a single letter ({'/'.join(letters)})."
-    )
+# The MC prompt formatting and option-letter answering now live in
+# eval_quality.models (LocalQAModel.answer_multiple_choice /
+# OpenAIQAModel.answer_multiple_choice). The runner simply calls that method,
+# so the prompt is defined in exactly one place.
 
 
 def answer_mc(qa_model, context: str, question: str, options: List[str]) -> str:
     """
-    Ask the QA model to select an option. We reuse whatever QA model the tier
-    provides. For local instruct models the generator exposes a .generate()
-    with a system/user split; for OpenAI models we call answer_question with a
-    combined prompt. Both return raw text that quality_metric parses.
+    Ask the QA model to select an option. Both the local and OpenAI QA models
+    expose answer_multiple_choice; we call it directly. A defensive fallback
+    covers any custom QA model that only implements answer_question.
     """
-    user = format_mc_prompt(context, question, options)
-
-    # Local instruct models expose the low-level generator via ._gen.
-    gen = getattr(qa_model, "_gen", None)
-    if gen is not None:
-        # Short answer — one letter — so cap tokens tight and use answer cleaning.
-        gen.max_new_tokens = 120
-        return gen.generate(MC_SYSTEM, user, clean_mode="answer")
-
-    # OpenAI-style models: fold the system instruction into the context arg.
-    return qa_model.answer_question(f"{MC_SYSTEM}\n\n{context}",
-                                    f"{question}\n\nOptions:\n" +
-                                    "\n".join(f"{L}. {o}" for L, o in
-                                              zip(['A','B','C','D'], options)))
+    if hasattr(qa_model, "answer_multiple_choice"):
+        return qa_model.answer_multiple_choice(context, question, options)
+    # Fallback: fold options into a plain QA call.
+    letters = ["A", "B", "C", "D", "E", "F"][:len(options)]
+    opt_lines = "\n".join(f"{L}. {o}" for L, o in zip(letters, options))
+    return qa_model.answer_question(
+        context, f"{question}\n\nOptions:\n{opt_lines}\n\nAnswer with one letter."
+    )
 
 
 # ---------------------------------------------------------------------------
-# Config factories (narrative-appropriate summarization)
+# Config factories
 # ---------------------------------------------------------------------------
-
-def _patch_narrative_summary(summ):
-    """
-    QuALITY passages are fiction/journalism. The default summarizer prompt is
-    tuned for scientific papers ("preserve key facts, names, numerical results"),
-    which under-weights narrative and thematic content that HARD questions probe.
-    We swap in a narrative-appropriate system prompt when the summarizer exposes
-    one (local instruct models). API summarizers keep their own prompt.
-    """
-    if hasattr(summ, "SYSTEM"):
-        summ.SYSTEM = (
-            "You are summarizing an excerpt from a story or article. Produce a "
-            "concise summary that preserves the main events, characters, "
-            "relationships, motivations, and themes, not only surface facts. "
-            "Output only the summary."
-        )
-    return summ
+# Note: the narrative-appropriate summarization prompt is now built into
+# eval_quality.models.LocalSummarizationModel (and the OpenAI summarizer), so no
+# runtime prompt-patching is needed here.
 
 
 def make_original_config(emb, summ, qa):
     return RetrievalAugmentationConfig(
         embedding_model=emb, summarization_model=summ, qa_model=qa,
-        tb_max_tokens=100, tb_num_layers=4, tb_summarization_length=500,
+        tb_max_tokens=100, tb_num_layers=4, tb_summarization_length=120,
         tr_top_k=8, tr_selection_mode="top_k",
     )
 
@@ -139,7 +103,7 @@ def _tree_cfg(clusterer, emb, summ):
         clustering_algorithm=clusterer, clustering_params={}, reduction_dimension=10,
         summarization_model=summ, embedding_models={"EMB": emb},
         cluster_embedding_model="EMB", max_tokens=100, num_layers=4,
-        summarization_length=500,
+        summarization_length=120,
     )
 
 
@@ -353,8 +317,7 @@ def main():
 
     print("\nLoading models...")
     emb, summ, qa = load_models(args.model_tier)
-    summ = _patch_narrative_summary(summ)
-    print("Models ready (narrative summarization prompt applied).")
+    print("Models ready (multiple-choice QA + narrative summarization).")
 
     run_meta = []
     for m in args.methods:

@@ -1,17 +1,28 @@
 """
-models.py — Shared model wrappers and tier definitions for QASPER eval.
+models.py — Model wrappers and tier definitions for the QuALITY experiment.
 
-Supports three model families through one interface:
-  - Causal instruct models (Qwen2.5-Instruct, Mistral-Instruct): use the
-    model's chat template so it stops cleanly at the turn boundary. This is
-    the primary path for the current tiers.
-  - Causal base models (no chat template): plain text-generation prompt.
-  - Encoder-decoder models (T5, BART): AutoModelForSeq2SeqLM.generate().
+This is a QuALITY-specific counterpart to eval_qasper/models.py. It shares the
+same loading and generation machinery (chat-template handling for Qwen/Mistral
+instruct models, seq2seq fallback for T5/BART, OpenAI wrappers, and the tier
+registry) but differs in two task-specific ways:
 
-Using the chat template for instruct models is important: it adds the proper
-generation prompt and the model emits an end-of-turn token, which eliminates
-the "runaway boilerplate" problem where causal models keep generating past
-the real answer into memorized system-prompt text.
+  1. Multiple-choice QA. QuALITY is a four-option classification task, not
+     free-form generation. LocalQAModel and OpenAIQAModel therefore expose an
+     answer_multiple_choice(context, question, options) method that formats the
+     options as A/B/C/D, instructs the model to reply with a single letter, and
+     caps generation tightly. The plain answer_question(context, question) method
+     is retained only for RAPTOR interface compatibility.
+
+  2. Narrative summarization. QuALITY passages are fiction and journalism
+     (Project Gutenberg stories, Slate articles), not scientific papers. The
+     summarizer's system prompt preserves events, characters, relationships,
+     motivations, and themes rather than "facts, names, and numerical results".
+     Using the scientific prompt here would under-represent the narrative content
+     that the HARD (whole-passage) questions probe, confounding a hierarchy
+     failure with a prompt mismatch.
+
+Everything else — the tier list, the seed behaviour, the runaway-answer cleaning
+— matches the QASPER harness so results across the two datasets stay comparable.
 """
 
 from __future__ import annotations
@@ -25,23 +36,22 @@ os.environ.setdefault("OPENAI_API_KEY", "not-used-in-local-demo")
 from raptor import BaseSummarizationModel, BaseQAModel
 from raptor.EmbeddingModels import SBertEmbeddingModel
 
-import transformers
 
-transformers.set_seed(42)
+LETTERS = ["A", "B", "C", "D", "E", "F"]
+
+
 # ---------------------------------------------------------------------------
-# Shared helpers
+# Shared cleaning helpers
 # ---------------------------------------------------------------------------
 
 def _clean_causal_answer(text: str) -> str:
     """
-    Strict cleaning for QA answers. Causal models often produce the correct
-    short answer and then keep generating into hallucinated boilerplate or echo
-    the prompt. We truncate at the first paragraph break and at known runaway
-    markers. This is correct for SHORT answers but would destroy multi-paragraph
-    summaries — use _clean_summary for those.
+    Strict cleaning for short answers (including single-letter MC answers).
+    Causal models sometimes emit the answer then drift into boilerplate; we
+    truncate at the first paragraph break and known runaway markers.
     """
     answer = text.strip()
-    for lead in ("Short answer:", "Answer:", "Summary:"):
+    for lead in ("Short answer:", "Answer:", "The answer is", "Option", "Choice"):
         if answer.startswith(lead):
             answer = answer[len(lead):].strip()
     answer = answer.split("\n\n")[0].strip()
@@ -61,20 +71,17 @@ def _clean_causal_answer(text: str) -> str:
 
 def _clean_summary(text: str) -> str:
     """
-    Light cleaning for summaries. Summaries are legitimately multi-sentence and
-    multi-paragraph, so we must NOT truncate at the first paragraph break the
-    way QA cleaning does. We only strip a leading "Summary:" label and chat
-    control tokens, and cut clear prompt-echo / boilerplate markers.
+    Light cleaning for summaries. Summaries are multi-sentence, so we must NOT
+    truncate at the first paragraph break the way answer cleaning does. Strip a
+    leading label and chat control tokens; cut only at explicit prompt-echo
+    markers.
     """
     out = text.strip()
     for lead in ("Summary:", "Here is a summary:", "Here's a summary:"):
         if out.startswith(lead):
             out = out[len(lead):].strip()
-    # Strip chat control tokens but keep all real content (incl. paragraph breaks)
     for token in ("<|im_end|>", "<|im_start|>"):
         out = out.replace(token, "")
-    # Cut obvious runaway into instruction text, but only at explicit markers —
-    # never at a bare paragraph break.
     for marker in ("You are an AI assistant", "\nUser:", "\nSystem:"):
         if marker in out:
             out = out.split(marker)[0].strip()
@@ -83,8 +90,9 @@ def _clean_summary(text: str) -> str:
 
 class _LocalGenerator:
     """
-    Shared loading + generation logic for local models. Detects model type
-    once and exposes a generate(system, user) method that does the right thing.
+    Shared loading + generation logic. Detects model type once and exposes a
+    generate(system, user, clean_mode) method. Identical to the QASPER harness
+    so both datasets run through the same generation path.
     """
 
     def __init__(self, model_name: str, max_new_tokens: int):
@@ -126,18 +134,10 @@ class _LocalGenerator:
             print(f"  [WARN] model load failed ({self.model_name}): {exc}", file=sys.stderr)
 
     def generate(self, system: str, user: str, clean_mode: str = "answer") -> str:
-        """
-        Generate a response. Returns "" on failure.
-
-        clean_mode controls post-processing:
-          - "answer": strict cleaning (truncate at paragraph break) for short QA.
-          - "summary": light cleaning (preserve multi-paragraph content) for
-            tree-building summaries.
-        """
+        """Generate a response. clean_mode is 'answer' (strict) or 'summary' (light)."""
         self._ensure_loaded()
         cleaner = _clean_summary if clean_mode == "summary" else _clean_causal_answer
 
-        # Encoder-decoder (T5/BART)
         if self._model is not None and not self._is_causal:
             try:
                 prompt = f"{system}\n\n{user}" if system else user
@@ -149,11 +149,9 @@ class _LocalGenerator:
             except Exception:
                 return ""
 
-        # Causal model
         if self._pipeline is not None and self._is_causal:
             try:
                 if self._has_chat_template:
-                    # Instruct model — use the chat template so it stops cleanly
                     messages: List[dict] = []
                     if system:
                         messages.append({"role": "system", "content": system})
@@ -162,10 +160,8 @@ class _LocalGenerator:
                         messages, tokenize=False, add_generation_prompt=True,
                     )
                 else:
-                    # Base causal model — plain prompt
                     prompt_text = (f"{system}\n\n{user}\n\nAnswer:" if system
                                    else f"{user}\n\nAnswer:")
-
                 result = self._pipeline(
                     prompt_text, max_new_tokens=self.max_new_tokens,
                     do_sample=False, return_full_text=False,
@@ -180,71 +176,111 @@ class _LocalGenerator:
 
 
 # ---------------------------------------------------------------------------
+# Multiple-choice prompt formatting (shared by local and API QA models)
+# ---------------------------------------------------------------------------
+
+MC_SYSTEM = (
+    "You are answering a multiple-choice reading-comprehension question about a "
+    "passage. You are given retrieved excerpts from the passage and a question "
+    "with four options labelled A, B, C, and D. Choose the single best option "
+    "using only the excerpts. Respond with just the letter (A, B, C, or D) and "
+    "nothing else."
+)
+
+
+def format_mc_user(context: str, question: str, options: List[str]) -> str:
+    letters = LETTERS[:len(options)]
+    opt_lines = "\n".join(f"{L}. {opt}" for L, opt in zip(letters, options))
+    return (
+        f"Context excerpts:\n{context}\n\n"
+        f"Question: {question}\n\n"
+        f"Options:\n{opt_lines}\n\n"
+        f"Answer with a single letter ({'/'.join(letters)})."
+    )
+
+
+# ---------------------------------------------------------------------------
 # Local models
 # ---------------------------------------------------------------------------
 
 class LocalSummarizationModel(BaseSummarizationModel):
-    """Local summarizer — chat template for instruct models, generate() otherwise."""
+    """Local summarizer with a narrative-appropriate system prompt for QuALITY."""
 
-    SYSTEM = ("You are a summarization assistant for scientific text. Produce a "
-              "concise summary that preserves key facts, names, and numerical results."
-              )
+    SYSTEM = (
+        "You are summarizing an excerpt from a story or article. Produce a concise "
+        "summary that preserves the main events, characters, relationships, "
+        "motivations, and themes, not only surface facts. Output only the summary."
+    )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
-        self._gen = _LocalGenerator(model_name, max_new_tokens=512)
+        self._gen = _LocalGenerator(model_name, max_new_tokens=128)
 
-    def summarize(self, context, max_tokens=512):
+    def summarize(self, context, max_tokens=150):
         text = " ".join(str(context).split())
         if not text:
             return ""
-        self._gen.max_new_tokens = min(int(max_tokens), 512)
+        self._gen.max_new_tokens = min(int(max_tokens), 128)
         user = f"Summarize the following text:\n\n{text}"
         out = self._gen.generate(self.SYSTEM, user, clean_mode="summary")
 
-        # Guard: if the model returned a near-empty summary (a known failure mode
-        # where causal models occasionally emit almost nothing), retry once with
-        # a more direct prompt before giving up. A 1-2 token "summary" produces a
-        # meaningless node embedding that pollutes the tree.
-        """if len(out.split()) < 5:
+        # Guard against near-empty summaries (causal models occasionally emit
+        # almost nothing); retry once, then fall back to lead sentences so the
+        # node carries real content rather than noise.
+        if len(out.split()) < 5:
             retry_user = (
-                "Write a concise 2-3 sentence summary of the following scientific "
-                f"text, preserving key facts and findings:\n\n{text}"
+                "Write a concise 2-3 sentence summary of the following narrative "
+                f"text, preserving events, characters, and themes:\n\n{text}"
             )
             retry = self._gen.generate(self.SYSTEM, retry_user, clean_mode="summary")
             if len(retry.split()) > len(out.split()):
                 out = retry
 
         if len(out.split()) < 3:
-            # Still degenerate — fall back to the lead sentences so the node at
-            # least carries real content from its children rather than noise.
             sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
             out = ". ".join(sentences[:2]) + ("." if sentences else "")
-            print(f"  [WARN] summary degenerated to <3 tokens; used lead-sentence "
-                  f"fallback for a {len(text.split())}-word cluster", file=sys.stderr)"""
-
+            print(f"  [WARN] summary degenerated; used lead-sentence fallback for a "
+                  f"{len(text.split())}-word cluster", file=sys.stderr)
         return out
 
 
 class LocalQAModel(BaseQAModel):
-    """Local QA model — chat template for instruct models, generate() otherwise."""
+    """
+    Local QA model for QuALITY.
 
-    SYSTEM = ("You answer questions about scientific papers using only the provided context. "
-          "Give the most specific answer the context supports — a number, entity, list, or "
-          "brief phrase. Extract specific values (scores, counts, names) exactly as stated. "
-          "For yes/no questions answer 'Yes' or 'No'. Only reply 'Unanswerable' if the "
-          "context genuinely does not contain the answer."
-              )
+    The primary method is answer_multiple_choice(context, question, options),
+    which formats the options and asks the model for a single letter. The plain
+    answer_question(context, question) is kept for RAPTOR interface compatibility
+    (RAPTOR constructs the config with a qa_model), but the QuALITY runner calls
+    answer_multiple_choice directly after question-only retrieval.
+    """
 
-    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 256):
+    QA_SYSTEM = (
+        "You answer questions about a passage using only the provided context. "
+        "Be concise."
+    )
+
+    def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct", max_new_tokens: int = 8):
+        # MC answers are a single letter, so the default token budget is tiny.
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
+    def answer_multiple_choice(self, context, question, options) -> str:
+        context = " ".join(str(context).split())
+        question = str(question).strip()
+        if not context or not options:
+            return ""
+        self._gen.max_new_tokens = 8  # single letter
+        user = format_mc_user(context, question, options)
+        return self._gen.generate(MC_SYSTEM, user, clean_mode="answer")
+
     def answer_question(self, context, question):
+        # RAPTOR-compatibility path (not used for QuALITY scoring).
         context = " ".join(str(context).split())
         question = str(question).strip()
         if not context:
             return ""
+        self._gen.max_new_tokens = 64
         user = f"Context: {context}\n\nQuestion: {question}"
-        return self._gen.generate(self.SYSTEM, user)
+        return self._gen.generate(self.QA_SYSTEM, user, clean_mode="answer")
 
 
 # ---------------------------------------------------------------------------
@@ -252,7 +288,7 @@ class LocalQAModel(BaseQAModel):
 # ---------------------------------------------------------------------------
 
 class OpenAIQAModel(BaseQAModel):
-    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 128):
+    def __init__(self, model_name: str = "gpt-4o-mini", max_tokens: int = 8):
         self.model_name = model_name
         self.max_tokens = max_tokens
         self._client = None
@@ -262,6 +298,26 @@ class OpenAIQAModel(BaseQAModel):
             return
         from openai import OpenAI
         self._client = OpenAI()
+
+    def answer_multiple_choice(self, context, question, options) -> str:
+        context = " ".join(str(context).split())
+        question = str(question).strip()
+        if not context or not options:
+            return ""
+        self._ensure_client()
+        try:
+            r = self._client.chat.completions.create(
+                model=self.model_name,
+                messages=[
+                    {"role": "system", "content": MC_SYSTEM},
+                    {"role": "user", "content": format_mc_user(context, question, options)},
+                ],
+                max_tokens=self.max_tokens, temperature=0,
+            )
+            return r.choices[0].message.content.strip()
+        except Exception as exc:
+            print(f"  [WARN] OpenAI MC error: {exc}", file=sys.stderr)
+            return ""
 
     def answer_question(self, context, question):
         context = " ".join(str(context).split())
@@ -273,15 +329,10 @@ class OpenAIQAModel(BaseQAModel):
             r = self._client.chat.completions.create(
                 model=self.model_name,
                 messages=[
-                    {"role": "system",
-                     "content": "You answer questions about scientific papers. Reply with "
-                                "the shortest possible answer: a phrase or entity, not a "
-                                "sentence. For yes/no questions answer 'Yes' or 'No'. If the "
-                                "context does not contain the answer, reply 'Unanswerable'."},
-                    {"role": "user",
-                     "content": f"Context: {context}\n\nQuestion: {question}"},
+                    {"role": "system", "content": "Answer concisely using only the context."},
+                    {"role": "user", "content": f"Context: {context}\n\nQuestion: {question}"},
                 ],
-                max_tokens=self.max_tokens, temperature=0,
+                max_tokens=64, temperature=0,
             )
             return r.choices[0].message.content.strip()
         except Exception as exc:
@@ -311,8 +362,9 @@ class OpenAISummarizationModel(BaseSummarizationModel):
                 model=self.model_name,
                 messages=[
                     {"role": "system",
-                     "content": "Summarize the following text from a scientific paper "
-                                "concisely, preserving key facts, names, and numerical results."},
+                     "content": "Summarize this excerpt from a story or article concisely, "
+                                "preserving the main events, characters, relationships, "
+                                "motivations, and themes."},
                     {"role": "user", "content": text},
                 ],
                 max_tokens=self.max_tokens, temperature=0,
@@ -323,7 +375,7 @@ class OpenAISummarizationModel(BaseSummarizationModel):
 
 
 # ---------------------------------------------------------------------------
-# Tier registry
+# Tier registry — same models as the QASPER harness for cross-dataset parity
 # ---------------------------------------------------------------------------
 
 MODEL_TIERS = {
