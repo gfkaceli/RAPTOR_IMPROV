@@ -213,22 +213,22 @@ class LocalSummarizationModel(BaseSummarizationModel):
     )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
-        self._gen = _LocalGenerator(model_name, max_new_tokens=128)
+        self._gen = _LocalGenerator(model_name, max_new_tokens=1024)
 
-    def summarize(self, context, max_tokens=150):
+    def summarize(self, context, max_tokens=1024):
         text = " ".join(str(context).split())
         if not text:
             return ""
-        self._gen.max_new_tokens = min(int(max_tokens), 128)
+        self._gen.max_new_tokens = min(int(max_tokens), 1024)
         user = f"Summarize the following text:\n\n{text}"
         out = self._gen.generate(self.SYSTEM, user, clean_mode="summary")
 
         # Guard against near-empty summaries (causal models occasionally emit
         # almost nothing); retry once, then fall back to lead sentences so the
         # node carries real content rather than noise.
-        if len(out.split()) < 5:
+        """if len(out.split()) < 5:
             retry_user = (
-                "Write a concise 2-3 sentence summary of the following narrative "
+                "Write a concise summary of the following narrative "
                 f"text, preserving events, characters, and themes:\n\n{text}"
             )
             retry = self._gen.generate(self.SYSTEM, retry_user, clean_mode="summary")
@@ -239,7 +239,7 @@ class LocalSummarizationModel(BaseSummarizationModel):
             sentences = [s.strip() for s in text.replace("\n", " ").split(".") if s.strip()]
             out = ". ".join(sentences[:2]) + ("." if sentences else "")
             print(f"  [WARN] summary degenerated; used lead-sentence fallback for a "
-                  f"{len(text.split())}-word cluster", file=sys.stderr)
+                  f"{len(text.split())}-word cluster", file=sys.stderr)"""
         return out
 
 
