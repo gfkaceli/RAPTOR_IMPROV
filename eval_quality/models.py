@@ -36,6 +36,9 @@ os.environ.setdefault("OPENAI_API_KEY", "not-used-in-local-demo")
 from raptor import BaseSummarizationModel, BaseQAModel
 from raptor.EmbeddingModels import SBertEmbeddingModel
 
+import transformers
+
+transformers.set_seed(42)
 
 LETTERS = ["A", "B", "C", "D", "E", "F"]
 
