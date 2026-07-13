@@ -180,11 +180,10 @@ class _LocalGenerator:
 # ---------------------------------------------------------------------------
 
 MC_SYSTEM = (
-    "You are answering a multiple-choice reading-comprehension question about a "
-    "passage. You are given retrieved excerpts from the passage and a question "
+    "You are answering a multiple-choice question about a passage."
+    "You are given text from the passage and a question "
     "with four options labelled A, B, C, and D. Choose the single best option "
-    "using only the excerpts. Respond with just the letter (A, B, C, or D) and "
-    "nothing else."
+    "using only the context."
 )
 
 
@@ -207,8 +206,8 @@ class LocalSummarizationModel(BaseSummarizationModel):
     """Local summarizer with a narrative-appropriate system prompt for QuALITY."""
 
     SYSTEM = (
-        "You are summarizing an excerpt from a story or article. Produce a concise "
-        "summary that preserves the main events, characters, relationships, "
+        "You are summarizing an excerpt from a story or article. Produce a summary "
+        " that preserves the main events, characters, relationships, "
         "motivations, and themes, not only surface facts. Output only the summary."
     )
 
