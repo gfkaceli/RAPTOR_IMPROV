@@ -102,7 +102,7 @@ def _tree_cfg(clusterer, emb, summ):
     return ClusterTreeConfig(
         clustering_algorithm=clusterer, clustering_params={}, reduction_dimension=10,
         summarization_model=summ, embedding_models={"EMB": emb},
-        cluster_embedding_model="EMB", max_tokens=512, num_layers=4,
+        cluster_embedding_model="EMB", max_tokens=100, num_layers=4,
         summarization_length=600,
     )
 
