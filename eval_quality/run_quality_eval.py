@@ -93,7 +93,7 @@ def answer_mc(qa_model, context: str, question: str, options: List[str]) -> str:
 def make_original_config(emb, summ, qa):
     return RetrievalAugmentationConfig(
         embedding_model=emb, summarization_model=summ, qa_model=qa,
-        tb_max_tokens=100, tb_num_layers=4, tb_summarization_length=600,
+        tb_max_tokens=135, tb_num_layers=4, tb_summarization_length=600,
         tr_top_k=10, tr_selection_mode="top_k",
     )
 
@@ -102,7 +102,7 @@ def _tree_cfg(clusterer, emb, summ):
     return ClusterTreeConfig(
         clustering_algorithm=clusterer, clustering_params={}, reduction_dimension=10,
         summarization_model=summ, embedding_models={"EMB": emb},
-        cluster_embedding_model="EMB", max_tokens=100, num_layers=4,
+        cluster_embedding_model="EMB", max_tokens=135, num_layers=4,
         summarization_length=600,
     )
 
@@ -149,7 +149,7 @@ def make_dbscan(emb, summ, qa):
 
 
 def make_flat(emb, summ, qa):
-    return FlatRetriever(embedding_model=emb, qa_model=qa, top_k=10, chunk_size=100)
+    return FlatRetriever(embedding_model=emb, qa_model=qa, top_k=10, chunk_size=500)
 
 
 METHODS = {
