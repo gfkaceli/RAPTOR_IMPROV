@@ -93,7 +93,7 @@ def answer_mc(qa_model, context: str, question: str, options: List[str]) -> str:
 def make_original_config(emb, summ, qa):
     return RetrievalAugmentationConfig(
         embedding_model=emb, summarization_model=summ, qa_model=qa,
-        tb_max_tokens=135, tb_num_layers=4, tb_summarization_length=600,
+        tb_max_tokens=140, tb_num_layers=4, tb_summarization_length=600,
         tr_top_k=10, tr_selection_mode="top_k",
     )
 
