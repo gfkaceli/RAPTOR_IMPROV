@@ -102,7 +102,7 @@ def _tree_cfg(clusterer, emb, summ):
     return ClusterTreeConfig(
         clustering_algorithm=clusterer, clustering_params={}, reduction_dimension=10,
         summarization_model=summ, embedding_models={"EMB": emb},
-        cluster_embedding_model="EMB", max_tokens=135, num_layers=4,
+        cluster_embedding_model="EMB", max_tokens=140, num_layers=4,
         summarization_length=600,
     )
 
@@ -149,7 +149,7 @@ def make_dbscan(emb, summ, qa):
 
 
 def make_flat(emb, summ, qa):
-    return FlatRetriever(embedding_model=emb, qa_model=qa, top_k=10, chunk_size=500)
+    return FlatRetriever(embedding_model=emb, qa_model=qa, top_k=10, chunk_size=100)
 
 
 METHODS = {
