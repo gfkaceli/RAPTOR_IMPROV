@@ -169,25 +169,21 @@ METHODS = {
 
 def retrieve_with_layers(ra, question: str):
     """
-    Retrieve context and, when possible, record the tree layer of each retrieved
-    node. Returns (context_text, layer_list). layer_list is empty for the flat
-    retriever (no tree) or if the RA object does not expose per-node layers.
+    Retrieve context and record the tree layer of each retrieved node.
+
+    RetrievalAugmentation.retrieve returns (context, layer_information) where
+    layer_information is a list of {"node_index", "layer_number"} dicts. The
+    FlatRetriever returns just the context string (no tree, so no layers). We
+    normalise both shapes here so the caller always gets (context_str, layers).
     """
-    context = ra.retrieve(question)
-    layers: List[int] = []
-    # FlatRetriever has num_layers=0 tree; everything is a leaf (layer 0).
-    tree = getattr(ra, "tree", None)
-    # We can't always map retrieved text back to node layers without deeper
-    # hooks into RAPTOR's retriever; layer logging is best-effort. If the RA
-    # exposes the last retrieved nodes, use them.
-    last_nodes = getattr(ra, "_last_retrieved_nodes", None)
-    if last_nodes and tree is not None:
-        layer_of = {}
-        for li, nodes in getattr(tree, "layer_to_nodes", {}).items():
-            for nd in nodes:
-                layer_of[getattr(nd, "index", id(nd))] = li
-        for nd in last_nodes:
-            layers.append(layer_of.get(getattr(nd, "index", id(nd)), -1))
+    result = ra.retrieve(question)
+    if isinstance(result, tuple):
+        context, layer_information = result
+    else:
+        context, layer_information = result, []
+    layers: List[int] = [
+        li.get("layer_number", -1) for li in (layer_information or [])
+    ]
     return context, layers
 
 
