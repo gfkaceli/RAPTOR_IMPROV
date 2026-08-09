@@ -10,7 +10,7 @@ were written from plot summaries, answers are short free-form paraphrases
 headline metric.
 
 Workflow:
-    1. python -m eval_narrativeqa.preprocess_narrativeqa --split validation --max-articles 3
+    1. python -m eval_narrativeqa.preprocess_narrativeqa --split validation --max-articles 5
     2. python -m eval_narrativeqa.run_narrativeqa_eval --model-tier base \
            --cache-dir <drive path>   # tree caching is essential at this scale
     3. python -m eval_narrativeqa.score_narrativeqa experiments/narrativeqa/<timestamp>

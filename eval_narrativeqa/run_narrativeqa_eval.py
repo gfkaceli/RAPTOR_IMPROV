@@ -73,7 +73,7 @@ from eval_narrativeqa.models import load_models, MODEL_TIERS, EMB_MODEL
 def make_original_config(emb, summ, qa):
     return RetrievalAugmentationConfig(
         embedding_model=emb, summarization_model=summ, qa_model=qa,
-        tb_max_tokens=140, tb_num_layers=5, tb_summarization_length=600,
+        tb_max_tokens=140, tb_num_layers=5, tb_summarization_length=2000,
         tr_top_k=10, tr_selection_mode="top_k",
     )
 
@@ -83,7 +83,7 @@ def _tree_cfg(clusterer, emb, summ):
         clustering_algorithm=clusterer, clustering_params={}, reduction_dimension=10,
         summarization_model=summ, embedding_models={"EMB": emb},
         cluster_embedding_model="EMB", max_tokens=140, num_layers=5,
-        summarization_length=600,
+        summarization_length=2000,
     )
 
 
@@ -101,7 +101,7 @@ def make_gmm(emb, summ, qa):
 
 
 def make_leiden(emb, summ, qa):
-    lcfg = LeidenConfig(k_neighbors=10, use_adjacency_edges=True, adjacency_weight=0.5,
+    lcfg = LeidenConfig(k_neighbors=15, use_adjacency_edges=True, adjacency_weight=0.5,
                         resolution=1.0,
                         resolution_schedule={0: 1.3, 1: 0.9, 2: 0.6, 3: 0.5},
                         partition_type="RBConfiguration", min_cluster_size=1)

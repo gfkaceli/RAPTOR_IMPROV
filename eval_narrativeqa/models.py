@@ -166,19 +166,19 @@ class LocalSummarizationModel(BaseSummarizationModel):
     )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
-        self._gen = _LocalGenerator(model_name, max_new_tokens=128)
+        self._gen = _LocalGenerator(model_name, max_new_tokens=512)
 
     def summarize(self, context, max_tokens=150):
         text = " ".join(str(context).split())
         if not text:
             return ""
-        self._gen.max_new_tokens = min(int(max_tokens), 128)
+        self._gen.max_new_tokens = min(int(max_tokens), 512)
         user = f"Summarize the following text:\n\n{text}"
         out = self._gen.generate(self.SYSTEM, user, clean_mode="summary")
 
         if len(out.split()) < 5:
             retry_user = (
-                "Write a concise 2-3 sentence summary of the following narrative "
+                "Write a summary of the following narrative "
                 f"text, preserving events, characters, and themes:\n\n{text}"
             )
             retry = self._gen.generate(self.SYSTEM, retry_user, clean_mode="summary")

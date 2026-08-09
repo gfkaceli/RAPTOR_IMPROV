@@ -1,0 +1,182 @@
+[
+  {
+    "accuracy": 0.6985,
+    "n": 2086,
+    "parse_rate": 0.9995,
+    "n_correct": 1457,
+    "accuracy_hard": 0.6028,
+    "n_hard": 1065,
+    "accuracy_easy": 0.7982,
+    "n_easy": 1021,
+    "file": "predictions_agglomerative.jsonl",
+    "ci_overall": {
+      "mean": 0.6985,
+      "lo": 0.6793,
+      "hi": 0.7167,
+      "n": 2086
+    },
+    "ci_hard": {
+      "mean": 0.6028,
+      "lo": 0.5728,
+      "hi": 0.6319,
+      "n": 1065
+    },
+    "ci_easy": {
+      "mean": 0.7982,
+      "lo": 0.7737,
+      "hi": 0.8227,
+      "n": 1021
+    },
+    "method": "agglomerative"
+  },
+  {
+    "accuracy": 0.6394,
+    "n": 2077,
+    "parse_rate": 1.0,
+    "n_correct": 1328,
+    "accuracy_hard": 0.5302,
+    "n_hard": 1058,
+    "accuracy_easy": 0.7527,
+    "n_easy": 1019,
+    "file": "predictions_dbscan.jsonl",
+    "ci_overall": {
+      "mean": 0.6394,
+      "lo": 0.6187,
+      "hi": 0.6601,
+      "n": 2077
+    },
+    "ci_hard": {
+      "mean": 0.5302,
+      "lo": 0.5,
+      "hi": 0.5605,
+      "n": 1058
+    },
+    "ci_easy": {
+      "mean": 0.7527,
+      "lo": 0.7252,
+      "hi": 0.7782,
+      "n": 1019
+    },
+    "method": "dbscan"
+  },
+  {
+    "accuracy": 0.664,
+    "n": 2086,
+    "parse_rate": 1.0,
+    "n_correct": 1385,
+    "accuracy_hard": 0.5709,
+    "n_hard": 1065,
+    "accuracy_easy": 0.761,
+    "n_easy": 1021,
+    "file": "predictions_flat.jsonl",
+    "ci_overall": {
+      "mean": 0.664,
+      "lo": 0.6429,
+      "hi": 0.6836,
+      "n": 2086
+    },
+    "ci_hard": {
+      "mean": 0.5709,
+      "lo": 0.5418,
+      "hi": 0.6009,
+      "n": 1065
+    },
+    "ci_easy": {
+      "mean": 0.761,
+      "lo": 0.7336,
+      "hi": 0.7865,
+      "n": 1021
+    },
+    "method": "flat"
+  },
+  {
+    "accuracy": 0.7108,
+    "n": 2068,
+    "parse_rate": 1.0,
+    "n_correct": 1470,
+    "accuracy_hard": 0.619,
+    "n_hard": 1050,
+    "accuracy_easy": 0.8055,
+    "n_easy": 1018,
+    "file": "predictions_gmm.jsonl",
+    "ci_overall": {
+      "mean": 0.7108,
+      "lo": 0.691,
+      "hi": 0.7302,
+      "n": 2068
+    },
+    "ci_hard": {
+      "mean": 0.619,
+      "lo": 0.5895,
+      "hi": 0.6476,
+      "n": 1050
+    },
+    "ci_easy": {
+      "mean": 0.8055,
+      "lo": 0.7809,
+      "hi": 0.8301,
+      "n": 1018
+    },
+    "method": "gmm"
+  },
+  {
+    "accuracy": 0.7085,
+    "n": 2086,
+    "parse_rate": 0.9995,
+    "n_correct": 1478,
+    "accuracy_hard": 0.6141,
+    "n_hard": 1065,
+    "accuracy_easy": 0.8071,
+    "n_easy": 1021,
+    "file": "predictions_kmeans.jsonl",
+    "ci_overall": {
+      "mean": 0.7085,
+      "lo": 0.6889,
+      "hi": 0.7267,
+      "n": 2086
+    },
+    "ci_hard": {
+      "mean": 0.6141,
+      "lo": 0.585,
+      "hi": 0.6423,
+      "n": 1065
+    },
+    "ci_easy": {
+      "mean": 0.8071,
+      "lo": 0.7826,
+      "hi": 0.8306,
+      "n": 1021
+    },
+    "method": "kmeans"
+  },
+  {
+    "accuracy": 0.7124,
+    "n": 2086,
+    "parse_rate": 0.9995,
+    "n_correct": 1486,
+    "accuracy_hard": 0.6244,
+    "n_hard": 1065,
+    "accuracy_easy": 0.8041,
+    "n_easy": 1021,
+    "file": "predictions_leiden.jsonl",
+    "ci_overall": {
+      "mean": 0.7124,
+      "lo": 0.6937,
+      "hi": 0.7306,
+      "n": 2086
+    },
+    "ci_hard": {
+      "mean": 0.6244,
+      "lo": 0.5944,
+      "hi": 0.6526,
+      "n": 1065
+    },
+    "ci_easy": {
+      "mean": 0.8041,
+      "lo": 0.7796,
+      "hi": 0.8276,
+      "n": 1021
+    },
+    "method": "leiden"
+  }
+]
