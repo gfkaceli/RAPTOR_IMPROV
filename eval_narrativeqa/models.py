@@ -30,6 +30,8 @@ import os
 import sys
 from typing import List, Tuple
 
+import transformers
+
 os.environ.setdefault("OPENAI_API_KEY", "not-used-in-local-demo")
 
 from raptor import BaseSummarizationModel, BaseQAModel
@@ -39,6 +41,8 @@ from raptor.EmbeddingModels import SBertEmbeddingModel
 EMB_MODEL = os.environ.get(
     "RAPTOR_EMB_MODEL", "sentence-transformers/all-MiniLM-L6-v2"
 )
+
+transformers.set_seed(42)
 
 
 # ---------------------------------------------------------------------------
@@ -166,13 +170,13 @@ class LocalSummarizationModel(BaseSummarizationModel):
     )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
-        self._gen = _LocalGenerator(model_name, max_new_tokens=512)
+        self._gen = _LocalGenerator(model_name, max_new_tokens=2048)
 
-    def summarize(self, context, max_tokens=150):
+    def summarize(self, context, max_tokens=2048):
         text = " ".join(str(context).split())
         if not text:
             return ""
-        self._gen.max_new_tokens = min(int(max_tokens), 512)
+        self._gen.max_new_tokens = min(int(max_tokens), 2048)
         user = f"Summarize the following text:\n\n{text}"
         out = self._gen.generate(self.SYSTEM, user, clean_mode="summary")
 
@@ -207,7 +211,7 @@ class LocalQAModel(BaseQAModel):
     )
 
     def __init__(self, model_name: str = "Qwen/Qwen2.5-1.5B-Instruct",
-                 max_new_tokens: int = 48):
+                 max_new_tokens: int = 256):
         self._gen = _LocalGenerator(model_name, max_new_tokens=max_new_tokens)
 
     def answer_question(self, context, question):
@@ -215,7 +219,7 @@ class LocalQAModel(BaseQAModel):
         question = str(question).strip()
         if not context:
             return ""
-        self._gen.max_new_tokens = 48
+        self._gen.max_new_tokens = 256
         user = f"Story excerpts: {context}\n\nQuestion: {question}\n\nShort answer:"
         return self._gen.generate(self.QA_SYSTEM, user, clean_mode="answer")
 

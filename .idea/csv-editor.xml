@@ -3,62 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\experiments\20260609-214956\detailed_agglomerative.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_dbscan.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_flat.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_gmm.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_kmeans.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_leiden.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\detailed_original.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\20260609-214956\results.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\experiments\qasper\20250624-203442\detailed_agglomerative.csv">
           <value>
             <Attribute>
@@ -67,20 +11,6 @@
           </value>
         </entry>
         <entry key="\experiments\qasper\20250624-203442\results.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\qasper\20260622-205227\detailed_flat (2).csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\experiments\qasper\20260622-205227\detailed_flat.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
