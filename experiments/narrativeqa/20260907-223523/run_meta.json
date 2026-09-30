@@ -1,0 +1,75 @@
+{
+  "timestamp": "20260906-223623",
+  "model_tier": "local-xl",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "n_stories": 20,
+  "n_questions_total": 586,
+  "seed": 224,
+  "cache_dir": null,
+  "data_file": "data/narrativeqa/train.json",
+  "methods": [
+    {
+      "method": "flat",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 82.59,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260824-173007/predictions_flat.jsonl"
+    },
+    {
+      "method": "leiden",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 4435.77,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260824-173007/predictions_leiden.jsonl"
+    },
+    {
+      "method": "kmeans",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 1813.42,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260824-173007/predictions_kmeans.jsonl"
+    },
+    {
+      "method": "original",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 21740.65,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260825-163639/predictions_original.jsonl"
+    },
+    {
+      "method": "gmm",
+      "n_stories": 19,
+      "n_questions": 556,
+      "n_cached_trees": 0,
+      "build_time_sec": 2394.5,
+      "failures": 1,
+      "output": "experiments/narrativeqa/20260825-163639/predictions_gmm.jsonl"
+    },
+    {
+      "method": "agglomerative",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 1897.6,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260825-163639/predictions_agglomerative.jsonl"
+    },
+    {
+      "method": "dbscan",
+      "n_stories": 20,
+      "n_questions": 586,
+      "n_cached_trees": 0,
+      "build_time_sec": 8875.55,
+      "failures": 0,
+      "output": "experiments/narrativeqa/20260906-223623/predictions_dbscan.jsonl"
+    }
+  ]
+}

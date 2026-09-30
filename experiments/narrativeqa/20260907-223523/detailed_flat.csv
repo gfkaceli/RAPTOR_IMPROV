@@ -1,0 +1,587 @@
+method,story_id,kind,question_id,f1,rouge_l,bleu,predicted,gold_1,tree_layers,tree_cached
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_0,0.4,0.4,0.3467,More than a week.,A little over a week.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_1,0.6667,0.6667,0.3679,Art,Angel of Italian Art,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_2,0.0,0.0,0.0,The Vicar,Rev. K. Hilyer,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_3,0.6667,0.6667,0.5503,the world of dreams,The Land of Dreams.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_4,1.0,1.0,1.0,playing the violin,Divine violin-playing,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_5,0.1538,0.1538,0.1104,Because Crump showed a magazine with depicted angels.,Because he actually cannot read music.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_6,0.0,0.0,0.0,adamantine walls,A madhouse or prison.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_7,0.0,0.0,0.0,scouring the country,Taking the angel to London and establishing him there.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_8,0.2857,0.2857,0.1116,A fire erupts.,Hew saw the vicar's house burning.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_9,0.4,0.4,0.0731,Two little white crosses,Two white crosses baring the names of Thomas Angel and Delia,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_10,0.0,0.0,0.0,an Angel of Art,A bird.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_11,0.0,0.0,0.0,The Vicar,On his wing.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_12,0.0,0.0,0.0,The Angel,A socialist.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_13,0.6667,0.6667,0.5503,world of dreams,"""The Land of Dreams"".",0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_14,0.0,0.0,0.0,Disappointed and confused.,He feels dismayed.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_15,0.0,0.0,0.0,They do not attack the vicar.,For hosting the Angel.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_16,0.0,0.0,0.0,The Angel,The vicar.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_17,0.4,0.4,0.2887,the Angel of Art,"""Mr. Angel"".",0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_18,0.0,0.0,0.0,Not mentioned,In a fire.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_19,0.0,0.0,0.0,ashes of the Vicar's stuffed ostrich,Nothing.,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_20,0.3333,0.3333,0.1839,servant girl,She is a serving girl,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_21,0.0,0.0,0.0,Settled opinions,Because he can't read music,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_22,0.0,0.0,0.0,Iridescent,polychromatic,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_23,0.2222,0.2222,0.1275,He defends the poor.,He becomes dismayed with the culture of Victorian England,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_24,0.8,0.8,0.4273,Thomas Angel and Delia Hardy,the graves are empty,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_25,0.0,0.0,0.0,The angel is not to be arrested.,For destroying barbwire,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_26,0.0,0.0,0.0,The Angel,Delia,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_27,0.0,0.0,0.0,his wings,Goth's own whip,0,False
+flat,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_28,1.0,1.0,1.0,London,England,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_0,1.0,1.0,1.0,Edward,Edward Cullen,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_1,1.0,1.0,1.0,Vampire,A vampire,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_2,0.0,0.0,0.0,Vampire,Edward brother,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_3,0.1667,0.1667,0.1104,Jasper's fevered eyes and ravenous state.,Scent of Bella's blood.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_4,0.0,0.0,0.0,Cold Ones,Werewolves,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_5,0.0,0.0,0.0,Provoked the Volturi.,Edward went to Italy to die.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_6,0.25,0.25,0.1609,Alice is Bella's friend.,Edward sister,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_7,0.0,0.0,0.0,San Marcos Day festival,To  save Edward,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_8,0.25,0.25,0.2686,"Ancient, very powerful vampires.",They were powerful vampire.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_9,0.2222,0.2222,0.1797,Because Bella knew too much.,Because she is human,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_10,0.7778,0.7778,0.5507,Alice saw a vision of Bella jumping off a cliff.,Alice had a vision of Bella jumping off a cliff into the oce,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_11,0.2,0.2,0.0914,Go to Italy,Edward planned to expose himself as a vampire.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_12,0.0,0.0,0.0,Edward,Jacob,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_13,0.5,0.3636,0.1797,Makes her realize she needs Edward.,She sees images of Edward,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_14,1.0,1.0,1.0,To protect her.,To protect her,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_15,0.6667,0.6667,0.5503,Jacob is a werewolf.,He is a werewolf,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_16,0.0,0.0,0.0,Vampires hunt and kill werewolves.,They are enemies,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_17,0.8889,0.8889,0.6687,Because Edward killed her mate.,"Edward killed Victoria's mate, James",0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_18,0.5,0.5,0.2187,He can't explain.,He has his first transformation into a werewolf,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_19,0.1538,0.1538,0.1155,Edward reminds her of her age.,She is getting older than her boyfriend.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_20,1.0,1.0,1.0,Jasper,Jasper,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_21,0.3529,0.2857,0.1313,To keep Bella human and protect his family.,He believes that his family puts Bella in danger.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_22,0.0,0.0,0.0,Write a note,She can move to Florida with her mother or spend time with h,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_23,0.1667,0.1667,0.1365,He's protecting her from vampires.,He turns into a werewolf for the first time.,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_24,1.0,1.0,1.0,Laurent,Laurent,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_25,0.0,0.0,0.0,Edward,Jacob,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_26,0.0,0.0,0.0,"Ancient, powerful vampires.",The Vampire overlords,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_27,0.2857,0.2857,0.2184,Volturi and Quileute tribe,The Werewolves and the Vampires,0,False
+flat,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_28,0.25,0.25,0.2686,Bella must become a vampire.,She must marry him.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_0,0.2857,0.2857,0.2184,"Steel, Brookings and DuQuesne",World Steel Corporation,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_1,0.0,0.0,0.0,DuQuesne,Blackie,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_2,0.0,0.0,0.0,shimmering globe,Zone of Force,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_3,0.2222,0.2222,0.1277,third planet of their fourteenth sun,Urvan,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_4,0.5,0.5,0.1353,Fenachrone,Natives of Fenachrone,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_5,0.0,0.0,0.0,a lifeboat,A Fenachrone battleship,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_6,0.0,0.0,0.0,Brookings,Martin Crane,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_7,0.0,0.0,0.0,Osnome,Norlamin,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_8,0.6667,0.6667,0.3679,Fenachrone,The Fenachrone colony,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_9,0.0,0.0,0.0,Dunark,Marc DuQuesne,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_10,0.2857,0.2857,0.2184,"Steel, Brookings and DuQuesne",World Steel Corporation,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_11,0.1667,0.1667,0.1104,To abandon his custom of working alone,To find a more knowledgeable species.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_12,0.0,0.0,0.0,Thank you for our lives,To fight against the invasion of Urvan Natives,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_13,0.25,0.25,0.1609,To show the guests around Kondal.,To find minerals,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_14,0.6667,0.6667,0.3679,Fenachrone,Fenachrone Natives,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_15,0.0,0.0,0.0,an officer,A lead crew member of the Fenachrone,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_16,0.1818,0.1818,0.0906,"Get Fenachrone vessel, find Skylark, blow her up.",Capture a Fenachrone battleship.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_17,0.1667,0.1667,0.0929,To confront and arm the green system against Osnomians.,To the zone of force.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_18,0.0,0.0,0.0,They will be wiped out.,Seaton destroys their recon ships,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_19,0.5,0.5,0.3333,DuQuesne and Loring,DeQuesne,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_20,0.5,0.5,0.1353,Seaton,Richard Seaton allies with DuQuesne.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_21,0.1538,0.1538,0.1104,To abandon his custom of working alone,To break the connection to the 'Object Compass'.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_22,0.2222,0.2222,0.2092,He only attacked personally.,"Seaton was busy mastering the ""zone of fore"".",0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_23,0.2857,0.2857,0.2484,Fenachrone war-vessels,The Fenachrones attack Seaton.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_24,0.4,0.4,0.2887,Conquest of the Universe,They intend to conquer the Milky Way Galaxy and the Universe,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_25,0.0,0.0,0.0,Brookings,Martin Crane is the sponsor.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_26,0.1333,0.1333,0.0929,inhabitants of the third planet of their fourteenth sun,Natives from the planet 'Urvan' are invading Osnome.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_27,0.0,0.0,0.0,Urvanian vessel,Skylark Three is the new ship.,0,False
+flat,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_28,0.5,0.5,0.5,DuQuesne survives.,He survives.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_0,0.4444,0.4444,0.2959,To arrest William Turner.,He wants to arrest them.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_1,0.0,0.0,0.0,press-ganged into Davy Jones' crew,Execution.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_2,0.0,0.0,0.0,Scuttled,It was wrecked in a typhoon.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_3,0.0,0.0,0.0,Jack Sparrow,Bootstrap Bill.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_4,0.0,0.0,0.0,Letters of Marque,Jack's magic compass.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_5,0.0,0.0,0.0,Pelegostos,Cannibals.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_6,0.0,0.0,0.0,Woman of the sea,A voodoo priestess.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_7,0.5714,0.5714,0.1578,in a chest,It is locked inside the Deadman's Chest.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_8,0.0,0.0,0.0,Five,Three.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_9,0.0,0.0,0.0,Jack escapes.,He is pulled to the bottom of the sea by the Kraken.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_10,1.0,1.0,1.0,Jack Sparrow,Jack Sparrow,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_11,1.0,1.0,1.0,Get married,Get married,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_12,1.0,1.0,1.0,Lord Cutler Beckett,Lord Cutler Beckett,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_13,0.25,0.25,0.1609,Jack Sparrow's crew member,Will's father,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_14,0.0,0.0,0.0,Isla Cruces beach,The Black Pearl,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_15,0.6667,0.6667,0.3679,A ship,A merchant ship,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_16,0.6667,0.6667,0.5,main mast,The mast,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_17,0.0,0.0,0.0,Will Turner,Jack,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_18,0.0,0.0,0.0,Jack's compass,A dog,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_19,0.0,0.0,0.0,Nothing,The heart and letters,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_20,0.2,0.2,0.0914,For being a pirate.,Because he let Jack Sparrow escape.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_21,0.0,0.0,0.0,Sank,It was destroyed in a typhoon.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_22,0.0,0.0,0.0,Free his father.,Bring back Jack's compass.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_23,0.0,0.0,0.0,Underwater,On a Scottish merchant vessel.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_24,0.0,0.0,0.0,Isla Cruces beach,On the Black Pearl.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_25,1.0,1.0,1.0,Davy Jones,Davy Jones.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_26,0.4,0.4,0.3467,Bootstrap's heart.,Davy Jones heart.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_27,0.0,0.0,0.0,inside his vest,In a jar of sand.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_28,0.6,0.6,0.2812,chains him to the main mast,She handcuffs him to the mast.,0,False
+flat,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_29,0.0,0.0,0.0,Not allowed back.,Because he brings Beckett the heart.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_0,0.0,0.0,0.0,"He became a regular old woman; yes, he became the devil knows what.",for underachieving,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_1,0.0,0.0,0.0,He thinks Hanna loves another.,Sophie doesn't notice him,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_2,0.0,0.0,0.0,By correspondence,through letters,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_3,0.0,0.0,0.0,Nothing significant.,"more about Sophie's life, including her engagement to anothe",0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_4,0.0,0.0,0.0,He serves her.,Sophie is his boss's daughter,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_5,0.0,0.0,0.0,"The dog's distinct ""I was--bow--wow!--I was--bow!""",they have a quality of dogginess to them,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_6,0.0,0.0,0.0,November 11th,"April 43, 2000",0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_7,0.0,0.0,0.0,the devil knows what,the heir to the throne of Spain,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_8,0.0,0.0,0.0,northern capital,China,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_9,0.1176,0.1176,0.082,When he discovers Spain and China are the same.,while he's waiting for Spanish deputies to arrive,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_10,0.25,0.25,0.1291,For his provincial and absurd nature.,For underachieving.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_11,0.0,0.0,0.0,The young lady in the stable.,Sophie,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_12,0.0,0.0,0.0,a very strange man,Poprishchin's boss,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_13,1.0,1.0,1.0,dogs,Dogs.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_14,0.0,0.0,0.0,correspondence,Letters.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_15,0.0,0.0,0.0,Letters reveal Sophie's love affairs and family dynamics.,Her engagement to another man.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_16,0.0,0.0,0.0,Memoirs of a Madman,His diary.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_17,0.0,0.0,0.0,Crimea,Spain,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_18,0.0,0.0,0.0,Wears his father's coat,A Spanish royal uniform.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_19,0.0,0.0,0.0,pleasant evening and conversations,Maltreatment at an insane asylum.,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_20,0.0,0.0,0.0,Akaki,Arksenty Ivanovich Poprishchin,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_21,0.2857,0.2857,0.1581,By his superiors and colleagues.,His Underachieving,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_22,0.0,0.0,0.0,Hanna Petritchenka,Sophie,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_23,0.0,0.0,0.0,A lackey,A footman,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_24,0.0,0.0,0.0,None,Conversations between dogs,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_25,0.0,0.0,0.0,fairly legible but the handwriting is somewhat doggish,Dogginess and Canine Nature,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_26,0.4,0.4,0.3033,Director's,Sophie,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_27,0.0,0.0,0.0,1846,43rd of April  2000,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_28,0.0,0.0,0.0,judge time accurately,Distinguish,0,False
+flat,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_29,0.1538,0.1538,0.0,Spain,China,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_0,0.0,0.0,0.0,abroad,Italy,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_1,0.0,0.0,0.0,Mrs. Bluestone,Thomas Thwaite,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_2,0.0,0.0,0.0,Countess,Lady Lovel,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_3,0.0,0.0,0.0,Daniel Thwaite,Fredrick Lovel,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_4,1.0,1.0,1.0,21,21,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_5,0.0,0.0,0.0,Great Russell Street,Australia,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_6,0.0,0.0,0.0,Nothing,1/2,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_7,1.0,1.0,1.0,Tailor,Tailor,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_8,0.0,0.0,0.0,19th century,1830s,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_9,0.0,0.0,0.0,former marriage in Sicily,He had a living wife,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_10,0.0,0.0,0.0,The marriage was legitimate and recognized.,Out of ambition.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_11,0.0,0.0,0.0,Whig. Traitor. Strong.,An evil one.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_12,0.3529,0.3529,0.1126,Because her father stigmatized her as a bastard.,Her father was already married when he married her mother.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_13,0.4,0.4,0.1938,He supported her financially.,He sheltered her and Lady Anna and paid for her legal battle,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_14,0.0,0.0,0.0,No proposed compromise mentioned.,The the new earl marry Lady Anna.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_15,0.0,0.0,0.0,Scornful,She liked the idea.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_16,0.5714,0.5714,0.5,Daniel Thwaite,"Daniel, Thomas Thwaite's son.",0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_17,0.1429,0.1429,0.0034,Not mentioned,She doesn't want him to marry her daughter.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_18,0.0,0.0,0.0,Lady Lovel becomes furious and assertive.,He didn't give her name to the police.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_19,0.0,0.0,0.0,Not mentioned,To avoid being judged by Daniel's low birth and Lady Anna's ,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_20,1.0,1.0,1.0,Earl Lovel,Earl Lovel.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_21,0.0,0.0,0.0,Cumberland,Italy.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_22,0.0,0.0,0.0,Miss Lovel,Thomas Thwaite.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_23,0.0,0.0,0.0,at the age of sixty-seven,England.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_24,0.2222,0.2222,0.2092,Heir to the Earl title.,Earl Lovel's distant cousin.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_25,0.8,0.8,0.5774,Mr. Daniel Thwaite,Daniel.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_26,0.0,0.0,0.0,The old man.,Thomas Thwaite.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_27,0.0,0.0,0.0,Lady Anna,Daniel.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_28,0.0,0.0,0.0,She did not wound him.,With a pistol.,0,False
+flat,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_29,0.6667,0.6667,0.5,Daniel Thwaite,Daniel.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_0,0.0,0.0,0.0,Not specified,1940,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_1,0.0,0.0,0.0,Bombardments,THE BATTLE OF FRANCE,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_2,0.0,0.0,0.0,By bombardments.,GERMAN AIR ATTACK,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_3,0.0,0.0,0.0,Père et mère Dollé,THE FAMILY OF MICHEL DOLLE,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_4,0.0,0.0,0.0,Georges,PAULETTE'S DOG.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_5,0.0,0.0,0.0,Amélie GOUARD,OTHER ANIMALS WHO DIED,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_6,0.3333,0.3333,0.1313,With crosses made from twigs and string.,STOLEN CROSSES,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_7,0.0,0.0,0.0,Not specified,IN THE RUINS OF AN ABANDONED WATERMILL,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_8,0.0,0.0,0.0,Georges',MICHEL'S BROTHER,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_9,0.0,0.0,0.0,Mérimont,A RED CROSS CAMP,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_10,0.0,0.0,0.0,Exode,Battle of France,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_11,0.0,0.0,0.0,Bombardments,German Air strike,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_12,0.0,0.0,0.0,La religieuse,Michel,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_13,0.0,0.0,0.0,A cimetière,A small cemetary,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_14,0.0,0.0,0.0,Georges DOLLÉ,Animals including her dog,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_15,0.2857,0.2857,0.2484,From the old moulin.,A local graveyard,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_16,0.0,0.0,0.0,The curé,French Gendarmes.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_17,0.0,0.0,0.0,poussins,Location of the stolen crosses.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_18,1.0,1.0,1.0,Michel,Michel,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_19,0.0,0.0,0.0,Not mentioned,Paulette,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_20,0.0,0.0,0.0,To the Dollé farm,A Red Cross camp.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_21,0.2857,0.2857,0.2484,To find croix.,In order to cope with the death and destruction of the war.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_22,0.0,0.0,0.0,A taupe,The cross from his grave.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_23,0.0,0.0,0.0,Le Père Dollé,His Father.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_24,0.0,0.0,0.0,Bombardments,During the German air attack while fleeing from Paris.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_25,0.4,0.4,0.2887,Michel's mother,Her mother.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_26,1.0,1.0,1.0,Michel,Michel.,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_27,0.0,0.0,0.0,Berthe,The Dolle' neighbour,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_28,1.0,1.0,1.0,1940,1940,0,False
+flat,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_29,0.0,0.0,0.0,A gendarme,The French gendarmes,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_0,1.0,1.0,1.0,Dalgard,Dalgard Nordis,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_1,0.0,0.0,0.0,Their new home.,the ruins of a city that once belonged to The Others,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_2,0.1739,0.1429,0.0978,"Add to map, learn about strangers","extend the Colony's map of the world, prove he is suitable t",0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_3,1.0,1.0,1.0,None,"none, zero",0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_4,0.6667,0.6667,0.3679,Raf,Raf Kurbi,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_5,0.0,0.0,0.0,"They find a print dried by the sun, left by one of the reptiles.",The Others have visited recently.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_6,0.0,0.0,0.0,"A vicious, intelligent reptilian monster.","mean, dragon-like creatures",0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_7,0.0,0.0,0.0,The mermen,aliens,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_8,1.0,1.0,1.0,Dalgard,Dalgard,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_9,1.0,1.0,1.0,Raf,Raf,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_10,0.0,0.0,0.0,Mermaid scout,Dalagard's knife brother,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_11,0.0,0.0,0.0,Ten,9,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_12,0.0,0.0,0.0,No creatures mentioned.,Snake-Devils,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_13,0.0,0.0,0.0,alien mental touch,Metal bands on the Snake-Devils.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_14,0.3333,0.3333,0.1839,snake-devils,A merman and a Snake Devil.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_15,0.0,0.0,0.0,Furred people,A merman war party.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_16,0.0,0.0,0.0,Raf doesn't destroy the globe ship and its cargo.,With 2 grenades.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_17,0.0,0.0,0.0,Through mental contact.,Telepathically.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_18,0.2222,0.2222,0.1275,To avoid the city.,To warn his people and the humans at Homeport.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_19,0.0,0.0,0.0,Dalgard,The local fauna.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_20,0.0,0.0,0.0,freedom and knowledge,The value of Science.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_21,1.0,1.0,1.0,None,None.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_22,0.0,0.0,0.0,Take back knowledge,Regain their civilization.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_23,0.0,0.0,0.0,"Sssuri suddenly struck off at an angle, heading not northeast now, but directly ",To warn his people.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_24,0.0,0.0,0.0,a watcher,A spy.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_25,0.0,0.0,0.0,a stranger,A merman and a snake-devil.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_26,0.0,0.0,0.0,Stun gun,Two grenades.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_27,0.0,0.0,0.0,guide Raf north,Returning to Homeport by himself.,0,False
+flat,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_28,0.0,0.0,0.0,not mentioned,To their Globe-Ship.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_0,0.2222,0.2222,0.0954,Cassandra was given prophecy by Apollo and rejected him.,Ajax the Lesser raped Cassandra and the Greek army condoned ,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_1,0.75,0.25,0.2567,Hecuba and Priam,King Priam and Queen Hecuba,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_2,0.3077,0.3077,0.1313,Cassandra was chosen for Agamemnon's prize.,Cassandra will become a concubine of Agamemnon,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_3,0.4,0.3077,0.1313,She was slain and laid on Achilles' tomb.,Polyxena was killed at the tomb of Achilles,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_4,0.0,0.0,0.0,Pyrrhus,Neoptolemus,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_5,0.2,0.2,0.0914,Astyanax will die.,Andromache's son Astyanax would be killed,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_6,0.0,0.0,0.0,Hurl him to death from Ilion's tower,Astyanax will avenge his father Hector when he grows up,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_7,0.0,0.0,0.0,King and Queen of Sparta,Menelaus,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_8,0.0,0.0,0.0,Andromache,Hecuba,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_9,1.0,1.0,1.0,Odysseus,Odysseus,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_10,0.1053,0.1053,0.063,Poseidon and Athena want to punish the Greek armies for taking Helen.,Because they allowed Ajax the Lesser to rape Cassandra.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_11,1.0,1.0,1.0,Talthybius,Talthybius,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_12,0.1905,0.1905,0.0483,"Hecuba enslaved, Cassandra freed to burn herself.",Hecuba will be taken away by Odysseus and Cassandra will be ,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_13,0.1667,0.1667,0.1104,"She goes willingly, garlanded for her wedding.",She is delighted in the news.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_14,0.4,0.2667,0.1222,Polyxena was slain and laid on Achilles' tomb.,She was sacrificed at the tomb of Achilles,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_15,0.375,0.375,0.1837,Andromache is to be taken as a slave.,She is to be the concubine of Achilles son Neoptolemus.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_16,0.1667,0.1667,0.0988,She does not escape.,She seduces her husband into saving her life.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_17,0.0,0.0,0.0,Andromache,Little Astyanax.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_18,0.3077,0.3077,0.1173,To keep her son alive.,That Astyanax be buried performing the proper Trojan rituals,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_19,0.25,0.25,0.0677,She dies.,She is carted off with Odysseus.,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_20,1.0,1.0,1.0,Troy,Troy,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_21,0.0,0.0,0.0,Helen,Poseidon,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_22,0.0,0.0,0.0,Soldiers,Talthybius,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_23,1.0,1.0,1.0,Cassandra,Cassandra,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_24,1.0,1.0,1.0,Polyxena,Polyxena,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_25,1.0,1.0,1.0,Menelaus,Menelaus,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_26,0.0,0.0,0.0,Talthybius,Hecuba,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_27,0.0,0.0,0.0,chariot,Hector's shield,0,False
+flat,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_28,1.0,1.0,1.0,Hecuba,Hecuba,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_0,0.5,0.5,0.1353,Sisters,They are sisters.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_1,0.0,0.0,0.0,van payment,Rose's son Oscar needs to go to private school.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_2,0.25,0.25,0.178,missing right arm,He has only one arm.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_3,0.3333,0.3333,0.1313,Biohazard removal and crime scene clean up service,A crime scene cleanup business.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_4,0.0,0.0,0.0,Not explicitly stated in excerpts.,"Norah accidentally burns down a house which costs them $40,0",0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_5,0.0,0.0,0.0,Biohazard removal service,A cleaning business Rose's father starts and she becomes a p,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_6,0.4,0.4,0.3033,By suicide.,She committed suicide.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_7,0.0,0.0,0.0,Cleaning the house.,She is attending a baby shower.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_8,0.0,0.0,0.0,Detective,Mac is Rose's ex-boyfriend and lover who is married to anoth,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_9,0.0,0.0,0.0,After the incident.,At Oscar's Birthday.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_10,0.0,0.0,0.0,"Cleaning, biohazard removal, real estate",She works as a full-time maid.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_11,0.0,0.0,0.0,Licking things in the classroom.,He had erratic behavior.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_12,0.3333,0.3333,0.1839,Cleaning job,A crime scene cleanup job.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_13,0.5,0.5,0.5,Lorkowski Cleaning,Sunshine Cleaning.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_14,1.0,1.0,1.0,Lynn,"Lynn, a client's daughter",0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_15,0.0,0.0,0.0,Hollywood,An insurance company.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_16,0.2857,0.2857,0.2184,Norah burned down the house.,It was set on fire and burned by an unattended candle.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_17,0.0,0.0,0.0,Not mentioned,"$40,000.",0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_18,0.0,0.0,0.0,"NORAH Listen, I know I fucked up, okay? Like really huge and I know that and I'm",During Oscar's birthday party.,0,False
+flat,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_19,0.0,0.0,0.0,Mousey Woman,Her father.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_0,0.0,0.0,0.0,"She began, and told me a strange tale.",After Anodos twenty first birthday.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_1,1.0,1.0,1.0,Fairy Land,Fairy Land.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_2,0.0,0.0,0.0,The Maid of the Alder-tree,A woman and her daughter.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_3,0.087,0.087,0.0523,Anodos didn't learn about specific trees from the given excerpts.,The spirits of the trees can leave their tree host and wonde,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_4,0.0,0.0,0.0,giants,Ash Tree and Alder Tree.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_5,1.0,1.0,1.0,Fairies,Fairies.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_6,0.8,0.8,0.5,The flowers die.,The flowers would die.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_7,0.0,0.0,0.0,The Maid of the Alder-tree,Sir Percivale.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_8,0.0,0.0,0.0,He didn't save Anodos.,Sir Percivale chopped the Ash Tree.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_9,0.1667,0.1667,0.1365,"Both pairs were dead, locked together.",They were attacked unarmed by giants.,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_10,0.0,0.0,0.0,No clear indication,21 days,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_11,1.0,1.0,1.0,Fairy Land,Fairy Land,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_12,0.8889,0.8889,0.4976,Ash and Alder-tree,The Ash Tree and The Alder Tree,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_13,0.1818,0.1818,0.0655,To please the lady.,To save his love from being trapped in a mirror,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_14,0.0,0.0,0.0,The Prince of the Enchanted City,Pygmalion,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_15,0.0,0.0,0.0,a shadow,The Marble Lady,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_16,0.1429,0.1429,0.0978,He finds the Chamber of Sir Anodos.,He is the only brother left alive after a battle,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_17,0.0,0.0,0.0,The knight is deceived.,Sir Percivale,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_18,0.5,0.5,0.5,Demon shadow,"A shadow, an evil presence",0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_19,0.0,0.0,0.0,The return of the knights' dead bodies.,Anodos' 21st birthday,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_20,0.2857,0.2857,0.1116,The third day,Anodo's twenty first birthday,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_21,0.6667,0.6667,0.2887,In and around flowers.,In flowers,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_22,1.0,1.0,1.0,Sir Percivale,Sir Percival,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_23,0.25,0.25,0.2686,He touches the alabaster block.,He sings to it,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_24,0.0,0.0,0.0,Fantastical rocks and stones.,Gnomes,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_25,1.0,1.0,1.0,Four,Four,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_26,0.5,0.5,0.5,The ancient woman,The ancient lady,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_27,0.0,0.0,0.0,Three,21 days,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_28,0.0,0.0,0.0,Three days,21 years,0,False
+flat,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_29,0.0,0.0,0.0,The skeleton,His sisters,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_0,0.0,0.0,0.0,Red Lion Street,London,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_1,0.0,0.0,0.0,Red Lion Street,Australia,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_2,0.0,0.0,0.0,Nothing directly inherited.,money,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_3,0.4444,0.4444,0.1609,his son who died in Australia,deceased son,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_4,0.0,0.0,0.0,Mrs. Byass,The Peckovers,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_5,0.0,0.0,0.0,Works for the Peckovers.,household drudge,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_6,0.1429,0.1429,0.0929,To go to a magistrate and let everything out.,become a famous actress,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_7,1.0,1.0,1.0,artist,artist,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_8,0.5,0.5,0.5,accepts it,destroys it,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_9,0.0,0.0,0.0,Unbetrothed relationship,an unhappy one,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_10,0.4444,0.4444,0.1609,his son who died in Australia,His deceased son.,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_11,0.4,0.4,0.0498,Granddaughter,Jane is Michael's granddaughter.,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_12,0.0,0.0,0.0,For charitable uses.,Joseph ends up losing it all in the Stock Market.,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_13,0.2857,0.2857,0.0629,He does not condition her; he wants her to give it to charitable uses.,"He has her doing charitable, everyday work.",0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_14,0.2,0.2,0.1797,To conceal Clem's indiscretions.,She thinks his father (Michael) is rich and wants his wealth,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_15,0.2222,0.2222,0.0262,Offers money to Jane.,"He gets Clara to start liking Sidney, hoping it will prevent",0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_16,0.25,0.1667,0.0144,Joseph manipulates Jane and Michael.,"Michael destroys his will, thinking Jane won't continue the ",0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_17,0.3333,0.3333,0.0183,London,Central London (specifically Clerkenwell Close),0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_18,0.2222,0.2222,0.0597,To avoid complicating Jane's life.,To be able to continue living a humble life and dedicate his,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_19,0.1538,0.1538,0.077,Makes her life uncertain.,Michael causes Sidney to break off his engagement with Jane.,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_20,1.0,1.0,1.0,Jane,Jane,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_21,0.0,0.0,0.0,Pennyloaf's family,The Peckovers,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_22,0.0,0.0,0.0,Michael,Joseph,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_23,0.6667,0.6667,0.5,Jane Snowdon,Jane,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_24,0.2857,0.2857,0.1581,He does not marry Clem.,Clem Peckover,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_25,0.0,0.0,0.0,Joseph,Sidney Kirkwood,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_26,0.0,0.0,0.0,Jane,Clara,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_27,0.0,0.0,0.0,vitriol,Acid,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_28,0.0,0.0,0.0,Michael dies without revealing his will.,He destroys it,0,False
+flat,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_29,0.0,0.0,0.0,Mrs. Peckover,Clem,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_0,0.0,0.0,0.0,"Thuvia, the Thark.",The daughter of the Holy Hekkador of the Therns.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_1,0.0,0.0,0.0,Therns,The green warriors of Warhoon.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_2,0.0,0.0,0.0,traitor to Helium,Heresy.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_3,0.0,0.0,0.0,within the palace,In the Temple of the Sun.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_4,0.0,0.0,0.0,To torture and degrade him.,As punishment for being defeated by Carter.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_5,0.0,0.0,0.0,one man,Tars Tarkas.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_6,0.0,0.0,0.0,Sola,Thuvia.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_7,1.0,1.0,1.0,Black pirates of Barsoom,The First Born,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_8,0.0,0.0,0.0,Temple of Issus,Omean.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_9,0.0,0.0,0.0,Twelve years,365 days.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_10,0.0,0.0,0.0,Carter pushed him into the waiting clutches of her betrayed and vengeful people.,He had to be his slave.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_11,0.2,0.2,0.1797,voluntary pilgrimage to Valley Dor,That it is a journey to paradise.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_12,0.2857,0.2857,0.2184,To fulfill a religious duty.,To find Carter.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_13,0.5,0.5,0.5,Twelve years,Ten years.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_14,0.4,0.4,0.2887,Dejah Thoris' father,He is her father.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_15,0.0,0.0,0.0,Prevented ascent with dislodged bars,The confusion caused from an attack by the Black Pirates of ,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_16,0.2222,0.2222,0.1275,He faces judgment.,He is tried for heresy by the Zodangans.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_17,0.3158,0.3158,0.0747,He appreciates Carter's friendship and sees it as an opportunity to assert his m,He becomes Carter's friend.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_18,1.0,1.0,1.0,Barsoom,Barsoom,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_19,0.0,0.0,0.0,hellish abode,The Valley Dor,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_20,0.0,0.0,0.0,Valley of Death,The afterlife,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_21,0.4,0.4,0.25,"Golden-haired, white-skinned",White,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_22,0.25,0.25,0.2686,"First Born, Holy Therns",The Therns and the Black Pirates,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_23,0.0,0.0,0.0,Thuvia,Xodar,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_24,1.0,1.0,1.0,Jeddak of Thark,"John Carter's friend, the Jeddak of Thark",0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_25,0.0,0.0,0.0,Thuvia,The Heliumetic navy,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_26,0.5,0.5,0.3333,Death by therns.,Death,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_27,0.4,0.4,0.2541,"Dejah Thoris, John Carter, Carthoris","Dejah Thoris, Thuvia and Phaidor",0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_28,0.0,0.0,0.0,at the atmosphere plant,"The Valley Dor, the Barsoomian equivalent of the afterlife",0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_29,0.0,0.0,0.0,Phaidor,"John's friend Tars Tarkas, who had set out to find John Cart",0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_30,0.1538,0.1538,0.1104,Valley Dor is far south of the equator.,That it is a lie the Therns have fed to the Baroomian's that,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_31,0.0,0.0,0.0,Carthoris,"They rescue Thuvia, a slave girl.",0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_32,0.2857,0.2857,0.2484,Warhoon of the South,The Black Pirates of Barsoom are attacking the Therns.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_33,0.1333,0.1333,0.0467,John escapes from the ship.,John kills all of the pirates but one and rescues a kidnappe,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_34,0.2,0.2,0.1797,He plans escape with Xodar.,John is imprisoned by the first born.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_35,0.25,0.25,0.1609,Swims through Omean's waters.,He leads a revolt among the prisoners killing many First One,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_36,0.0,0.0,0.0,Tars Tarkas enters the tree.,He is discovered by his enemies and forced to fight.,0,False
+flat,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_37,0.0,0.0,0.0,"Waters rise, threatening the expedition.","John is challenged by the Therns, Zat Arras and then the Fir",0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_0,0.5,0.5,0.1353,Squire,Squire of Allington,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_1,1.0,1.0,1.0,Two,two,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_2,0.0,0.0,0.0,Lady De Courcy,John Eames,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_3,1.0,1.0,1.0,Income-tax Office,Income Tax Office,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_4,0.0,0.0,0.0,George,cousin Bernard,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_5,0.2857,0.2857,0.2184,Intercepted him at the bridge,kept rejecting him,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_6,0.0,0.0,0.0,keep a carriage for her,further his career,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_7,0.0,0.0,0.0,She did not marry Crosbie.,Dr. Crofts,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_8,0.5,0.5,0.5,Lily Dale,Christopher Dale,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_9,1.0,1.0,1.0,Christopher Dale,Christopher Dale.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_10,0.4444,0.4444,0.2025,Income-tax official,John Eames is a junior clerk who works at the Income Tax Dep,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_11,0.6667,0.6667,0.2887,Mrs. Dale's family,The Dale family.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_12,1.0,1.0,1.0,Doctor,James Crofts is the local doctor.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_13,0.0,0.0,0.0,John Eames,Adolphus Crosbie.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_14,0.0,0.0,0.0,Aunt Dina,Bell.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_15,1.0,1.0,1.0,Lily,Lily.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_16,1.0,1.0,1.0,Bernard,Dr. James Crofts.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_17,0.4,0.4,0.0498,Alexandrina,Lady Alexandria de Courcy.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_18,0.1429,0.1429,0.0929,He doesn't jilt her; she leaves him.,Her family is able to further his career.,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_19,0.0,0.0,0.0,The Dales,The Dale family,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_20,0.0,0.0,0.0,Mrs. Dale,the widowed mother (Dowager) of the estate owner,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_21,1.0,1.0,1.0,Christopher Dale,Christopher Dale,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_22,0.0,0.0,0.0,Mrs. Dale,his widowed sister-in-law and her daughters,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_23,0.6667,0.6667,0.3679,John,John Eames,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_24,0.9091,0.9091,0.8187,clerk at Income-tax Office,junior clerk at the income Tax Office,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_25,0.0,0.0,0.0,Bernard Dale,Dr. James Crofts,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_26,0.5,0.5,0.5,Mr. Crosbie,Adolphus Crosbie,0,False
+flat,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_27,0.0,0.0,0.0,Bernard Dale,Dr. James Crofts,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_0,0.5714,0.5714,0.3943,"secret agent, shopkeeper",A secret agent and a shop owner.,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_1,0.0,0.0,0.0,shady wares,"Pornographic material, contraceptives and bric a break.",0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_2,0.6667,0.6667,0.3679,London,"London, England",0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_3,0.0,0.0,0.0,XIX century,In the Victorian age 1886,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_4,0.3158,0.3077,0.0915,Winnie and her mother,"wife, sister, brother in law and mother in law",0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_5,0.0,0.0,0.0,Print media publishing,Terrorism,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_6,0.6667,0.6667,0.5503,Third-person limited,Third person; omnicscient,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_7,0.0,0.0,0.0,"Simple, honest, loyal, easily impressed.",He makes him a sympathetic character because he was autistic,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_8,0.0,0.0,0.0,X2 green powder,bomb,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_9,0.5,0.5,0.2136,Winnie is married to Mr. Verloc.,Winnie is Mr. Verlac's wife,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_10,1.0,1.0,1.0,London,London,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_11,0.0,0.0,0.0,Shady wares,pornographic,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_12,0.25,0.25,0.1609,"She confronts him, defending Stevie.",Mrs. Verloc stabs Mr. Verloc to death,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_13,0.5,0.5,0.5,Greenwich Meridian,The Greenwich Conservatory,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_14,1.0,1.0,1.0,Brother,Stevie is Mrs. Verloc's brother,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_15,0.6667,0.6667,0.3679,A man,Stevie,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_16,0.0,0.0,0.0,information about an affair,Mr. Verloc's savings,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_17,0.1667,0.1667,0.1365,Committed suicide by jumping off a bridge.,By drowning herself in the English Channel,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_18,1.0,1.0,1.0,overcoat,An overcoat,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_19,1.0,1.0,1.0,London,London,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_20,0.0,0.0,0.0,The fellow with the bomb.,Stevie,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_21,1.0,1.0,1.0,Her brother.,Brother,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_22,0.0,0.0,0.0,Ossipon,The Professor,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_23,0.6667,0.6667,0.5,Mr Verloc,Verloc,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_24,0.0,0.0,0.0,anarchist,secret agent,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_25,0.6667,0.6667,0.3679,Ossipon,Comrade Ossipon,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_26,0.0,0.0,0.0,Mrs. Verloc leaves the house.,Suicide,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_27,0.0,0.0,0.0,"A heap of rags, scorched and bloodstained.",overcoat,0,False
+flat,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_28,1.0,1.0,1.0,Chief Inspector Heat,Inspector Heat,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_0,1.0,1.0,1.0,Porthgenna Tower,Porthgenna Tower,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_1,0.0,0.0,0.0,Not mentioned,Sarah Leeson,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_2,0.0,0.0,0.0,Captain Treverton,a local miner,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_3,0.0,0.0,0.0,Notable for the history and antiquities of Porthgenna Tower.,An actress,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_4,0.0,0.0,0.0,Blindness,He was blind.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_5,0.0,0.0,0.0,housekeeper,A servant,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_6,0.4,0.4,0.3033,In a picture,In an unused room,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_7,0.0,0.0,0.0,Offered to release Rosamond from engagement.,He still accepted Rosamud and skipped the inheritance.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_8,0.2222,0.2222,0.1797,Bitter enemy of Captain Treverton.,A villainious servant and heir to Porthagenna Tower,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_9,0.0,0.0,0.0,Six months,Twentyyears.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_10,0.5,0.5,0.5,Mr. Treverton,Rosamund Treverton,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_11,0.0,0.0,0.0,Three weeks,20 years,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_12,0.0,0.0,0.0,Blindness,He is blind,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_13,1.0,1.0,1.0,Sarah Leeson,Sarah Leeson,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_14,0.0,0.0,0.0,Keep your own counsel,Stay away from the room with the message hidden in it.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_15,0.3333,0.3333,0.2184,Captain Treverton's brother,Her brother Andrew.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_16,0.0,0.0,0.0,Sarah,Rodamund,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_17,0.0,0.0,0.0,Doctor's nurse,An actress,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_18,1.0,1.0,1.0,Mrs. Treverton,Mrs Traverton,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_19,0.5,0.5,0.1353,Mrs. Treverton,"Sarah Leeson, the servant of Mrs. Treverton",0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_20,0.3636,0.3636,0.1623,To keep her from Captain Treverton.,Mrs. Treverton is childless and she wants to give her husban,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_21,0.3333,0.3333,0.3467,in her bosom,Sarah hides the paper in an unused room at Porthgenna.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_22,1.0,1.0,1.0,Leonard Frankland,Leonard Frankland.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_23,0.0,0.0,0.0,Jacob tracks them and reports,Sarah becomes an employee under an assumed name.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_24,0.125,0.125,0.0541,The approaching interview with her mother.,Sarah gives her a message that leads her to the secret hidin,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_25,0.1818,0.1818,0.0522,"He is wounded, but acknowledges Rosamond's truthfulness.",Leonard accepts the fact that Rosamund is an illigitamate ch,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_26,0.3636,0.3636,0.1795,Captain Treverton's brother,Andrew is the brother of Mrs. Trevorton.,0,False
+flat,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_27,0.0,0.0,0.0,Through marriage.,Andrew Treverton refuses to accept the inheritance.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_0,0.0,0.0,0.0,shop,Laundromat.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_1,0.2,0.2,0.106,Taught them to dance and talk slang.,He abandoned them.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_2,0.0,0.0,0.0,Not mentioned,The daughter of Gervaise and Coupeau.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_3,0.25,0.25,0.178,fell under the bridge,He fell from a hospital roof.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_4,1.0,1.0,1.0,Lantier,Lantier.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_5,0.0,0.0,0.0,Walks and watches construction.,Drinking.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_6,0.0,0.0,0.0,Goujet,Gervaise.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_7,0.0,0.0,0.0,Cow's-Tail,Nana.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_8,0.1333,0.1333,0.0574,"He grows thin, his complexion turns leaden, and he loses his appetite.",He becomes an alcoholic.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_9,0.0,0.0,0.0,Not mentioned,Her lover Lantier,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_10,0.0,0.0,0.0,Laundry worker,Gervaise becomes a washerwoman,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_11,0.0,0.0,0.0,Not specified,In the Louvre,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_12,0.5,0.5,0.5,A Clearstarcher shop,A laundry,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_13,0.1667,0.1667,0.1204,His husband's mental breakdown.,A fall from a hospital roof,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_14,0.0,0.0,0.0,alcohol,Alcololism,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_15,0.0,0.0,0.0,Indolence,Excessive pride,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_16,1.0,1.0,1.0,Lantier,Lantier,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_17,0.0,0.0,0.0,flower business,Nana becomes a streetwalker,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_18,0.25,0.25,0.1291,Gervaise loses her way in the rain.,The death of Gervaise,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_19,0.0,0.0,0.0,Rue Neuve,Paris.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_20,0.2857,0.2857,0.1116,laundry worker,Works in a laundry washing clothes.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_21,0.0,0.0,0.0,Coupeau is a former hat manufacturer.,The man that Gervaise marries.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_22,1.0,1.0,1.0,Louvre,The Loovre.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_23,0.4,0.4,0.2304,to open a small establishment,To open her own laundry business.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_24,0.25,0.25,0.1609,He danced until he fell.,Falling off the roof of a hospital.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_25,0.0,0.0,0.0,Nana takes him home.,He becomes an unemployed alcoholic.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_26,0.2222,0.2222,0.0742,Lantier's extravagance and Coupeau's laziness.,Her pride.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_27,0.3636,0.3636,0.1438,Gervaise's business fails and she becomes impoverished.,She becomes an alcoholic.,0,False
+flat,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_28,0.0,0.0,0.0,Not mentioned,She becomes a prostitute.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_0,0.0,0.0,0.0,ANN,The golden woman.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_1,0.0,0.0,0.0,Seven,Six.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_2,1.0,1.0,1.0,Jack Driscoll,Jack Driscoll.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_3,0.0,0.0,0.0,Director,Wildlife film maker.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_4,0.1667,0.1667,0.0988,They climb down the vine.,By letting go of a vine and falling into the water.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_5,0.5,0.5,0.1353,BUILDING,The Empire State Building.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_6,1.0,1.0,1.0,Skull Island,Skull Island.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_7,0.0,0.0,0.0,Tyrannosaurs,Dinosaurs.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_8,0.0,0.0,0.0,Ann's scream,The flash on the cameras.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_9,1.0,1.0,1.0,New York,New York.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_10,0.0,0.0,0.0,motion pictures,Wildlife films,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_11,1.0,1.0,1.0,Venture,Venture,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_12,0.5714,0.5714,0.3943,New York City,The streets of New York,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_13,0.0,0.0,0.0,Denham,Jack Driscoll,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_14,0.0,0.0,0.0,The location.,Skull Island,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_15,1.0,1.0,1.0,Kong,Kong,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_16,0.0,0.0,0.0,Not mentioned,Six,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_17,1.0,1.0,1.0,Ann Darrow,Ann Darrow,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_18,1.0,1.0,1.0,Gorilla,A giant ape,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_19,0.0,0.0,0.0,Denham throws chloroform at Kong.,A gas bomb,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_20,0.0,0.0,0.0,New York Public Library,Captain Englehorn,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_21,0.0,0.0,0.0,NY DOCKS,New York Street,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_22,0.0,0.0,0.0,Denham,Jack Driscoll,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_23,1.0,1.0,1.0,Skull Island,Skull Island,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_24,0.2,0.2,0.1629,"Stone ruins, huge wall",They saw the  villagers were going to sacrifice a young woma,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_25,0.0,0.0,0.0,Not mentioned,Six tribe women,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_26,0.0,0.0,0.0,Ann was captured by the Native villagers.,They kidnapped her.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_27,1.0,1.0,1.0,as the Eighth Wonder of the World,Denham presented Kong as the eight wonder of the world.,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_28,0.2857,0.2857,0.1581,"Ann falls, Kong catches her.",Kong died,0,False
+flat,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_29,0.1667,0.1667,0.1365,Pulled her free of her bonds,Kong carried her in his hand.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_0,0.5,0.5,0.5,Easter service,Military Service,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_1,0.0,0.0,0.0,Excommunicated,Because she has been seduced by Turiddu.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_2,1.0,1.0,1.0,Lola,Lola,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_3,0.0,0.0,0.0,punish,Excommunicating her.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_4,0.5714,0.5714,0.3943,Throws her down,He throws her to the ground.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_5,0.0,0.0,0.0,Turiddu goes into the church.,He repents and begs Alfio to stop.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_6,0.0,0.0,0.0,RUSTIC CHIVALRY,Wine.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_7,0.0,0.0,0.0,Rustic Sicilian custom of accepting a challenge,A fight to the death.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_8,0.0,0.0,0.0,Lucia,Santuzza.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_9,1.0,1.0,1.0,Mother,Lucia is his mother.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_10,0.0,0.0,0.0,Francofonte,He was going to buy some more wine.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_11,0.2857,0.2857,0.2184,For Lola's unfaithfulness.,For her seduction with Turiddu,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_12,0.1818,0.1818,0.0655,Lola's unfaithfulness,Santuzza told Alfio that his wife had an affair with Turiddu,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_13,0.1818,0.1818,0.0655,To accept the challenge.,It's a Sicilian custom in accepting a duel challenge.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_14,0.0,0.0,0.0,To win back her love after marrying Lola.,"Because his fiance married another man, Alfio.",0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_15,0.0,0.0,0.0,Inn,An old wine shop,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_16,0.0,0.0,0.0,Lola's unfaithfulness,Turiddu threw her to the ground and dismissed her.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_17,1.0,1.0,1.0,Turiddu,Turiddu,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_18,0.4,0.4,0.2136,During Turiddu's military absence.,Turiddu was away in the military.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_19,0.6,0.6,0.2812,Lola was Turiddu's lover.,Lola was Turridu's fiance.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_20,1.0,1.0,1.0,Alfio,Alfio,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_21,0.3333,0.3333,0.0183,lover,Santuzza is Turridu's lover.,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_22,0.0,0.0,0.0,Turiddu,Turridu,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_23,1.0,1.0,1.0,wine,wine,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_24,0.0,0.0,0.0,Challenging Alfio to a duel.,seeing Lola,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_25,1.0,1.0,1.0,Mother,Lucia is Turrido's mother,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_26,0.0,0.0,0.0,Inn,a wine shop,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_27,0.2857,0.2857,0.096,Lola's infidelity with Turiddu,that Alfio's wife is having an affair with Turridu,0,False
+flat,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_28,1.0,1.0,1.0,ear,Alfio's ear,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_0,0.0,0.0,0.0,projectionist,The Narrator is a traveling automobile recall specialist.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_1,0.5714,0.5714,0.3467,men with testicular cancer,Testicular Cancer victims.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_2,0.0,0.0,0.0,pack of cigarettes,Marla gives the Narrator her phone number.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_3,0.0,0.0,0.0,Marla Singer,The Narrator meets Tyler Durden.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_4,0.0,0.0,0.0,Unconventional,A soap salesman.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_5,0.0,0.0,0.0,Fight Club,Consumerism.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_6,0.3333,0.3333,0.1623,Tyler welcomes guys to fight club.,The club is formed by the Narrator and Tyler getting into fi,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_7,0.0,0.0,0.0,Jack,Tyler.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_8,0.1,0.1,0.0706,Tyler reveals their plan to send press releases to newspapers.,That Tyler and the Narrator are disassociated personalities ,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_9,0.0,0.0,0.0,Pulling the wrong wire.,The Narrator only shoots himself through his cheek.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_10,0.0,0.0,0.0,Jack,The narrator,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_11,0.0,0.0,0.0,steroids,He was addicted to partcipitating in support group.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_12,1.0,1.0,1.0,Marla Singer,Marla Singer,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_13,0.0,0.0,0.0,Jack,Tyler,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_14,1.0,1.0,1.0,Fight Club,Fight Club,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_15,0.5,0.5,0.5,On the plane.,On a flight,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_16,0.0,0.0,0.0,Reel three,Tyler and Narrator are thesame person.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_17,0.0,0.0,0.0,Buy the exact same stuff all over again.,Tyler wanted to blow up credit card company building,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_18,0.0,0.0,0.0,Tyler,Himself,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_19,0.2222,0.2222,0.2092,A massive explosion and implosion.,Narrator and Marla were holding hand,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_20,0.0,0.0,0.0,Fight Club,"""Project Mayhem.""",0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_21,0.0,0.0,0.0,cancer,Insomnia.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_22,0.3333,0.3333,0.2041,Makes and sells soap.,Soap Salesman.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_23,1.0,1.0,1.0,Marla Singer,Marla Singer,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_24,0.0833,0.0833,0.0442,"The ""now I get to go out and buy the exact same stuff all over again"" list.",Destroying buildings that contain credit card companies' rec,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_25,1.0,1.0,1.0,Fight club,A fight club.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_26,0.7692,0.7692,0.3074,Support group for men with testicular cancer,A support group for testicular cancer victims.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_27,0.0,0.0,0.0,banquet waiter,A traveling automobile recall specialist.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_28,0.25,0.25,0.2686,Jack shoots Tyler twice.,He fires a gun through his cheek.,0,False
+flat,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_29,0.0,0.0,0.0,Angel Face,Tyler Durden.,0,False

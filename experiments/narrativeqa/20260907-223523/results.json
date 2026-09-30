@@ -1,0 +1,221 @@
+[
+  {
+    "n": 586,
+    "f1": 0.2753,
+    "rouge_l": 0.274,
+    "bleu": 0.2199,
+    "file": "predictions_agglomerative.jsonl",
+    "ci_f1": {
+      "mean": 0.2753,
+      "lo": 0.2476,
+      "hi": 0.3042,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.274,
+      "lo": 0.2463,
+      "hi": 0.3031,
+      "n": 586
+    },
+    "rouge_l_books": 0.2774,
+    "f1_books": 0.2786,
+    "n_books": 417,
+    "rouge_l_scripts": 0.2655,
+    "f1_scripts": 0.2671,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.8889,
+      "1": 0.1051,
+      "2": 0.006
+    },
+    "method": "agglomerative"
+  },
+  {
+    "n": 586,
+    "f1": 0.2762,
+    "rouge_l": 0.2737,
+    "bleu": 0.2252,
+    "file": "predictions_dbscan.jsonl",
+    "ci_f1": {
+      "mean": 0.2762,
+      "lo": 0.2478,
+      "hi": 0.3048,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.2737,
+      "lo": 0.2452,
+      "hi": 0.3022,
+      "n": 586
+    },
+    "rouge_l_books": 0.2664,
+    "f1_books": 0.2694,
+    "n_books": 417,
+    "rouge_l_scripts": 0.2915,
+    "f1_scripts": 0.2929,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.585,
+      "1": 0.1618,
+      "2": 0.0737,
+      "3": 0.0659,
+      "4": 0.0628,
+      "5": 0.0509
+    },
+    "method": "dbscan"
+  },
+  {
+    "n": 586,
+    "f1": 0.2627,
+    "rouge_l": 0.2609,
+    "bleu": 0.2146,
+    "file": "predictions_flat.jsonl",
+    "ci_f1": {
+      "mean": 0.2627,
+      "lo": 0.2344,
+      "hi": 0.2924,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.2609,
+      "lo": 0.2324,
+      "hi": 0.2908,
+      "n": 586
+    },
+    "rouge_l_books": 0.2606,
+    "f1_books": 0.2627,
+    "n_books": 417,
+    "rouge_l_scripts": 0.2615,
+    "f1_scripts": 0.2627,
+    "n_scripts": 169,
+    "method": "flat"
+  },
+  {
+    "n": 556,
+    "f1": 0.2998,
+    "rouge_l": 0.2972,
+    "bleu": 0.246,
+    "file": "predictions_gmm.jsonl",
+    "ci_f1": {
+      "mean": 0.2998,
+      "lo": 0.2699,
+      "hi": 0.3294,
+      "n": 556
+    },
+    "ci_rouge_l": {
+      "mean": 0.2972,
+      "lo": 0.2668,
+      "hi": 0.3269,
+      "n": 556
+    },
+    "rouge_l_books": 0.2986,
+    "f1_books": 0.302,
+    "n_books": 387,
+    "rouge_l_scripts": 0.2942,
+    "f1_scripts": 0.2948,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.8135,
+      "1": 0.177,
+      "2": 0.0095
+    },
+    "method": "gmm"
+  },
+  {
+    "n": 586,
+    "f1": 0.2719,
+    "rouge_l": 0.2704,
+    "bleu": 0.2192,
+    "file": "predictions_kmeans.jsonl",
+    "ci_f1": {
+      "mean": 0.2719,
+      "lo": 0.2443,
+      "hi": 0.3003,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.2704,
+      "lo": 0.2427,
+      "hi": 0.2987,
+      "n": 586
+    },
+    "rouge_l_books": 0.2677,
+    "f1_books": 0.2694,
+    "n_books": 417,
+    "rouge_l_scripts": 0.2773,
+    "f1_scripts": 0.2782,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.8785,
+      "1": 0.1147,
+      "2": 0.0068
+    },
+    "method": "kmeans"
+  },
+  {
+    "n": 586,
+    "f1": 0.2818,
+    "rouge_l": 0.2793,
+    "bleu": 0.2269,
+    "file": "predictions_leiden.jsonl",
+    "ci_f1": {
+      "mean": 0.2818,
+      "lo": 0.2529,
+      "hi": 0.3114,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.2793,
+      "lo": 0.251,
+      "hi": 0.3087,
+      "n": 586
+    },
+    "rouge_l_books": 0.2725,
+    "f1_books": 0.2748,
+    "n_books": 417,
+    "rouge_l_scripts": 0.296,
+    "f1_scripts": 0.299,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.7273,
+      "1": 0.1532,
+      "2": 0.0348,
+      "3": 0.0326,
+      "4": 0.0275,
+      "5": 0.0246
+    },
+    "method": "leiden"
+  },
+  {
+    "n": 586,
+    "f1": 0.2625,
+    "rouge_l": 0.2603,
+    "bleu": 0.2115,
+    "file": "predictions_original.jsonl",
+    "ci_f1": {
+      "mean": 0.2625,
+      "lo": 0.2342,
+      "hi": 0.2912,
+      "n": 586
+    },
+    "ci_rouge_l": {
+      "mean": 0.2603,
+      "lo": 0.2317,
+      "hi": 0.2889,
+      "n": 586
+    },
+    "rouge_l_books": 0.2595,
+    "f1_books": 0.2619,
+    "n_books": 417,
+    "rouge_l_scripts": 0.2623,
+    "f1_scripts": 0.2641,
+    "n_scripts": 169,
+    "layer_dist": {
+      "0": 0.4773,
+      "1": 0.4527,
+      "2": 0.0638,
+      "3": 0.0061
+    },
+    "method": "original"
+  }
+]

@@ -1,0 +1,587 @@
+method,story_id,kind,question_id,f1,rouge_l,bleu,predicted,gold_1,tree_layers,tree_cached
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_0,0.0,0.0,0.0,six days,A little over a week.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_1,0.6667,0.6667,0.3679,Art,Angel of Italian Art,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_2,0.0,0.0,0.0,The Vicar,Rev. K. Hilyer,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_3,0.1667,0.1667,0.0792,"a World of War, a World of Pain, a World of Death",The Land of Dreams.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_4,0.0,0.0,0.0,music,Divine violin-playing,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_5,0.0,0.0,0.0,The angel's appearance and behavior were discredited.,Because he actually cannot read music.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_6,0.8,0.8,0.4289,"Prison, Madhouse",A madhouse or prison.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_7,0.2857,0.2857,0.2484,dismiss Mr. Angel,Taking the angel to London and establishing him there.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_8,0.0,0.0,0.0,A child screaming in a passion.,Hew saw the vicar's house burning.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_9,0.0,0.0,0.0,A cripple's grave,Two white crosses baring the names of Thomas Angel and Delia,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_10,0.0,0.0,0.0,a picture in a newspaper,A bird.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_11,0.0,0.0,0.0,land of beautiful dreams,On his wing.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_12,0.0,0.0,0.0,The Angel,A socialist.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_13,0.1667,0.1667,0.0792,"World of War, a World of Pain, a World of Death","""The Land of Dreams"".",1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_14,0.0,0.0,0.0,"Appalled, horrified",He feels dismayed.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_15,0.2,0.2,0.106,The Angel's actions cause confusion and distress.,For hosting the Angel.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_16,1.0,1.0,1.0,Vicar,The vicar.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_17,0.0,0.0,0.0,The Chequered Man,"""Mr. Angel"".",1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_18,0.0,0.0,0.0,Not mentioned,In a fire.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_19,0.0,0.0,0.0,ashes,Nothing.,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_20,0.3333,0.3333,0.1839,servant girl,She is a serving girl,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_21,0.0,0.0,0.0,Settled opinions are mental teeth.,Because he can't read music,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_22,0.0,0.0,0.0,Gorgeous floods of color,polychromatic,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_23,0.2,0.2,0.1629,He cut barbed wire.,He becomes dismayed with the culture of Victorian England,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_24,0.0,0.0,0.0,The Vicar's stuffed ostrich.,the graves are empty,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_25,0.3333,0.3333,0.1398,The angel cut barbed wire.,For destroying barbwire,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_26,0.0,0.0,0.0,Mrs Jehoram,Delia,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_27,0.0,0.0,0.0,barbed wire,Goth's own whip,1,False
+leiden,0bff02718921b6f106c87a5418f29553790954af,gutenberg,0bff02718921b6f106c87a5418f29553790954af_28,0.0,0.0,0.0,no clear indication,England,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_0,1.0,1.0,1.0,Edward Cullen,Edward Cullen,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_1,1.0,1.0,1.0,Vampire,A vampire,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_2,0.2857,0.2857,0.2184,"Vampire, Jacob's enemy",Edward brother,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_3,0.2857,0.2857,0.0954,Jasper lunges at Bella thinking she's in danger.,Scent of Bella's blood.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_4,1.0,1.0,1.0,werewolves,Werewolves,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_5,0.4444,0.4444,0.2025,To provoke the Volturi,Edward went to Italy to die.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_6,0.5,0.5,0.2554,Alice is Bella's sister.,Edward sister,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_7,0.5,0.5,0.3467,To meet the Volturi.,To  save Edward,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_8,0.5714,0.5714,0.3943,a powerful vampire family,They were powerful vampire.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_9,0.1818,0.1818,0.1365,Bella knew too much about vampires.,Because she is human,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_10,0.5,0.5,0.1179,Alice saw Bella jump off a cliff.,Alice had a vision of Bella jumping off a cliff into the oce,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_11,0.2,0.2,0.0914,Go to Italy,Edward planned to expose himself as a vampire.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_12,0.0,0.0,0.0,Alice,Jacob,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_13,0.2,0.2,0.1629,Makes her feel alive,She sees images of Edward,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_14,1.0,1.0,1.0,To protect her,To protect her,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_15,0.1429,0.1429,0.0632,Jacob's werewolf nature and his involvement with Sam's group.,He is a werewolf,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_16,0.5,0.5,0.2554,Vampires and werewolves are enemies.,They are enemies,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_17,0.5,0.5,0.3799,Because Edward killed hers.,"Edward killed Victoria's mate, James",1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_18,0.1333,0.1333,0.0929,Jacob fears he cannot protect Bella from the Cullens.,He has his first transformation into a werewolf,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_19,0.3,0.2,0.0929,Edward reminds her he's aging while she isn't.,She is getting older than her boyfriend.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_20,0.0,0.0,0.0,Edward,Jasper,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_21,0.5455,0.5455,0.1936,To protect her from the Volturi.,He believes that his family puts Bella in danger.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_22,0.5,0.4286,0.1647,Leave to live with her mother in Jacksonville or go to Port Angeles to shop with,She can move to Florida with her mother or spend time with h,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_23,0.125,0.125,0.0706,Jacob struggles with his werewolf nature and fears hurting Bella.,He turns into a werewolf for the first time.,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_24,0.0,0.0,0.0,Vampires,Laurent,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_25,0.0,0.0,0.0,Edward,Jacob,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_26,0.4,0.4,0.2887,a powerful vampire family,The Vampire overlords,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_27,0.5,0.5,0.2027,Cullen family and the Quileute werewolves,The Werewolves and the Vampires,1,False
+leiden,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a,movie,1c5ca93baf311815addd6b6fa1cdb23dd8c35b4a_28,0.0,0.0,0.0,Five more years as a human,She must marry him.,1,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_0,0.0,0.0,0.0,None mentioned,World Steel Corporation,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_1,0.0,0.0,0.0,DuQuesne,Blackie,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_2,1.0,1.0,1.0,zone of force,Zone of Force,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_3,0.0,0.0,0.0,Osnome,Urvan,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_4,0.0,0.0,0.0,Osnomian,Natives of Fenachrone,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_5,0.0,0.0,0.0,a ship of space,A Fenachrone battleship,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_6,0.0,0.0,0.0,Not mentioned,Martin Crane,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_7,0.0,0.0,0.0,Osnome,Norlamin,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_8,0.0,0.0,0.0,None,The Fenachrone colony,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_9,0.0,0.0,0.0,Fenor,Marc DuQuesne,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_10,0.0,0.0,0.0,Not mentioned,World Steel Corporation,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_11,0.1667,0.1667,0.1104,To attack the third planet of the fourteenth sun.,To find a more knowledgeable species.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_12,0.2222,0.2222,0.1277,To help them back into the vessel.,To fight against the invasion of Urvan Natives,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_13,0.2857,0.2857,0.2184,To investigate the alien vessel.,To find minerals,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_14,0.5,0.5,0.5,Fenachrone fleet,Fenachrone Natives,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_15,0.0,0.0,0.0,Dunark,A lead crew member of the Fenachrone,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_16,0.1538,0.1538,0.0336,Return to Skylark,Capture a Fenachrone battleship.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_17,0.75,0.5,0.3536,To study the force zone.,To the zone of force.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_18,0.1818,0.1818,0.1365,Their entire race shall perish utterly.,Seaton destroys their recon ships,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_19,0.0,0.0,0.0,Seaton,DeQuesne,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_20,0.5,0.5,0.1353,Seaton,Richard Seaton allies with DuQuesne.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_21,0.0,0.0,0.0,Avoided capture by Fenachrones.,To break the connection to the 'Object Compass'.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_22,0.6,0.6,0.2636,Seaton was busy.,"Seaton was busy mastering the ""zone of fore"".",5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_23,0.0,0.0,0.0,Urvanian group,The Fenachrones attack Seaton.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_24,0.0,0.0,0.0,Build massive cruiser,They intend to conquer the Milky Way Galaxy and the Universe,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_25,0.0,0.0,0.0,Not mentioned,Martin Crane is the sponsor.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_26,0.0,0.0,0.0,Urvanians,Natives from the planet 'Urvan' are invading Osnome.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_27,0.0,0.0,0.0,Vessel of dagal,Skylark Three is the new ship.,5,False
+leiden,240ce3ba97e6969e93aa7e23bd384be181c49387,gutenberg,240ce3ba97e6969e93aa7e23bd384be181c49387_28,0.2353,0.2353,0.0527,DuQuesne is reduced to ashes.,He survives.,5,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_0,0.2,0.2,0.1797,To discuss charges and negotiate.,He wants to arrest them.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_1,0.5,0.5,0.3333,Death by execution,Execution.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_2,0.0,0.0,0.0,Not mentioned,It was wrecked in a typhoon.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_3,1.0,1.0,1.0,Bootstrap Bill,Bootstrap Bill.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_4,0.6667,0.6667,0.3679,A compass,Jack's magic compass.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_5,0.0,0.0,0.0,Pelegostos,Cannibals.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_6,0.5,0.5,0.5,Voodoo queen,A voodoo priestess.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_7,0.5714,0.5714,0.1578,in a chest,It is locked inside the Deadman's Chest.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_8,0.0,0.0,0.0,Multiple,Three.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_9,0.0,0.0,0.0,Jack does not die.,He is pulled to the bottom of the sea by the Kraken.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_10,1.0,1.0,1.0,Jack Sparrow,Jack Sparrow,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_11,0.0,0.0,0.0,Prepare for execution,Get married,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_12,1.0,1.0,1.0,Lord Cutler Beckett,Lord Cutler Beckett,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_13,0.0,0.0,0.0,Bootstrap Bill Turner,Will's father,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_14,0.0,0.0,0.0,Isla Cruces,The Black Pearl,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_15,0.2857,0.2857,0.1581,A ship commanded by Captain Bellamy.,A merchant ship,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_16,0.0,0.0,0.0,Elizabeth ties Jack to a cannon.,The mast,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_17,0.0,0.0,0.0,Bootstrap Bill Turner,Jack,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_18,0.0,0.0,0.0,Jack as a god,A dog,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_19,0.0,0.0,0.0,A chest,The heart and letters,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_20,0.1538,0.1538,0.1155,To reclaim his position and crew.,Because he let Jack Sparrow escape.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_21,0.0,0.0,0.0,Scuttled and attacked by the Flying Dutchman.,It was destroyed in a typhoon.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_22,0.0,0.0,0.0,Open the chest for the key.,Bring back Jack's compass.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_23,0.0,0.0,0.0,dark room,On a Scottish merchant vessel.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_24,0.0,0.0,0.0,Isla Cruces,On the Black Pearl.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_25,1.0,1.0,1.0,Davy Jones,Davy Jones.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_26,1.0,1.0,1.0,Davy Jones' heart,Davy Jones heart.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_27,0.25,0.25,0.2686,"In a chest, locked away.",In a jar of sand.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_28,0.0,0.0,0.0,Elizabeth throws an axe at Pintel and Ragetti.,She handcuffs him to the mast.,1,False
+leiden,3055c4d4f368f97c4c2a1a312a0f452a6814ad71,movie,3055c4d4f368f97c4c2a1a312a0f452a6814ad71_29,0.3077,0.3077,0.1374,Norrington takes the heart of Davy Jones.,Because he brings Beckett the heart.,1,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_0,0.0,0.0,0.0,He feared displaying unguarded courtesy.,for underachieving,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_1,0.0,0.0,0.0,Hanna loves Levko.,Sophie doesn't notice him,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_2,0.5,0.5,0.5,Through correspondence,through letters,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_3,0.0,0.0,0.0,Political intrigues and romantic affairs,"more about Sophie's life, including her engagement to anothe",5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_4,0.0,0.0,0.0,He visits her household.,Sophie is his boss's daughter,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_5,0.0,0.0,0.0,Arksenty overhears the dogs' conversation.,they have a quality of dogginess to them,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_6,0.0,0.0,0.0,November 11th,"April 43, 2000",5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_7,0.0,0.0,0.0,the Spanish king Ferdinand VIII,the heir to the throne of Spain,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_8,0.0,0.0,0.0,Spain,China,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_9,0.0,0.0,0.0,When studying State affairs,while he's waiting for Spanish deputies to arrive,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_10,0.1818,0.1818,0.0833,For his uneducated nature and sensitivity about his rank.,For underachieving.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_11,1.0,1.0,1.0,Sophie,Sophie,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_12,0.0,0.0,0.0,a politician,Poprishchin's boss,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_13,0.0,0.0,0.0,two officials,Dogs.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_14,0.0,0.0,0.0,correspondence,Letters.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_15,0.1333,0.1333,0.0706,Sophie's romantic interests and her father's political ambitions.,Her engagement to another man.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_16,0.4,0.4,0.2887,In his memoirs,His diary.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_17,1.0,1.0,1.0,Spain,Spain,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_18,0.0,0.0,0.0,Wears a cross at his buttonhole,A Spanish royal uniform.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_19,0.4,0.4,0.2887,his new cloak,Maltreatment at an insane asylum.,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_20,0.0,0.0,0.0,Titular councillor,Arksenty Ivanovich Poprishchin,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_21,0.2857,0.2857,0.1581,By his superiors and colleagues,His Underachieving,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_22,0.0,0.0,0.0,The petitioner's daughter.,Sophie,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_23,0.0,0.0,0.0,A lackey,A footman,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_24,0.0,0.0,0.0,None,Conversations between dogs,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_25,0.0,0.0,0.0,Profoundly astonished me,Dogginess and Canine Nature,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_26,0.4,0.4,0.25,Sophie and her father,Sophie,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_27,0.0,0.0,0.0,Not specified,43rd of April  2000,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_28,0.0,0.0,0.0,Determine directions,Distinguish,5,False
+leiden,324c7aa534095d4c227bf6459e5d302185d96cb5,gutenberg,324c7aa534095d4c227bf6459e5d302185d96cb5_29,1.0,1.0,1.0,China,China,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_0,0.0,0.0,0.0,Keswick,Italy,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_1,0.0,0.0,0.0,Not mentioned,Thomas Thwaite,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_2,0.5,0.5,0.5,Countess Lovel,Lady Lovel,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_3,0.0,0.0,0.0,Not proposed in excerpts.,Fredrick Lovel,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_4,1.0,1.0,1.0,21,21,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_5,0.0,0.0,0.0,Cumberland,Australia,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_6,0.0,0.0,0.0,Not mentioned,1/2,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_7,1.0,1.0,1.0,Tailor,Tailor,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_8,0.0,0.0,0.0,19th century,1830s,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_9,0.1538,0.1538,0.0802,Earl Lovel claimed his first wife was still alive.,He had a living wife,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_10,0.1818,0.1818,0.0906,It was part of the religion of her life.,Out of ambition.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_11,0.0,0.0,0.0,Tailor,An evil one.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_12,0.4286,0.4286,0.1327,Her father was unmarried.,Her father was already married when he married her mother.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_13,0.4444,0.4444,0.1607,He supported her.,He sheltered her and Lady Anna and paid for her legal battle,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_14,0.3636,0.3636,0.193,Settlement of property favoring the new earl,The the new earl marry Lady Anna.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_15,0.3333,0.3333,0.3467,She refused him.,She liked the idea.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_16,0.5714,0.5714,0.5,Daniel Thwaite,"Daniel, Thomas Thwaite's son.",5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_17,0.1429,0.1429,0.0807,She does not wound Daniel.,She doesn't want him to marry her daughter.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_18,0.125,0.125,0.0929,Lady Anna threatens to expose an attempted murder plot.,He didn't give her name to the police.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_19,0.1111,0.1111,0.0221,To start a new life.,To avoid being judged by Daniel's low birth and Lady Anna's ,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_20,0.0,0.0,0.0,The Countess,Earl Lovel.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_21,0.0,0.0,0.0,Not mentioned,Italy.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_22,0.0,0.0,0.0,Miss Lovel,Thomas Thwaite.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_23,0.0,0.0,0.0,Grassmere,England.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_24,0.8889,0.8889,0.4976,Lord Lovel's cousin,Earl Lovel's distant cousin.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_25,1.0,1.0,1.0,Daniel Thwaite,Daniel.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_26,0.0,0.0,0.0,Old man,Thomas Thwaite.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_27,1.0,1.0,1.0,Daniel Thwaite,Daniel.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_28,0.0,0.0,0.0,Forbids her from seeing him.,With a pistol.,5,False
+leiden,3d59cad31537c384e1fde9cc33c518595115a621,gutenberg,3d59cad31537c384e1fde9cc33c518595115a621_29,0.6667,0.6667,0.5,Daniel Thwaite,Daniel.,5,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_0,0.0,0.0,0.0,Not specified,1940,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_1,0.0,0.0,0.0,Road accident,THE BATTLE OF FRANCE,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_2,0.3333,0.3333,0.3467,in a road accident,GERMAN AIR ATTACK,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_3,0.5,0.3333,0.3195,Michel Dollé's family,THE FAMILY OF MICHEL DOLLE,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_4,0.0,0.0,0.0,Jock,PAULETTE'S DOG.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_5,0.0,0.0,0.0,Georges,OTHER ANIMALS WHO DIED,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_6,0.2222,0.2222,0.1104,With crosses and names written on them.,STOLEN CROSSES,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_7,0.0,0.0,0.0,old mill,IN THE RUINS OF AN ABANDONED WATERMILL,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_8,0.4,0.4,0.3033,Dollé's,MICHEL'S BROTHER,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_9,0.0,0.0,0.0,an orphanage,A RED CROSS CAMP,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_10,0.0,0.0,0.0,Exode de 1940,Battle of France,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_11,0.0,0.0,0.0,A road accident,German Air strike,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_12,0.0,0.0,0.0,A nun,Michel,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_13,0.0,0.0,0.0,crosses,A small cemetary,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_14,0.3333,0.3333,0.2686,dead cow's dog,Animals including her dog,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_15,0.3333,0.3333,0.1839,from the corbillard,A local graveyard,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_16,0.0,0.0,0.0,Michel,French Gendarmes.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_17,0.2,0.2,0.1365,Michel offers to tell about the crosses.,Location of the stolen crosses.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_18,1.0,1.0,1.0,Michel,Michel,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_19,0.0,0.0,0.0,Not mentioned,Paulette,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_20,0.0,0.0,0.0,to an orphanage,A Red Cross camp.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_21,0.3333,0.3333,0.1313,To bury their pet dog and other animals.,In order to cope with the death and destruction of the war.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_22,0.0,0.0,0.0,crosses,The cross from his grave.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_23,0.0,0.0,0.0,The narrative does not mention an antagonist breaking a promise to Michel.,His Father.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_24,0.0,0.0,0.0,Paulette's dog is killed by a bomb.,During the German air attack while fleeing from Paris.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_25,0.0,0.0,0.0,Maman,Her mother.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_26,1.0,1.0,1.0,Michel,Michel.,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_27,0.0,0.0,0.0,Gouards,The Dolle' neighbour,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_28,1.0,1.0,1.0,1940,1940,1,False
+leiden,3ee65995071a0e70027e74a9b7735a734ba43bc7,movie,3ee65995071a0e70027e74a9b7735a734ba43bc7_29,0.0,0.0,0.0,The police and a nun.,The French gendarmes,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_0,1.0,1.0,1.0,Dalgard,Dalgard Nordis,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_1,0.2222,0.2222,0.0009,the city,the ruins of a city that once belonged to The Others,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_2,0.0833,0.0833,0.0265,"mislead Those Others, find passage to sea","extend the Colony's map of the world, prove he is suitable t",1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_3,1.0,1.0,1.0,None,"none, zero",1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_4,0.6667,0.6667,0.3679,Raf,Raf Kurbi,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_5,0.0,0.0,0.0,reptile prints,The Others have visited recently.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_6,0.0,0.0,0.0,"A fierce, intelligent reptilian monster.","mean, dragon-like creatures",1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_7,0.0,0.0,0.0,Those Others,aliens,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_8,1.0,1.0,1.0,Dalgard,Dalgard,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_9,1.0,1.0,1.0,Raf,Raf,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_10,0.0,0.0,0.0,A merman.,Dalagard's knife brother,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_11,0.0,0.0,0.0,seven,9,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_12,0.0,0.0,0.0,Merpeople skeletons,Snake-Devils,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_13,0.0,0.0,0.0,mental thrust,Metal bands on the Snake-Devils.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_14,0.3333,0.3333,0.1839,snake-devils,A merman and a Snake Devil.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_15,0.0,0.0,0.0,Rows of furred people,A merman war party.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_16,0.0,0.0,0.0,Raf guides the flitter to hover near the globe ship and signals for a drop.,With 2 grenades.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_17,0.0,0.0,0.0,They amplify Raf's reaching thought.,Telepathically.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_18,0.3077,0.3077,0.1313,To avoid warfare and follow hopper exodus.,To warn his people and the humans at Homeport.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_19,0.0,0.0,0.0,Dalgard,The local fauna.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_20,0.0,0.0,0.0,off-world exploration,The value of Science.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_21,1.0,1.0,1.0,None,None.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_22,0.0,0.0,0.0,take back with them,Regain their civilization.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_23,0.2222,0.2222,0.1797,To reach the sea more swiftly.,To warn his people.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_24,0.0,0.0,0.0,a fugitive,A spy.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_25,0.0,0.0,0.0,Sssuri,A merman and a snake-devil.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_26,0.0,0.0,0.0,flame-throwers,Two grenades.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_27,0.0,0.0,0.0,use blast bombs,Returning to Homeport by himself.,1,False
+leiden,5ae39df9a568442600cbc2ff2c223e87f2ed4acf,gutenberg,5ae39df9a568442600cbc2ff2c223e87f2ed4acf_28,0.0,0.0,0.0,corridor beyond,To their Globe-Ship.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_0,0.25,0.25,0.106,Cassandra was violated and taken as a prize.,Ajax the Lesser raped Cassandra and the Greek army condoned ,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_1,0.25,0.25,0.178,Tyndareus and a god.,King Priam and Queen Hecuba,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_2,0.3077,0.3077,0.1313,Cassandra is chosen as Agamemnon's prize.,Cassandra will become a concubine of Agamemnon,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_3,0.4286,0.2857,0.1454,Polyxena is alive and watching Achilles' tomb.,Polyxena was killed at the tomb of Achilles,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_4,0.0,0.0,0.0,Menelaus,Neoptolemus,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_5,0.2667,0.2667,0.1313,He would be thrown from the walls of Troy.,Andromache's son Astyanax would be killed,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_6,0.0,0.0,0.0,build again The wreck,Astyanax will avenge his father Hector when he grows up,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_7,1.0,1.0,1.0,Menelaus,Menelaus,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_8,0.0,0.0,0.0,Not mentioned,Hecuba,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_9,0.0,0.0,0.0,Menelaus,Odysseus,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_10,0.0,0.0,0.0,Poseidon and Athena want revenge for Troy's destruction.,Because they allowed Ajax the Lesser to rape Cassandra.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_11,1.0,1.0,1.0,TALTHYBIUS,Talthybius,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_12,0.0,0.0,0.0,slaves to Menelaus,Hecuba will be taken away by Odysseus and Cassandra will be ,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_13,0.0,0.0,0.0,Treated as a prize for Agamemnon,She is delighted in the news.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_14,0.6154,0.4615,0.1943,Polyxena was sacrificed to Achilles' tomb.,She was sacrificed at the tomb of Achilles,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_15,0.5333,0.5333,0.1969,She is to bury her son.,She is to be the concubine of Achilles son Neoptolemus.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_16,0.1667,0.1667,0.0988,She does not escape.,She seduces her husband into saving her life.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_17,0.1667,0.1667,0.1204,Hector's son's body,Little Astyanax.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_18,0.5,0.5,0.2187,To bury her son.,That Astyanax be buried performing the proper Trojan rituals,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_19,0.2,0.2,0.1629,She leaps into the flames.,She is carted off with Odysseus.,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_20,1.0,1.0,1.0,Troy,Troy,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_21,0.0,0.0,0.0,Hera,Poseidon,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_22,1.0,1.0,1.0,Talthybius,Talthybius,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_23,1.0,1.0,1.0,Cassandra,Cassandra,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_24,1.0,1.0,1.0,Polyxena,Polyxena,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_25,1.0,1.0,1.0,Menelaus,Menelaus,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_26,0.0,0.0,0.0,Talthybius,Hecuba,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_27,0.0,0.0,0.0,Greek wain,Hector's shield,1,False
+leiden,5e51efd017946e72a87da7f0c589b3b3aefdf5ec,gutenberg,5e51efd017946e72a87da7f0c589b3b3aefdf5ec_28,1.0,1.0,1.0,Hecuba,Hecuba,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_0,0.5,0.5,0.1353,Sisters,They are sisters.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_1,0.0,0.0,0.0,Ten bucks,Rose's son Oscar needs to go to private school.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_2,0.2857,0.2857,0.1116,prosthetic arm,He has only one arm.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_3,0.3333,0.3333,0.1313,biohazard removal and crime scene clean-up service,A crime scene cleanup business.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_4,0.0,0.0,0.0,Not provided in excerpts.,"Norah accidentally burns down a house which costs them $40,0",1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_5,0.2,0.2,0.0914,Biohazard cleaning service,A cleaning business Rose's father starts and she becomes a p,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_6,0.0,0.0,0.0,Not specified,She committed suicide.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_7,0.0,0.0,0.0,Walking into the bedroom.,She is attending a baby shower.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_8,0.0,0.0,0.0,Detective,Mac is Rose's ex-boyfriend and lover who is married to anoth,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_9,0.0,0.0,0.0,After burning down the house.,At Oscar's Birthday.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_10,0.3333,0.3333,0.3467,Molly Maid cleaner,She works as a full-time maid.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_11,0.2857,0.2857,0.1797,Oscar engaged in disruptive behavior.,He had erratic behavior.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_12,0.0,0.0,0.0,postmortem cleaning,A crime scene cleanup job.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_13,0.5,0.5,0.5,Lorkowski Cleaning,Sunshine Cleaning.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_14,0.0,0.0,0.0,Randy,"Lynn, a client's daughter",1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_15,0.0,0.0,0.0,Clean Sweep guys,An insurance company.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_16,0.5,0.375,0.1277,Norah accidentally set it on fire.,It was set on fire and burned by an unattended candle.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_17,0.0,0.0,0.0,$1999,"$40,000.",1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_18,0.0,0.0,0.0,After setting fire to the house.,During Oscar's birthday party.,1,False
+leiden,6cce85cdf00f2e164a8c9fcd71467d9c46559c20,movie,6cce85cdf00f2e164a8c9fcd71467d9c46559c20_19,0.0,0.0,0.0,Norah,Her father.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_0,0.0,0.0,0.0,"She began, and told me a strange tale.",After Anodos twenty first birthday.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_1,1.0,1.0,1.0,Fairy Land,Fairy Land.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_2,0.0,0.0,0.0,the Maid of the Alder-tree,A woman and her daughter.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_3,0.1667,0.1667,0.1104,"A great good is coming to thee, Anodos",The spirits of the trees can leave their tree host and wonde,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_4,0.0,0.0,0.0,demons,Ash Tree and Alder Tree.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_5,1.0,1.0,1.0,Fairies,Fairies.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_6,0.8,0.8,0.5,The flowers die.,The flowers would die.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_7,0.0,0.0,0.0,a knight,Sir Percivale.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_8,0.0,0.0,0.0,He didn't; Anodos saved himself.,Sir Percivale chopped the Ash Tree.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_9,0.0,0.0,0.0,locked together in death-struggle,They were attacked unarmed by giants.,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_10,0.0,0.0,0.0,Not specified,21 days,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_11,1.0,1.0,1.0,Fairy Land,Fairy Land,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_12,0.8,0.8,0.6687,Beech-tree and Alder-tree,The Ash Tree and The Alder Tree,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_13,0.375,0.375,0.1299,To approach and gaze upon his love.,To save his love from being trapped in a mirror,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_14,0.0,0.0,0.0,The narrator,Pygmalion,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_15,0.0,0.0,0.0,Cosmo,The Marble Lady,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_16,0.0,0.0,0.0,Through his journey and encounters.,He is the only brother left alive after a battle,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_17,0.0,0.0,0.0,the knight,Sir Percivale,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_18,0.4,0.4,0.3033,evil demon,"A shadow, an evil presence",1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_19,0.0,0.0,0.0,solemn procession,Anodos' 21st birthday,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_20,0.0,0.0,0.0,winter,Anodo's twenty first birthday,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_21,0.6667,0.6667,0.2887,In and around flowers.,In flowers,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_22,0.5,0.5,0.5,Sir Galahad,Sir Percival,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_23,0.5,0.5,0.2554,Anodes sings to the Marble Lady.,He sings to it,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_24,0.4,0.4,0.25,gnomes or goblin-fairies,Gnomes,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_25,1.0,1.0,1.0,Four,Four,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_26,0.0,0.0,0.0,The mysterious woman in the beech tree.,The ancient lady,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_27,0.4,0.4,0.2887,twenty-one days,21 days,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_28,0.4,0.4,0.2887,twenty-one years,21 years,1,False
+leiden,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f,gutenberg,762a9ff01da2e8fd7382f8b52b1dd86d98a1b07f_29,0.0,0.0,0.0,a mysterious woman in a beech tree,His sisters,1,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_0,0.0,0.0,0.0,Australia,London,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_1,1.0,1.0,1.0,Australia,Australia,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_2,0.5,0.5,0.3799,a little store of money,money,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_3,0.4444,0.4444,0.1609,his son who died in Australia,deceased son,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_4,0.0,0.0,0.0,Mrs. Griffin,The Peckovers,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_5,0.0,0.0,0.0,Spies on Joseph Snowdon.,household drudge,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_6,0.0,0.0,0.0,to pursue a better life,become a famous actress,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_7,0.0,0.0,0.0,not mentioned,artist,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_8,0.5,0.5,0.5,changes it,destroys it,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_9,0.0,0.0,0.0,Unengaged,an unhappy one,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_10,0.4444,0.4444,0.1609,his son who died in Australia,His deceased son.,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_11,0.4,0.4,0.2136,Jane's grandfather's son,Jane is Michael's granddaughter.,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_12,0.0,0.0,0.0,To help John Hewett's family.,Joseph ends up losing it all in the Stock Market.,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_13,0.0,0.0,0.0,Let it be as if nothing had happened,"He has her doing charitable, everyday work.",5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_14,0.125,0.125,0.0541,To gain control and inheritance.,She thinks his father (Michael) is rich and wants his wealth,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_15,0.0952,0.0952,0.0406,Offers her money to gain her favor.,"He gets Clara to start liking Sidney, hoping it will prevent",5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_16,0.0769,0.0769,0.0199,By securing Michael's favor through schemes.,"Michael destroys his will, thinking Jane won't continue the ",5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_17,0.2857,0.2857,0.1116,Victorian London,Central London (specifically Clerkenwell Close),5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_18,0.2222,0.2222,0.0597,To protect Jane from burdensome responsibilities.,To be able to continue living a humble life and dedicate his,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_19,0.1538,0.1538,0.077,jeopardizes her future happiness,Michael causes Sidney to break off his engagement with Jane.,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_20,0.6667,0.6667,0.5,Jane Snowdon,Jane,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_21,0.0,0.0,0.0,Mrs Peckover's,The Peckovers,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_22,0.8,0.8,0.4082,Joseph James Snowdon,Joseph,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_23,0.0,0.0,0.0,a hospital in Sydney or Melbourne,Jane,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_24,0.5,0.5,0.5,Mrs Peckover,Clem Peckover,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_25,0.5,0.5,0.1353,Michael,Sidney Kirkwood,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_26,0.0,0.0,0.0,Jane Snowdon,Clara,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_27,0.0,0.0,0.0,vitriol,Acid,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_28,0.0,0.0,0.0,Leaves no will.,He destroys it,5,False
+leiden,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2,gutenberg,78ee76ea661bf5bc910ea56dcf0307b03f26a5f2_29,0.0,0.0,0.0,Jenny,Clem,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_0,0.0,0.0,0.0,Dejah Thoris,The daughter of the Holy Hekkador of the Therns.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_1,0.0,0.0,0.0,Therns,The green warriors of Warhoon.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_2,0.0,0.0,0.0,blasphemy against the Sacred,Heresy.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_3,0.0,0.0,0.0,Shador,In the Temple of the Sun.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_4,0.0,0.0,0.0,Not mentioned,As punishment for being defeated by Carter.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_5,0.0,0.0,0.0,John Carter,Tars Tarkas.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_6,0.0,0.0,0.0,Dejah Thoris,Thuvia.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_7,1.0,1.0,1.0,black pirates of Barsoom,The First Born,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_8,0.0,0.0,0.0,Temple of Issus,Omean.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_9,0.5,0.5,0.5,A few days,365 days.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_10,0.1429,0.1429,0.0706,Xodar was tortured for his knowledge of the prison's layout.,He had to be his slave.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_11,0.2857,0.2857,0.0954,Valley Dor is sacred and leads to Life Eternal,That it is a journey to paradise.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_12,0.2,0.2,0.106,To fulfill a legend and return with proof.,To find Carter.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_13,0.8,0.8,0.4082,Ten Earth years,Ten years.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_14,0.4,0.4,0.2887,Dejah Thoris' father,He is her father.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_15,0.0,0.0,0.0,forged order,The confusion caused from an attack by the Black Pirates of ,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_16,0.3333,0.3333,0.193,He is unjustly sentenced to death.,He is tried for heresy by the Zodangans.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_17,0.1429,0.1429,0.0802,Xodar is relieved Carter won't enforce Issus' commands.,He becomes Carter's friend.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_18,1.0,1.0,1.0,Barsoom,Barsoom,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_19,0.0,0.0,0.0,prison of Shador,The Valley Dor,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_20,0.0,0.0,0.0,El Dorado,The afterlife,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_21,0.0,0.0,0.0,polished ebony,White,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_22,0.25,0.25,0.2686,"First Born, Holy Therns",The Therns and the Black Pirates,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_23,0.0,0.0,0.0,Therns,Xodar,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_24,0.5714,0.2857,0.1858,Martian warrior and friend of John Carter,"John Carter's friend, the Jeddak of Thark",5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_25,0.0,0.0,0.0,Thuvia,The Heliumetic navy,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_26,1.0,1.0,1.0,Death,Death,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_27,0.4,0.4,0.2541,"John Carter, Dejah Thoris, Xodar","Dejah Thoris, Thuvia and Phaidor",5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_28,0.2222,0.2222,0.1275,Isle of Shador,"The Valley Dor, the Barsoomian equivalent of the afterlife",5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_29,0.0,0.0,0.0,Carthoris,"John's friend Tars Tarkas, who had set out to find John Cart",5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_30,0.0,0.0,0.0,Cruel deception for pilgrims,That it is a lie the Therns have fed to the Baroomian's that,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_31,0.0,0.0,0.0,Dejah Thoris,"They rescue Thuvia, a slave girl.",5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_32,0.6667,0.6667,0.3679,Black pirates,The Black Pirates of Barsoom are attacking the Therns.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_33,0.1429,0.1429,0.0241,John escapes captivity.,John kills all of the pirates but one and rescues a kidnappe,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_34,0.6,0.6,0.255,John Carter is imprisoned.,John is imprisoned by the first born.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_35,0.0,0.0,0.0,Swims to the surface.,He leads a revolt among the prisoners killing many First One,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_36,0.0,0.0,0.0,Carter rescues Tars Tarkas.,He is discovered by his enemies and forced to fight.,5,False
+leiden,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9,gutenberg,9f3553caee89c48b8f0ba947fa1a088dc9aca4a9_37,0.0714,0.0714,0.0095,Fierce battle between invaders and defenders.,"John is challenged by the Therns, Zat Arras and then the Fir",5,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_0,0.5,0.5,0.1353,squire,Squire of Allington,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_1,1.0,1.0,1.0,Two,two,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_2,0.0,0.0,0.0,Lily Dale,John Eames,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_3,1.0,1.0,1.0,Income-Tax Office,Income Tax Office,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_4,0.6667,0.6667,0.3679,Bernard,cousin Bernard,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_5,0.0,0.0,0.0,Accepted John Eames as her second lover.,kept rejecting him,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_6,0.0,0.0,0.0,Provide Crosbie with a comfortable life.,further his career,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_7,0.0,0.0,0.0,Her cousin,Dr. Crofts,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_8,1.0,1.0,1.0,Christopher Dale,Christopher Dale,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_9,0.8,0.8,0.5774,"Christopher Dale, Esq",Christopher Dale.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_10,0.2857,0.2857,0.0067,clerk,John Eames is a junior clerk who works at the Income Tax Dep,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_11,0.3333,0.3333,0.2,Mrs Dale and her daughters,The Dale family.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_12,1.0,1.0,1.0,Doctor,James Crofts is the local doctor.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_13,0.0,0.0,0.0,Dr Crofts,Adolphus Crosbie.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_14,0.0,0.0,0.0,Bessie,Bell.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_15,1.0,1.0,1.0,Lily,Lily.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_16,1.0,1.0,1.0,Bernard,Dr. James Crofts.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_17,0.4,0.4,0.0498,Alexandrina,Lady Alexandria de Courcy.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_18,0.2222,0.2222,0.1275,Secretly marries Alexandrina.,Her family is able to further his career.,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_19,0.5,0.5,0.5,Mrs Dale,The Dale family,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_20,0.0,0.0,0.0,two persons,the widowed mother (Dowager) of the estate owner,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_21,0.8,0.8,0.5774,"Christopher Dale, Esq",Christopher Dale,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_22,0.1667,0.1667,0.0988,Mrs Dale and the girls,his widowed sister-in-law and her daughters,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_23,0.0,0.0,0.0,Adolphus Crosbie,John Eames,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_24,0.4,0.4,0.0498,clerk,junior clerk at the income Tax Office,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_25,0.0,0.0,0.0,Crosbie,Dr. James Crofts,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_26,0.0,0.0,0.0,Lord De Courcy,Adolphus Crosbie,4,False
+leiden,a92d15a67e802a1ab4fbaeecb6b58914690059f8,gutenberg,a92d15a67e802a1ab4fbaeecb6b58914690059f8_27,0.0,0.0,0.0,Bernard,Dr. James Crofts,4,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_0,0.0,0.0,0.0,"seller of shady wares, protector of society",A secret agent and a shop owner.,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_1,0.0,0.0,0.0,shady wares,"Pornographic material, contraceptives and bric a break.",1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_2,0.6667,0.6667,0.3679,London,"London, England",1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_3,0.0,0.0,0.0,turn of the 20th century,In the Victorian age 1886,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_4,0.3158,0.3077,0.0915,Winnie and her mother,"wife, sister, brother in law and mother in law",1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_5,0.0,0.0,0.0,Trade in afternoon papers,Terrorism,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_6,0.6667,0.6667,0.5503,Third-person limited,Third person; omnicscient,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_7,0.1429,0.1429,0.1104,Stevie is portrayed as naive and devoted.,He makes him a sympathetic character because he was autistic,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_8,0.0,0.0,0.0,can containing X2 green powder,bomb,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_9,0.8333,0.8333,0.3799,Winnie is Mr. Verloc's wife.,Winnie is Mr. Verlac's wife,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_10,1.0,1.0,1.0,London,London,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_11,0.0,0.0,0.0,shady wares,pornographic,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_12,0.1429,0.1429,0.1104,She starts to defend Stevie's behavior.,Mrs. Verloc stabs Mr. Verloc to death,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_13,0.5,0.5,0.5,Greenwich Park,The Greenwich Conservatory,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_14,0.8,0.8,0.6065,Mrs. Verloc's brother,Stevie is Mrs. Verloc's brother,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_15,0.6667,0.6667,0.3679,A man,Stevie,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_16,0.0,0.0,0.0,life and affection,Mr. Verloc's savings,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_17,0.3333,0.3333,0.3467,She attempts suicide.,By drowning herself in the English Channel,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_18,1.0,1.0,1.0,overcoat,An overcoat,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_19,1.0,1.0,1.0,London,London,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_20,0.0,0.0,0.0,A man whose body was blown to pieces.,Stevie,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_21,1.0,1.0,1.0,Her brother,Brother,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_22,0.0,0.0,0.0,Comrade Ossipon,The Professor,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_23,0.6667,0.6667,0.5,Mr Verloc,Verloc,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_24,0.4,0.4,0.2887,secret organization worker,secret agent,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_25,0.0,0.0,0.0,Karl Yundt,Comrade Ossipon,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_26,0.0,0.0,0.0,Escapes to Spain,Suicide,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_27,0.1429,0.1429,0.0632,"Enormous hole, smashed roots, broken branches, fragments of a man's body.",overcoat,1,False
+leiden,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4,gutenberg,c8ce03f26a02ca9fcfbb0c9272f4558402b919b4_28,1.0,1.0,1.0,Chief Inspector Heat,Inspector Heat,1,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_0,0.6667,0.6667,0.3679,Porthgenna,Porthgenna Tower,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_1,0.0,0.0,0.0,S. Jazeph,Sarah Leeson,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_2,0.0,0.0,0.0,Captain Treverton,a local miner,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_3,0.0,0.0,0.0,Historically significant Myrtle Room,An actress,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_4,0.5,0.5,0.1353,blind,He was blind.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_5,0.0,0.0,0.0,housekeeper,A servant,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_6,0.3333,0.3333,0.3467,in the north rooms,In an unused room,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_7,0.0,0.0,0.0,Directed old man to disclose discovery to niece.,He still accepted Rosamud and skipped the inheritance.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_8,0.1667,0.1667,0.1204,"A bitter, eccentric, and misunderstood man.",A villainious servant and heir to Porthagenna Tower,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_9,0.0,0.0,0.0,15 years,Twentyyears.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_10,0.5,0.5,0.5,Rosamond Treverton,Rosamund Treverton,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_11,0.5,0.5,0.5,five years,20 years,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_12,0.5,0.5,0.1353,blind,He is blind,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_13,0.0,0.0,0.0,S. Jazeph,Sarah Leeson,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_14,0.2222,0.2222,0.041,Keep the secret.,Stay away from the room with the message hidden in it.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_15,0.0,0.0,0.0,Captain Alexander,Her brother Andrew.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_16,0.0,0.0,0.0,Rosamond Frankland,Rodamund,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_17,0.0,0.0,0.0,No information,An actress,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_18,0.0,0.0,0.0,Sarah's mother,Mrs Traverton,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_19,0.5,0.5,0.1353,Mrs. Treverton,"Sarah Leeson, the servant of Mrs. Treverton",5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_20,0.0,0.0,0.0,Not mentioned in excerpts.,Mrs. Treverton is childless and she wants to give her husban,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_21,0.3333,0.3333,0.3467,in her bosom,Sarah hides the paper in an unused room at Porthgenna.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_22,0.6667,0.6667,0.3679,Frankland,Leonard Frankland.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_23,0.0,0.0,0.0,Captain Treverton orders a search.,Sarah becomes an employee under an assumed name.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_24,0.1111,0.1111,0.0624,Rosamond finds the secret letter in the Myrtle Room.,Sarah gives her a message that leads her to the secret hidin,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_25,0.0833,0.0833,0.0473,"He corrects her, saying ""Captain Treverton"" instead of ""my father"".",Leonard accepts the fact that Rosamund is an illigitamate ch,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_26,0.2,0.2,0.0914,Timothy's daughter,Andrew is the brother of Mrs. Trevorton.,5,False
+leiden,c964b6f4312c789c76b202a664ccab8a9807282f,gutenberg,c964b6f4312c789c76b202a664ccab8a9807282f_27,0.0,0.0,0.0,Rosamond gains Porthgenna through her father's estate.,Andrew Treverton refuses to accept the inheritance.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_0,0.0,0.0,0.0,shop,Laundromat.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_1,0.0,0.0,0.0,Assumed care of their education.,He abandoned them.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_2,0.0,0.0,0.0,Not mentioned,The daughter of Gervaise and Coupeau.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_3,0.0,0.0,0.0,leaped over the mattress,He fell from a hospital roof.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_4,1.0,1.0,1.0,Lantier,Lantier.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_5,0.0,0.0,0.0,"walks with crutch, saunters, watches construction",Drinking.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_6,1.0,1.0,1.0,Gervaise,Gervaise.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_7,0.0,0.0,0.0,Cow's-Tail,Nana.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_8,0.4615,0.4615,0.1257,He becomes ill and is sent to a mental institution.,He becomes an alcoholic.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_9,0.5,0.5,0.1353,Lantier,Her lover Lantier,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_10,0.2857,0.2857,0.2184,Gervaise works as a clearstarcher.,Gervaise becomes a washerwoman,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_11,0.0,0.0,0.0,Not specified,In the Louvre,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_12,0.0,0.0,0.0,Not mentioned,A laundry,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_13,0.2,0.2,0.0914,Lantier's sermon,A fall from a hospital roof,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_14,1.0,1.0,1.0,alcoholism,Alcololism,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_15,0.0,0.0,0.0,Indifference and lack of care.,Excessive pride,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_16,0.0,0.0,0.0,Gervaise,Lantier,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_17,0.0,0.0,0.0,She worked at home rolling violet stems.,Nana becomes a streetwalker,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_18,0.4,0.4,0.3467,Gervaise's suicide,The death of Gervaise,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_19,0.0,0.0,0.0,Quartier,Paris.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_20,0.0,0.0,0.0,clearstarcher,Works in a laundry washing clothes.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_21,0.0,0.0,0.0,A struggling worker consumed by alcoholism.,The man that Gervaise marries.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_22,1.0,1.0,1.0,Louvre,The Loovre.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_23,0.0,0.0,0.0,Wedding expenses,To open her own laundry business.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_24,0.0,0.0,0.0,thrown back from the wall,Falling off the roof of a hospital.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_25,0.2222,0.2222,0.1797,He falls back against the wall.,He becomes an unemployed alcoholic.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_26,0.25,0.125,0.0643,Coupeau's laziness and alcoholism.,Her pride.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_27,0.2222,0.2222,0.1277,She descends into poverty and despair.,She becomes an alcoholic.,5,False
+leiden,cb5468ec85bb82131dad276d2bdf82161d607aba,gutenberg,cb5468ec85bb82131dad276d2bdf82161d607aba_28,0.0,0.0,0.0,Not mentioned in excerpts.,She becomes a prostitute.,5,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_0,0.5,0.5,0.5,Old Woman,The golden woman.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_1,0.0,0.0,0.0,Not mentioned,Six.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_2,1.0,1.0,1.0,Jack Driscoll,Jack Driscoll.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_3,0.0,0.0,0.0,Writer,Wildlife film maker.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_4,0.0,0.0,0.0,They climb down vines.,By letting go of a vine and falling into the water.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_5,1.0,1.0,1.0,Empire State Building,The Empire State Building.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_6,1.0,1.0,1.0,Skull Island,Skull Island.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_7,0.6667,0.6667,0.5,Carnivorous dinosaurs,Dinosaurs.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_8,0.0,0.0,0.0,BAT-THINGS attacking him,The flash on the cameras.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_9,1.0,1.0,1.0,New York,New York.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_10,0.0,0.0,0.0,film,Wildlife films,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_11,1.0,1.0,1.0,VENTURE,Venture,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_12,0.0,0.0,0.0,from the audience/auditions,The streets of New York,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_13,1.0,1.0,1.0,Jack Driscoll,Jack Driscoll,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_14,0.5,0.5,0.5,an uncharted island,Skull Island,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_15,1.0,1.0,1.0,Kong,Kong,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_16,0.0,0.0,0.0,Two,Six,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_17,1.0,1.0,1.0,Ann Darrow,Ann Darrow,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_18,1.0,1.0,1.0,gorilla,A giant ape,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_19,0.0,0.0,0.0,Englehorn hurls the chloroform bottle at Kong.,A gas bomb,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_20,0.0,0.0,0.0,Preston,Captain Englehorn,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_21,0.0,0.0,0.0,On the ship's hold.,New York Street,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_22,1.0,1.0,1.0,Jack Driscoll,Jack Driscoll,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_23,1.0,1.0,1.0,Skull Island,Skull Island,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_24,0.1538,0.1538,0.077,Ritual involving a possessed woman.,They saw the  villagers were going to sacrifice a young woma,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_25,0.0,0.0,0.0,Not mentioned,Six tribe women,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_26,0.0,0.0,0.0,Dragged through a frenzy of fearful Skull Island natives.,They kidnapped her.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_27,1.0,1.0,1.0,as the Eighth Wonder of the World,Denham presented Kong as the eight wonder of the world.,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_28,0.0,0.0,0.0,Plummeted towards the ground,Kong died,1,False
+leiden,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e,movie,dc8d6c5a9a9cb0ee6cc3b47ed9aa7a6f6209d05e_29,0.2,0.2,0.1629,Picked her up gently,Kong carried her in his hand.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_0,0.5,0.5,0.5,Easter service,Military Service,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_1,0.3333,0.3333,0.3467,She is accursed.,Because she has been seduced by Turiddu.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_2,1.0,1.0,1.0,Lola,Lola,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_3,0.0,0.0,0.0,punish,Excommunicating her.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_4,0.5714,0.5714,0.3943,Throws her down,He throws her to the ground.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_5,0.1818,0.1818,0.1269,bites Alfio's ear,He repents and begs Alfio to stop.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_6,0.5,0.5,0.3333,Ruby wine flowing,Wine.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_7,0.0,0.0,0.0,Challenge and duel,A fight to the death.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_8,0.0,0.0,0.0,Lucia,Santuzza.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_9,1.0,1.0,1.0,Mother,Lucia is his mother.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_10,0.0,0.0,0.0,At Lola's dwelling.,He was going to buy some more wine.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_11,0.1667,0.1667,0.1104,Santuzza threatened to reveal Turiddu's betrayal.,For her seduction with Turiddu,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_12,0.3636,0.3636,0.0825,Turiddu's infidelity,Santuzza told Alfio that his wife had an affair with Turiddu,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_13,0.1818,0.1818,0.0655,To challenge Alfio.,It's a Sicilian custom in accepting a duel challenge.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_14,0.2,0.2,0.0914,To avoid Alfio.,"Because his fiance married another man, Alfio.",1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_15,1.0,1.0,1.0,Wine shop,An old wine shop,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_16,0.0,0.0,0.0,Santuzza informed Alfio.,Turiddu threw her to the ground and dismissed her.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_17,1.0,1.0,1.0,Turiddu,Turiddu,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_18,0.4,0.4,0.2136,During Turiddu's military service.,Turiddu was away in the military.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_19,0.5455,0.5455,0.2136,Lola was Turiddu's lover/wife.,Lola was Turridu's fiance.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_20,1.0,1.0,1.0,Alfio,Alfio,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_21,0.5,0.5,0.2825,Turiddu's lover,Santuzza is Turridu's lover.,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_22,0.0,0.0,0.0,Turiddu,Turridu,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_23,1.0,1.0,1.0,wine,wine,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_24,0.5,0.5,0.5,Meeting Lola,seeing Lola,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_25,1.0,1.0,1.0,Mother,Lucia is Turrido's mother,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_26,1.0,1.0,1.0,Wine shop,a wine shop,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_27,0.1429,0.1429,0.0807,Lola has gone with Turiddu,that Alfio's wife is having an affair with Turridu,1,False
+leiden,fbbfafdd97567ddaadc565e18ac617703e1fed66,gutenberg,fbbfafdd97567ddaadc565e18ac617703e1fed66_28,1.0,1.0,1.0,ear,Alfio's ear,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_0,0.0,0.0,0.0,employee,The Narrator is a traveling automobile recall specialist.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_1,0.3333,0.3333,0.3467,men with cancer,Testicular Cancer victims.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_2,0.0,0.0,0.0,food to go,Marla gives the Narrator her phone number.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_3,0.0,0.0,0.0,A Bald Man,The Narrator meets Tyler Durden.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_4,1.0,1.0,1.0,Soap salesman,A soap salesman.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_5,0.0,0.0,0.0,Tyler's wealth and possessions,Consumerism.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_6,0.2,0.1538,0.1104,Tyler Durden initiates Jack into Fight Club.,The club is formed by the Narrator and Tyler getting into fi,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_7,1.0,1.0,1.0,Tyler,Tyler.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_8,0.1333,0.1333,0.0661,Tyler works as a banquet waiter.,That Tyler and the Narrator are disassociated personalities ,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_9,0.0,0.0,0.0,Jack dodges Tyler's attack.,The Narrator only shoots himself through his cheek.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_10,0.0,0.0,0.0,Jack,The narrator,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_11,0.0,0.0,0.0,insomnia,He was addicted to partcipitating in support group.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_12,1.0,1.0,1.0,Marla Singer,Marla Singer,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_13,0.0,0.0,0.0,Jack,Tyler,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_14,1.0,1.0,1.0,Fight Club,Fight Club,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_15,0.0,0.0,0.0,PAPER ST HOUSE,On a flight,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_16,0.0,0.0,0.0,Marla's voicemail,Tyler and Narrator are thesame person.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_17,0.0,0.0,0.0,Fight Club,Tyler wanted to blow up credit card company building,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_18,0.0,0.0,0.0,Tyler,Himself,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_19,0.0,0.0,0.0,"Collapsing upon itself, creating a cloud of dust.",Narrator and Marla were holding hand,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_20,1.0,1.0,1.0,Project Mayhem,"""Project Mayhem.""",1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_21,0.0,0.0,0.0,Testicular cancer,Insomnia.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_22,0.0,0.0,0.0,projectionist,Soap Salesman.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_23,0.0,0.0,0.0,Chloe,Marla Singer,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_24,0.0,0.0,0.0,Liposuction clinic,Destroying buildings that contain credit card companies' rec,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_25,1.0,1.0,1.0,Fight Club,A fight club.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_26,0.5,0.5,0.1797,Support groups for men with cancer,A support group for testicular cancer victims.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_27,0.0,0.0,0.0,disenchanted office worker,A traveling automobile recall specialist.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_28,0.0,0.0,0.0,Tyler dodges Jack's shots.,He fires a gun through his cheek.,1,False
+leiden,ff53fd53a94f343b8365915645b79d7ad5b1528e,movie,ff53fd53a94f343b8365915645b79d7ad5b1528e_29,1.0,1.0,1.0,Tyler Durden,Tyler Durden.,1,False
