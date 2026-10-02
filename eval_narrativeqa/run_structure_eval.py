@@ -140,7 +140,7 @@ def main():
     p.add_argument("--policies", nargs="+", default=None,
                    help="Default: all policies.")
     p.add_argument("--max-stories", type=int, default=None)
-    p.add_argument("--token-budget", type=int, default=1400,
+    p.add_argument("--token-budget", type=int, default=4096,
                    help="Context budget in tokenizer tokens, shared by all policies. "
                         "1400 ~= ten 140-token leaves, the node count of the "
                         "completed run (top_k=10).")
